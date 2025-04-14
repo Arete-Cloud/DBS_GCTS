@@ -1,0 +1,14 @@
+{
+  "name": "zarete_dbs",
+  "version": "1.0.0",
+  "description": "ZARETE_DBS",
+  "repositoryLayout": {
+    "formatVersion": 6,
+    "format": "json",
+    "metaInformation": ".gctsmetadata/",
+    "tableContent": "true",
+    "readableSource": "false",
+    "keepClient": "false",
+    "fingerprintSeckey": "/BYOG/FPRINT_RT/22D73F0E66131FE086A5DA9076A668A7_0"
+  }
+}

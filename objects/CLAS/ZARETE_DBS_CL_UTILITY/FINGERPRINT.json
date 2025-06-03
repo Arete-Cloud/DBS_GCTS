@@ -1,0 +1,62 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CINC ZARETE_DBS_CL_UTILITY=========CCAU.abap",
+   "fingerprint":"BEd9e45Xonxl42KSThfyCol3cJAEQT6RePLEYetRAt5JNPWlNEym5xmy6OanGB07n7YhAzL9ughkKR+CvK119g=="
+  },
+  {
+   "name":"CINC ZARETE_DBS_CL_UTILITY=========CCDEF.abap",
+   "fingerprint":"MHbMT2f05eewbeB0ToH4+nP9fxeG2DmFtooXCLRaBN7hFzHmUrtAGIii+UAMb8OZ2e3qDV9bo6CXsEGWZ4UMTw=="
+  },
+  {
+   "name":"CINC ZARETE_DBS_CL_UTILITY=========CCIMP.abap",
+   "fingerprint":"loMASVm1xszNd7EzW4sUpAgaICKO3r8UOctsa6T2CNvZTyaoJBlnJlZ+oBILR4pASxbhrUVjMjg94p4iMY5xzA=="
+  },
+  {
+   "name":"CINC ZARETE_DBS_CL_UTILITY=========CCMAC.abap",
+   "fingerprint":"R5+SK2NGB99vipJkOltSRjANXVsu4Xt+VnXcBF3Od2cg9QQUOlANIHA1SsnUAzhpAuzndMRaI2SaH986uPMszg=="
+  },
+  {
+   "name":"CLAS ZARETE_DBS_CL_UTILITY.asx.json",
+   "fingerprint":"jDtZiQqWME+R7kbHGF2TqFi8gFTKR6iUHSr9GrNvP9GhXmwXUZL8vbJ0qg/glGaOlzWhXhi6GJ+HwkxED72XDA=="
+  },
+  {
+   "name":"CLSD ZARETE_DBS_CL_UTILITY.abap",
+   "fingerprint":"yhr1SQ0dUopUTQy7/UqDiHAPXuVqCuhYoqbgZWiBJYyoq49vlXpQ2GCCfIvW+IxUY+YVvLogvGUDzjZzm7jAdw=="
+  },
+  {
+   "name":"CPRI ZARETE_DBS_CL_UTILITY.abap",
+   "fingerprint":"L3CfMvraBR3P3oKK7/qAbEuDDE2tYtD87pQucvFx9UvN9/fTckL3Vqa0CvlFj9OGP9zdL8J1idII95VJStM3Kw=="
+  },
+  {
+   "name":"CPRO ZARETE_DBS_CL_UTILITY.abap",
+   "fingerprint":"K5wpc2VQRP33oF9AksboojVoqLAiLc2FUbGO/NAFxJwJeI2UM/I86QTUeMQXXh3Jlg/pxP0OO0S6c3JWjyzg3A=="
+  },
+  {
+   "name":"CPUB ZARETE_DBS_CL_UTILITY.abap",
+   "fingerprint":"cZ07Gdixv/Y01FDAJ5APZomwKml7RGoiJfUuKRjHErp9z3NPAJUK/ighFEL5uN1BHNONXrDZwayHADvfde8qIQ=="
+  },
+  {
+   "name":"METH CONSTRUCTOR.abap",
+   "fingerprint":"UoE0TXctGWhD7qdlrG2Nq/puxCe3TvM5fVRHcIyy2tOX3tultF3ux5UC+XkeQJ7csPVFvvlFY49JSjFSgg25IQ=="
+  },
+  {
+   "name":"METH JOURNAL_ENTRY_CREATE.abap",
+   "fingerprint":"CepOFbX6Pa2j0MdnhLH8ngfs7UgMJ8S5gkfSzBRPESL3jaVpzdglxDTkzSevZmhWd08gC9wWR3KdnumHT+gCKw=="
+  },
+  {
+   "name":"METH JOURNAL_ENTRY_TEST_MODE.abap",
+   "fingerprint":"SaHz7p3b8FKvBwjmT2e+ibxn+HF3O7BlKIaVVM7N1iZeQfz47ImUiCmWC3x2vpIETHhFtQ6NTXqUuUM/32K1Rw=="
+  },
+  {
+   "name":"METH RUN.abap",
+   "fingerprint":"mkgATmiXWeEd8mYs/Vr1NboybtaSNKlB8hhX6rLRaqaK+vl5Jy7nB2OLQkkgF4aWbCRATpUoP8J5aM+t5+b1jw=="
+  },
+  {
+   "name":"REPS ZARETE_DBS_CL_UTILITY=========CT.abap",
+   "fingerprint":"8NiBbSa6YA8/dIp+CmuEIjNyLhk0XrrcCktJPQCZjtO20jAFictoWYHQwpqzOXy+rjwxxzi7APFfZWQXFDVDKQ=="
+  }
+ ],
+ "fingerprintAll":"Xas2uavlAxw03nqWHqS8SvKAUgIyTyCR9kUhrSdXgPqJwf8iY6amRxU4WSjgfRNLDuLJMgClQaKWyNRGiR/RDQ=="
+}

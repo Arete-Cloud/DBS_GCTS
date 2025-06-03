@@ -1,0 +1,50 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CINC ZARETE_DBS_CO_JOURNAL_ENTRY_CRCCDEF.abap",
+   "fingerprint":"wmjt+A0uddll49nbOl2fBnp1qHE1PjlYfF6FcRzl8NI6lNTXGLhFZvuM1do9bUYmUnxrS6RJk1ZSOf81yeSydA=="
+  },
+  {
+   "name":"CINC ZARETE_DBS_CO_JOURNAL_ENTRY_CRCCIMP.abap",
+   "fingerprint":"cFd/Vfhjy5YJEcWkTPmb6ZBVd5DtLWPBfFsmtJMTNaM/Xj5qAjzyIPb5GlDeLTwWFfJWHBVX3c6v8Uvj0MJPvA=="
+  },
+  {
+   "name":"CINC ZARETE_DBS_CO_JOURNAL_ENTRY_CRCCMAC.abap",
+   "fingerprint":"hEDpCLTD2I4VCaUo1HZr+57RHFyY0taptBbSkLYqfVMJLPGFHpinVPJ7nkD0js9Sx7d+geTjzpdh1TaC32ryMQ=="
+  },
+  {
+   "name":"CLAS ZARETE_DBS_CO_JOURNAL_ENTRY_CR.asx.json",
+   "fingerprint":"ikfVajhlbMt51n0VVcdJpfV+e63rFKaVIfZ8h+vQ2y7h81gLGnDJtZg6GES/xsFNpjVitfxoT0kLsr4oo2ntQA=="
+  },
+  {
+   "name":"CLSD ZARETE_DBS_CO_JOURNAL_ENTRY_CR.abap",
+   "fingerprint":"tqmhmsshzUutJwV98xZ16kH0aE15zNtdVeXab/sV3Ukpj5VWCOLGJU9U6fmfugoDyySjkLXIcVrTuUu/WLFyCg=="
+  },
+  {
+   "name":"CPRI ZARETE_DBS_CO_JOURNAL_ENTRY_CR.abap",
+   "fingerprint":"TCRHy6CpSRNFMVEI9lRuTsicdnL7ukKoKkf30c1eN3mH6Pgzh2QNlb2CryG0s+zU90IMFSZ1IzLAF6u/N8zuiw=="
+  },
+  {
+   "name":"CPRO ZARETE_DBS_CO_JOURNAL_ENTRY_CR.abap",
+   "fingerprint":"XnR0A6JjxF3c3Np9A3uS/jeECD10mFGt3Zie1eGZtrvlkcj5CSCUF7q+b1rKFwhVIESk03+isd9YpJ64TctCIg=="
+  },
+  {
+   "name":"CPUB ZARETE_DBS_CO_JOURNAL_ENTRY_CR.abap",
+   "fingerprint":"O5SxB8x+3pVIBGayGLJ9ueHsU/J7e1l676xFeQjhlzk3fDoiM39u2sBgctFXrlQ2nhQ66mvZMkc0JPLlbbyAtA=="
+  },
+  {
+   "name":"METH CONSTRUCTOR.abap",
+   "fingerprint":"XO5ZcEXH0tyZx8h+mYeG3e5CiX0VFaNbgpd4GG/0IYOyzctrucg/qfN88Lnl80aQ/KAqn6UXrt0ghvFbLWHvvw=="
+  },
+  {
+   "name":"METH JOURNAL_ENTRY_CREATE_REQUEST_C.abap",
+   "fingerprint":"OOpr1nOvIaDGwyM6jf/cD+sMdJhZ1fAuaEa7CaZSd7vPe/dvkcPFwOrWzKseCeXqTIT1trt7FXJu2p1RcAFpGQ=="
+  },
+  {
+   "name":"REPS ZARETE_DBS_CO_JOURNAL_ENTRY_CRCT.abap",
+   "fingerprint":"/o3dXDlScyb2auTp6gCj+T5LqWCUEIM8E50s0sImiTs+0govdKRocgi5leWtO64ft4MRRuL/hQ5WQnkbFASmrg=="
+  }
+ ],
+ "fingerprintAll":"IuC38+YtzDC5Ze8/4QM2K+ipX/MqHIPXzF0ZbwEVjRkOgyRp+zUrLRwoJ7JVdSvt8hJigHP+YLaoBMrRsQkBIQ=="
+}

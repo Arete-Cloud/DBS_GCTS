@@ -1,0 +1,278 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CLAS ZARETE_DBS_SC_BP_API.asx.json",
+   "fingerprint":"r19pK3DjpWzCM4vXF6rOy4xsrdzqL/FaEKtqZfQ/Oq2byvSnf+Xo4aKkgd76le26gn6E+tOEuoE1O2sqPEstdg=="
+  },
+  {
+   "name":"CLSD ZARETE_DBS_SC_BP_API.abap",
+   "fingerprint":"6J3i08AMJV23t3WEaNGXaqZLuRo8gc7c2+2Ro6GsXb/wHYB42TKojyR+O33h6lWCYXBPb8vFvGE2MbIHcnAbUA=="
+  },
+  {
+   "name":"CPRI ZARETE_DBS_SC_BP_API.abap",
+   "fingerprint":"gVZeO9oF4z8OYGJIdjfGpq7NRBsXAynytac7VllTHeAQRhaps6NxujlcbqngkvKc7mGckr+bqGWcXaXatd2v4Q=="
+  },
+  {
+   "name":"CPRO ZARETE_DBS_SC_BP_API.abap",
+   "fingerprint":"uYoYaTrl5gyLpFHnNrziLmN3zhP5SiaNkvm+RZfHAmWMIDxiyDEpQvg5pXIt+c0/YneG0+GW8u9mehY8lWfzsQ=="
+  },
+  {
+   "name":"CPUB ZARETE_DBS_SC_BP_API.abap",
+   "fingerprint":"Kb2zdzErk6x4XOVN5yAveJrMMBe3cQGFjVOuB8w4/a95/w2Uvx3LozFhf4wTNjupjPuhkHpCcPm2zyXRn1sUkA=="
+  },
+  {
+   "name":"METH /IWBEP/IF_V4_MP_BASIC_PM~DEFINE.abap",
+   "fingerprint":"3mBsoVkcO+Fwp7fg5V44WVz3/f4swHY93ztcoV2shAu3dYLBphlNKCtiwbibUgP9UF9uVF7iB3nlLxArXzQl4g=="
+  },
+  {
+   "name":"METH DEF_A_ADDRESS_EMAIL_ADDRESS_TY.abap",
+   "fingerprint":"KecvaTlPq0VLQWznfd2hjlMGF710U+r6a8NGM2sR0TUuHHQQB85jhdZWNvwb3bBioqXBJfQPYCtYvqMlhY/2VQ=="
+  },
+  {
+   "name":"METH DEF_A_ADDRESS_FAX_NUMBER_TYPE.abap",
+   "fingerprint":"IIfZEsM0qrSs/yGF5m0xAdXRJiBz2Ey8RlOggSgmXxZov2cPowmvfA68o+BhslBw1iD3hj9A2kzeJChnvEG6KA=="
+  },
+  {
+   "name":"METH DEF_A_ADDRESS_HOME_PAGE_URLTYP.abap",
+   "fingerprint":"UndUgt99VZvoTq5iFV3Msh0sT8WWtRXHD6yaW58TUzSqkGVnqx3LVJPrjRbFm771/pH3FAw2zTK3frb3/iUFOQ=="
+  },
+  {
+   "name":"METH DEF_A_ADDRESS_PHONE_NUMBER_TYP.abap",
+   "fingerprint":"zpwKFyTrpwDA93ZIJrmHUUGfC8WkNy4dlN0ZKAVOaVt+ov1is83yDJaNQQ69Oz+BtXVWfh6uqdCN3nBcTvtqVA=="
+  },
+  {
+   "name":"METH DEF_A_BPADDRESS_INDEPENDENT__2.abap",
+   "fingerprint":"qdYWMC8NMYSugzsmOn4+1l2OXqyIwvnFtxPN2kUzwFbYh84JAT67RlO+DfKNtaaIJNvHEk2wosXVBSmQ4ykteQ=="
+  },
+  {
+   "name":"METH DEF_A_BPADDRESS_INDEPENDENT__3.abap",
+   "fingerprint":"qLhhqtQrZX49ez1poCtWA5SYFDLlnQ0HNRfaQ2V9aywpnJtn8W7GaEGSrLBzr0H+gcfaGzPvYFvS/J8ovnz0eA=="
+  },
+  {
+   "name":"METH DEF_A_BPADDRESS_INDEPENDENT__4.abap",
+   "fingerprint":"+Ocu+HTJQ5YSl46UfpUPpVsZvQoVf08GvH6Fa700Hyk/Looc4w2/JylJPSt9dcU/0pyZLu8zCfsxupJNgm+VwQ=="
+  },
+  {
+   "name":"METH DEF_A_BPADDRESS_INDEPENDENT__5.abap",
+   "fingerprint":"yhUeZ6FsC2mNepPM2Hl9IIVgCVSh2hcHT1TMp8UlOVe/CRxfHvwbiHMrtj91QW+w/tFyLAH69kge0E3RZei/7A=="
+  },
+  {
+   "name":"METH DEF_A_BPADDRESS_INDEPENDENT__6.abap",
+   "fingerprint":"5slENu4H/sjUNeLbbKgIqD2/6E92QicEhI+JKb/m5565raRg5HfIdNBoVBMf3L4apMN8n1yXsQUlC33d8MiiDQ=="
+  },
+  {
+   "name":"METH DEF_A_BPADDR_DEPDNT_INTL_LOC_2.abap",
+   "fingerprint":"SPmd89kGQxiZ0lDTHa6yrHNHdQe1q/yq1bcLSv6Ky6r364vlkeEa2mgwhTJ7U0pGqGfMpq8MW5DWcq1UVukvVQ=="
+  },
+  {
+   "name":"METH DEF_A_BPCONTACT_TO_ADDRESS_TYP.abap",
+   "fingerprint":"qVXtoUhYTemBvzADlySYT8zn9ElGqxK34WgOiihspzoeRnET6j286xoG5YW/bkam3ufJczYqeN2KF1G9R9QDCw=="
+  },
+  {
+   "name":"METH DEF_A_BPCONTACT_TO_FUNC_AND__2.abap",
+   "fingerprint":"IIcfM2NclqnNrdPZ9KWgAqaWQIBJrnu0oHlcMB/Ie6ueMoInsSAedHhl414P2arHzCnb/D9CJxUUUFXBiLbHXQ=="
+  },
+  {
+   "name":"METH DEF_A_BPCREDIT_WORTHINESS_TYPE.abap",
+   "fingerprint":"ulLzIjL+C2w1pSyUWBw77yvsEmhYAVPF3TycL43mATomaYFfivsHcZIstYzpvRTvtNsGE0TcRI1thD3MgeO/FA=="
+  },
+  {
+   "name":"METH DEF_A_BPDATA_CONTROLLER_TYPE.abap",
+   "fingerprint":"eodrYw/rYJtDpeSREzkyrLkHzIDEnGWRvjjiujwVEZaVbfKT1UyEVYqsN+JxcWwnZFu+d5mIMA4K2wDdzrUY0Q=="
+  },
+  {
+   "name":"METH DEF_A_BPEMPLOYMENT_TYPE.abap",
+   "fingerprint":"POw1zlhGM+y2r7jM8sTYxmckWWmKM9nMJy9olrYL7H5Mqfnd6cONV4p/bYOaSW/5EwE3thSGNBOlIu0zHCoe4Q=="
+  },
+  {
+   "name":"METH DEF_A_BPFINANCIAL_SERVICES_E_2.abap",
+   "fingerprint":"sBlTR9KkdnXc/gsjpMoi6r9RRc5xHLxWTk/9uQSa1pfzgrmnK8KMXfV6RS8TsTsYiZB1OwwR+dux+7KChyS8Mw=="
+  },
+  {
+   "name":"METH DEF_A_BPFINANCIAL_SERVICES_R_2.abap",
+   "fingerprint":"DNGQUDJN6VG1Eu3WHtDuhtzoXJ+AQxHGF5lsGLJyC32Twuak1SBTod4bgskfJIB3DTyGCFkSIdFldbOY7d9urg=="
+  },
+  {
+   "name":"METH DEF_A_BPFISCAL_YEAR_INFORMAT_2.abap",
+   "fingerprint":"pRR+BlYwikbAWBgZggL/ugYV5Wzu0eK5LnihY5yochE+ZFah+tTAWHc1QO1yQmYbYbMkXPS3pbgJ4J8+usLJLw=="
+  },
+  {
+   "name":"METH DEF_A_BPINTL_ADDRESS_VERSION_T.abap",
+   "fingerprint":"fAJlRGYmThDZwmYGOzI3kGMsk55LDPaD+Fay9qiRSip4WtYc9GNgrLYOJpPOEMzsS2jgzyyBbLyP/tHP7Lqqtg=="
+  },
+  {
+   "name":"METH DEF_A_BPRELATIONSHIP_TYPE.abap",
+   "fingerprint":"ACNWM1vrXmYyjOEjoGgiciVXt9tnG3zQXkDfJ+pGrZVeBLiMD9jFt/RJdXyMSUugVLcpHVNJtMg3t6awUgMOyw=="
+  },
+  {
+   "name":"METH DEF_A_BUSINESS_PARTNER_ADDRE_2.abap",
+   "fingerprint":"FIdkIcYk/PqmXdU9nuY5xr+w1lmI5UNMyMPXYS41LZtHbgsGBpGQ7doQkCWz8Bgmv7xxc1ePWcXcVyfLaA9KUw=="
+  },
+  {
+   "name":"METH DEF_A_BUSINESS_PARTNER_ALIAS_T.abap",
+   "fingerprint":"fzGEfxj4Q0LN3jCs+6kkQJrMyjEWDT+Umr2o1LAwK8VXCwnhABugxPge/TR9n6mwTV8X6pkd+Vi7AjCU6hP73Q=="
+  },
+  {
+   "name":"METH DEF_A_BUSINESS_PARTNER_BANK_TY.abap",
+   "fingerprint":"IVWm1d6ta+cUR8qV4gusYUn+b4pLB1y6t1Cui6gkqEIygYRv+Vbnomb9RIobltiVyrKe4ZWueJ9rstScGGXI0A=="
+  },
+  {
+   "name":"METH DEF_A_BUSINESS_PARTNER_CONTA_2.abap",
+   "fingerprint":"aKgDwAt30HGOd8k7Gq9PmeCzcJSgZ+siRbG18u2Z495j1LOoIdSO3v/AVWkrgE4uYnyGEe9juUg0RaZVO6ze3g=="
+  },
+  {
+   "name":"METH DEF_A_BUSINESS_PARTNER_IS_BA_2.abap",
+   "fingerprint":"vbyX0MBYRZgrKh4z+BAE4J/FQVrsYM2LPjqzamHdi7ac+eoBgDtZVV5jkrfjwJqc5uoQfzwhsYTecjSAn5j/FA=="
+  },
+  {
+   "name":"METH DEF_A_BUSINESS_PARTNER_PAYME_2.abap",
+   "fingerprint":"s8fg0V4x6SVRB/b2+MLL2WNAmvv0sOswy6ukM8b/xFvkW6B5REn7Bf8qpUZv2Izx1EIOBKik6KCGiCvNT23umQ=="
+  },
+  {
+   "name":"METH DEF_A_BUSINESS_PARTNER_RATIN_2.abap",
+   "fingerprint":"rbYNfrL/wZ+UtM02T2htZoX3esY3BpTwgBbv9LTEftqoN+iauafb6kYBLsl6F/G5yWk2pg+sFZPTGyKoQpYb/A=="
+  },
+  {
+   "name":"METH DEF_A_BUSINESS_PARTNER_ROLE_TY.abap",
+   "fingerprint":"U9Pp3/Xwq4q1AjBKADSTxssliM2eAGcwrWGwwVyrfBRX7AqDctSjCRwQ5ukJQdLmD2cXur1eGZgPRSWEqKA2FA=="
+  },
+  {
+   "name":"METH DEF_A_BUSINESS_PARTNER_TAX_N_2.abap",
+   "fingerprint":"EcbJg9XH8tFQgCISUwOUQiluU8G6mOMOZl6/z77Ciq9vuTnjS+J7I1YU3kqoDoKylX+na3ewIaaoW9CdxLXCyw=="
+  },
+  {
+   "name":"METH DEF_A_BUSINESS_PARTNER_TYPE.abap",
+   "fingerprint":"mSXc/6IfrAplb9lqzOowXwTiJYj8jm5vlq0pFY98qCtNB/zDIcJdgdnHxJwGpnqvFN08VLV8rdEWDDTVUa0s/Q=="
+  },
+  {
+   "name":"METH DEF_A_BUS_PART_ADDR_DEPDNT_T_2.abap",
+   "fingerprint":"ANT/Z21tro/Su9u6+4QipYeJN6ztL4QKduTPFLO0nJKhaBaTidQ96bbk0nQjNy9sJP9jke7T3doJwmL/v4BsYg=="
+  },
+  {
+   "name":"METH DEF_A_BU_PA_ADDRESS_USAGE_TYPE.abap",
+   "fingerprint":"D6EyWb/yFmORaA/SP5O/J5IMhpMZJEc1gdtsIwhxlzuuXjvlgysAi7TPX3S9mLcquAYGbHG0tnxuJu3IJVQFkA=="
+  },
+  {
+   "name":"METH DEF_A_BU_PA_IDENTIFICATION_TYP.abap",
+   "fingerprint":"wUGUB64Ej7j0+lusGDeOBji9TcrtxLLd646d+HuLj0WfEJpB5sgdfIyiXVeHkZlQMl5GUzFSVQMvEZyeqNOQ7g=="
+  },
+  {
+   "name":"METH DEF_A_BU_PA_INDUSTRY_TYPE.abap",
+   "fingerprint":"P8RJa3HtNisxJj/0YjQnf9Bv0paMuMG4T7pENBt9RhTfQT4utoQ/21Q6+aGijnN2dr8p7ttd+iPAuBiYWvlBOg=="
+  },
+  {
+   "name":"METH DEF_A_CUSTOMER_COMPANY_TEXT_TY.abap",
+   "fingerprint":"E4TeNetWqOpwNi9nVZuF7AakQcu5kXJzg8p6a878c8Pnpd9F7rqy9CUSALsUeRzG+zxbxWcigDnOXzSIIPGwZQ=="
+  },
+  {
+   "name":"METH DEF_A_CUSTOMER_COMPANY_TYPE.abap",
+   "fingerprint":"tOkv5jGHIRmPiawgQ6VhLWeGHmfrWF8pt+G6eAuZ5iBWOvfw+ZtKhz4KR6XPQEnaZ5uQLmGZuXZHJvZ4zgUiXw=="
+  },
+  {
+   "name":"METH DEF_A_CUSTOMER_DUNNING_TYPE.abap",
+   "fingerprint":"FUn7VTzulOiiksaFVMduqUGYHFCM+Yo6YifEvcew2MCwz6GXuhIZvU31GV2PWzUI2zjBpET4xZx9GfMscJes/w=="
+  },
+  {
+   "name":"METH DEF_A_CUSTOMER_SALES_AREA_TA_2.abap",
+   "fingerprint":"G6ktK2PMOrqXgIUeSCOyetau5kCUrrFwn3AHqGwTtLgZ30tshujZKw9IRY0YHNTWVaAYGaj5gtKaWd3PBDa7uw=="
+  },
+  {
+   "name":"METH DEF_A_CUSTOMER_SALES_AREA_TE_2.abap",
+   "fingerprint":"6DHCKub+XmSRadIbN00R+hfPePNDEaRq23RFa8gdycMdNSvvwa0y5xvRboh/TUg2yq2o8PVa14qCB/8QNBfLQg=="
+  },
+  {
+   "name":"METH DEF_A_CUSTOMER_SALES_AREA_TYPE.abap",
+   "fingerprint":"4Rd1rpO4GZml53ONqqdvHVtD6Mm18u/gN5ElyHdFB2AfxAp99AgHlNciSnyPQmrIxg5gsaSqc20ZT+GA9bvKGg=="
+  },
+  {
+   "name":"METH DEF_A_CUSTOMER_TAX_GROUPING_TY.abap",
+   "fingerprint":"lYv5Eedw7FQHKxo5MRm6/C+QJ79OPuyBXYqgRoPlwMNUuYWZFH9f0Cnbfg+WEy5PG6cu9JY2Q0wSrXwcJFy5qQ=="
+  },
+  {
+   "name":"METH DEF_A_CUSTOMER_TEXT_TYPE.abap",
+   "fingerprint":"MM81ItZE3TmNsSg/qDWMTOVfM4jdTMYe3bQU4IJBwcRC6OiQ1qbQ4CwRYNtPlrtlMIdWTz7Ae/UDci9jJdbmTQ=="
+  },
+  {
+   "name":"METH DEF_A_CUSTOMER_TYPE.abap",
+   "fingerprint":"wakjgY0F4rB6nnywG5898BsuJxIf4mt0xKYStw3CmYRhE4jVmLXXI8YKtQqnL44SESxf0yKh4xexsVGJf8yCvg=="
+  },
+  {
+   "name":"METH DEF_A_CUSTOMER_UNLOADING_POI_2.abap",
+   "fingerprint":"AYwbLL8CSh8WUrGSQ4lKMu2QNTT681mCq1jn7xpujTnUiXRIsNgfxwDQlxVmGwgqDCtk8bsrxUCVPxy0gZ9zYw=="
+  },
+  {
+   "name":"METH DEF_A_CUSTOMER_WITH_HOLDING__2.abap",
+   "fingerprint":"idngk8wf58j3iYI3RplAjsDIdGns3jl6pdKBQL/LdxQ2WIuA7s1VaeCRfDeomH1g0qy2fNF/BvhjYwPTi6B5Gg=="
+  },
+  {
+   "name":"METH DEF_A_CUST_ADDR_DEPDNT_EXT_I_2.abap",
+   "fingerprint":"QZcimROa/DziKZsgj9zj5kH7BPovIcNoUeavhy3DBC/Ym4Hgb4GDpTj/iwP/X3Q/O2xIt2VUf5AAIJAF5QwWKA=="
+  },
+  {
+   "name":"METH DEF_A_CUST_ADDR_DEPDNT_INFOR_2.abap",
+   "fingerprint":"FGXR6C9gh0S/bjPFl/Xg4U7aRlWTSU9BtDCN4cPBf+UlijuCNcR+bgC2YUmtM+qYK+7pJmu4hAXLUrpK0omqmQ=="
+  },
+  {
+   "name":"METH DEF_A_CUST_SALES_PARTNER_FUN_2.abap",
+   "fingerprint":"8P364N6hizwSBL5XlBFVhvDqGsoIshIrYE+1oXY/ql8ZtYOeEbombD3Tji0Ad6ZzQIAXCWShC+aDhWC+DP4q1g=="
+  },
+  {
+   "name":"METH DEF_A_CUST_SLS_AREA_ADDR_DEP_3.abap",
+   "fingerprint":"T1PRjJ3YiWJa6Uod5dMy/8pv+Drh9NfdaGQ78V/dfQMCTJikgbKJCzb3AAA/xIMpTRvFkrfn85RPZk3I0o6CPw=="
+  },
+  {
+   "name":"METH DEF_A_CUST_SLS_AREA_ADDR_DEP_4.abap",
+   "fingerprint":"/pNaRUUetDZkSknc8wpl7jRio9ag7TjciSJLPO/R3ClGoP/X8JatSuSKdKMvmDqztjYy5aVkhOYL+KTbUysBeg=="
+  },
+  {
+   "name":"METH DEF_A_CUST_UNLDG_PT_ADDR_DEP_2.abap",
+   "fingerprint":"bzu0ZNwvqmeM+nJBdYxiqzBbmuHXg5AbaEgnvPJD4yJ8K8Ni55zF98zkRCIhHPZd2EjOrp/SxX6e07RuXALEMA=="
+  },
+  {
+   "name":"METH DEF_A_SUPPLIER_COMPANY_TEXT_TY.abap",
+   "fingerprint":"1EMrcIy8NVDa0ag6LHArm4ww4Wu2k1/Y0qpf0530oatkv65CmyfINqO2h8jN65zMMfctWyvK6AR0Ys/Vt2+/QA=="
+  },
+  {
+   "name":"METH DEF_A_SUPPLIER_COMPANY_TYPE.abap",
+   "fingerprint":"fVUUiORpOdiOht/j4r6nmQuMS/siLDXpLJH9eAfy/RgaM8pQLKjT8J0st8Rp4K7lgHuD8gED8LHSjHcBQHCf9Q=="
+  },
+  {
+   "name":"METH DEF_A_SUPPLIER_DUNNING_TYPE.abap",
+   "fingerprint":"PRre+VGms4u/c9CvRot8Okys4ENs5vsob0vKDjwlLmMOAEfgzWz/oEGcfmjneCUvJBH0ppVqZqB8iOQVIoTybg=="
+  },
+  {
+   "name":"METH DEF_A_SUPPLIER_PARTNER_FUNC_TY.abap",
+   "fingerprint":"HFutTHA0lyau45lvYMyLD94L9seIyJZU/GcSd+XY65KI0qZ4eLt5Y7lZmOPEoQvuTKaEy5f86DHnVGfknMwY+Q=="
+  },
+  {
+   "name":"METH DEF_A_SUPPLIER_PURCHASING_OR_3.abap",
+   "fingerprint":"RkNzVa4g8W1Clz3XNrh+AHeuOvW+ejZHGNpcoD9hVC8PPu6p5AARrkw6VYqXcqFXimsVkvay2NSfbUzGjLwqRA=="
+  },
+  {
+   "name":"METH DEF_A_SUPPLIER_PURCHASING_OR_4.abap",
+   "fingerprint":"ExCKZVvte1QoHnxV0BXvmShjvax7WH5KUGGYXqC67lpK+XCyyNGmbkKJDBZHd6rVzsV3t7pdwcvB/WLKmIPNEg=="
+  },
+  {
+   "name":"METH DEF_A_SUPPLIER_TEXT_TYPE.abap",
+   "fingerprint":"PNVmJ48l1LozMoVIacqK6XTAbPFXP1+ovBClnlMXyjeR7ZlC5GHIRUMtvBroZTF6X2/gv8CM5uQY4e25C5s8tA=="
+  },
+  {
+   "name":"METH DEF_A_SUPPLIER_TYPE.abap",
+   "fingerprint":"aJNxplt3Dgn61mZDqxjaS9BPNYZlP+y2LH5azZOwJFnP6DM3Q5YI2TCL/+zxF72RUhTKFtyJh7bbL3Kr5/nY0Q=="
+  },
+  {
+   "name":"METH DEF_A_SUPPLIER_WITH_HOLDING__2.abap",
+   "fingerprint":"HlA+5gbGNEhrUI20yI9UOvK62Z9E2tbIBLpKJ+K4Tip3HJPmJG6pKILLiaeYetVO6jwGGIHhTSxPWqmvHVhpsQ=="
+  },
+  {
+   "name":"REPS ZARETE_DBS_SC_BP_API==========CL.abap",
+   "fingerprint":"wt4uCVmlXhNKQ6KQnsA9zSsiEK+cMFrV2EA20vjzY/xxVcYF1rLDC0xzdiREAyNVoy8jM3p+k+ODKac4C6+hSw=="
+  },
+  {
+   "name":"REPS ZARETE_DBS_SC_BP_API==========CT.abap",
+   "fingerprint":"/oy/r5UVagAVSqah4XR3XSOoCWHqCE/PMgDfKr1ft5YpM8PwATT790ZDHSGhZV3O/g8Cxm6wXfWCfghlqMgejg=="
+  }
+ ],
+ "fingerprintAll":"4J8Q4leV8JAj3kCn18IyuxPtwwWTcV2hJgrkQElKQuwn/yGz5wx4MTppzpTjeK1Uf7hQF8oOKPYsQodThWMbDg=="
+}

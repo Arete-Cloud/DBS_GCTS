@@ -1,0 +1,58 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CINC ZARETE_DBS_CL_BP_API==========CCAU.abap",
+   "fingerprint":"yguDZ7388/UGh+i5dzy75GjEyEO86/YBjdqD3OxUcyFV5II8wSOF/DIjsFTglCsUs6rtCKYFX/18S5raGGr6AA=="
+  },
+  {
+   "name":"CINC ZARETE_DBS_CL_BP_API==========CCDEF.abap",
+   "fingerprint":"zeuORg7owqOMzlInfbuFYj8545xixMWR8tR33O9AIk9fQx2BULh0X6XJ4sAjPuyRTXGWWZCWhiay1wke2x68hg=="
+  },
+  {
+   "name":"CINC ZARETE_DBS_CL_BP_API==========CCIMP.abap",
+   "fingerprint":"/cbNKw1rfwtVWII4CxpOhE0849nG1QncBsmuHh8Pm0VD5y4uC5oE04DHxk+v5x5zpFiCmlsNsp4XdSxRfXRDxg=="
+  },
+  {
+   "name":"CINC ZARETE_DBS_CL_BP_API==========CCMAC.abap",
+   "fingerprint":"pRh0/afsbkqgKfrvbEqMDbup/my8KPXeOtKu0NDVNCd36PzpRlMoDpSKqtUqkKHvZVBg5bTBANVoAZjpmuolaQ=="
+  },
+  {
+   "name":"CLAS ZARETE_DBS_CL_BP_API.asx.json",
+   "fingerprint":"dp24HwpGcwHlmiIiPNX+2pQwUvnAOG737jqKrHuwM5O3zWyizyKoAO3FZkJAjPQxi+Fv0iBO5aBCYldWLM5gnA=="
+  },
+  {
+   "name":"CLSD ZARETE_DBS_CL_BP_API.abap",
+   "fingerprint":"cQ7YJblz6IMJ61GTHmD4G6k8XgebTHU2+0vhBMdxKippy4HA9cWjkNOJE5JHoSAzGgKs2VX1vRo2+2vaClZmOg=="
+  },
+  {
+   "name":"CPRI ZARETE_DBS_CL_BP_API.abap",
+   "fingerprint":"u7aodAJSWEXynlntgqD7r+tDcXvmN9BrJ0V9sW433lfiafj3GptQdiblsTIUoCgEhtdl+Ss8K8yvyiGk00EqLA=="
+  },
+  {
+   "name":"CPRO ZARETE_DBS_CL_BP_API.abap",
+   "fingerprint":"9ad1G+QbYmL8nt5EF699SoQDht+NXstzqUZ0GAknlvPfXiBBBKQpDgifZtjIrpi+m4aIpVaQaLYARR3hP9wOAg=="
+  },
+  {
+   "name":"CPUB ZARETE_DBS_CL_BP_API.abap",
+   "fingerprint":"WLjN/NJpuTPYMBSYAGtUdOIku4EDKlQYy8S8C9pv2aKY/hYMbMJoEqECkDzOFk/Wq3+Fxqw88uNeGT24TRyzOw=="
+  },
+  {
+   "name":"METH CONSTRUCTOR.abap",
+   "fingerprint":"gCQ1zzafUGrFEUrFoqZ5buI6S/e8Ow5msbutYOLl4ctXXjZ4fc1K0/hcVKGZdbiZuh/TiGyZB518z8krOYAdvg=="
+  },
+  {
+   "name":"METH GET_TAXNUMBER.abap",
+   "fingerprint":"IIUaLXbG8lyoAkxfDtLukF7R0szWQjQoHnYvBELBOXuUHkgaB6IKJAWOxJy5KbLVOA2rqPQoPYctsdGr6KF/Vg=="
+  },
+  {
+   "name":"METH IF_RAP_QUERY_PROVIDER~SELECT.abap",
+   "fingerprint":"px7TJnftsUV5+ddzPRzw8FmdoPW1RF2jbJrLnA0frXSF4Ax1MFJ6idC02u5zTLUiLq+JI1yjMayqYz+AHd3NCg=="
+  },
+  {
+   "name":"REPS ZARETE_DBS_CL_BP_API==========CT.abap",
+   "fingerprint":"2NaYlKcEnSkwYUvPJubHWhCuUOoP8vu80O/oYrhovbM2Lsep5ykpsW2l4y9r0UkzNZMESCW25oIe64VYIBJTrQ=="
+  }
+ ],
+ "fingerprintAll":"wp7sUkQdfTSGXYfXuArn2kXsvx99JN91d/gGAGaX+/ZHiOE6bneJ6GUCrrI3LVP4Iihd8x3FY8oE6waIe7D2pQ=="
+}

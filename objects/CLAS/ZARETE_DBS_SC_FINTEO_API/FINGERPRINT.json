@@ -1,0 +1,86 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CINC ZARETE_DBS_SC_FINTEO_API======CCAU.abap",
+   "fingerprint":"yeHSlkzE764/ajrma/Hybza+s2/xTDa5x0nw1e+JZatFVSuXg1b0o3r5ws48j0qAx7uvmkHAWil3rEHLDsbwAQ=="
+  },
+  {
+   "name":"CINC ZARETE_DBS_SC_FINTEO_API======CCDEF.abap",
+   "fingerprint":"RcK/1wLkeUR791swWJbLzLqT287rJdwB4hpWabKOqrqvj73Sz+7SLz6d04GunX4NItFPivmi9bb34JYep8WlEw=="
+  },
+  {
+   "name":"CINC ZARETE_DBS_SC_FINTEO_API======CCIMP.abap",
+   "fingerprint":"b+a0wZakwEemWwvbg6jviQq3RTbO2oNWvT79bLkxgSCPhvCoyGQPsEeQCTnAyXCaX6ky+wxi2PP2tHS0zRXIpQ=="
+  },
+  {
+   "name":"CINC ZARETE_DBS_SC_FINTEO_API======CCMAC.abap",
+   "fingerprint":"FG6tc6TFH4ogqjfUU2Y3vwkgT6wMLZUZUOKgAOWhVXozWLgsYE4u/EgHuCHpY8guUbcHbI/A4vZlYIcbgMH+hg=="
+  },
+  {
+   "name":"CLAS ZARETE_DBS_SC_FINTEO_API.asx.json",
+   "fingerprint":"BGTE8UGMvniRjUoEXCRI7uJ9Xl08F0GciBMR8YaP1OELJUpKYdBVE3SjVmZVV8jDw7SoXv3LcqahOX2iGvdg2g=="
+  },
+  {
+   "name":"CLSD ZARETE_DBS_SC_FINTEO_API.abap",
+   "fingerprint":"Dun48nOOH+1Gp3yEAYjPAad7oN6KMIWm73jyNhIRpIUTceskckIcJ9IiUTPenV/grhExjpkTLFSCWrd2sLRO7g=="
+  },
+  {
+   "name":"CPRI ZARETE_DBS_SC_FINTEO_API.abap",
+   "fingerprint":"vuW9fAD/MCYeXlfcJstuWTtg39eB4NDZ1AyoWfTl8XBB7sjMKcFlVZA7EOBgZVhKG2EwydQcZB5foBWSF2TqyA=="
+  },
+  {
+   "name":"CPRO ZARETE_DBS_SC_FINTEO_API.abap",
+   "fingerprint":"xFm+6MEbcSWPaPNpD1OebKnHPqcCbRyrxLM9oxSxze+fkrw8mC25y7CFg3apKMrPVeZvVzPOCm652ZtAvCJvgw=="
+  },
+  {
+   "name":"CPUB ZARETE_DBS_SC_FINTEO_API.abap",
+   "fingerprint":"OWHHvVfrdwKkz677ycat9slN1w7uAmebOZE3b4hJ+ZODEUl/Lena/Wrb2vFvUKAjxQ6nGFHVfUkAYpgiTeSrpA=="
+  },
+  {
+   "name":"METH CONSTRUCTOR.abap",
+   "fingerprint":"IUpeCPDGo4wXtzDsPBa2K2FZd89/FTk3SQu9hOTYtcj9kp47svsxzVJcGfnIMGLrv6d9/DDxkrXG/hDKeD03Uw=="
+  },
+  {
+   "name":"METH DELETE_INVOICE.abap",
+   "fingerprint":"hzTJjtK7ztkc8ttxM4HMcNyIN0gJ5k+Nry+Jg5PhjW909/ZsN+GtJau0IxGxBMOTUP/q2NePZN2CVnGNUhbTZA=="
+  },
+  {
+   "name":"METH GET_INVOICE.abap",
+   "fingerprint":"SG5QBitXslgRugA418UU40H13Fzv/eoMDBxkjt7rWGYhZ6XOK7xfQsucXusdEstJ3dOmLjIJh8bnkMRALN4PmA=="
+  },
+  {
+   "name":"METH GET_LIMIT.abap",
+   "fingerprint":"oHIZlC+VUs9sBekusKGGiAEwXQD3Lz5Vr8yrGlwdDD5dWj7x2No36R7m09bjLHXUd/dtPSDWR4BDG1Q6UJSX4g=="
+  },
+  {
+   "name":"METH IS_CONNECTION.abap",
+   "fingerprint":"RXXBzmBW81E2PrzizUNuiUS9oZRA82xeJjkzfYoMijVZJ+37xP6Xw4SKl23Vo+7gwLY4gRVvPl3FPBPdPBThKQ=="
+  },
+  {
+   "name":"METH UPDATE_INVOICE.abap",
+   "fingerprint":"PTMtlSPZkaFS0F5yMsyC28D9Pk0YAg8W7uKE4DtrNC/9zOiPGci1jgzl9wosWsOGECXVUydMEgg7NmRAqKK2vQ=="
+  },
+  {
+   "name":"METH UPLOAD_INVOICE.abap",
+   "fingerprint":"X4iQ1wskDd73vO/E2bjrgyjOYoo90pm1/op8URSbCVYaNpsEIRmW5xnzWX/OjStkOb4Rr2KaxG1bZVMgXkGQrg=="
+  },
+  {
+   "name":"METH __EXECUTE.abap",
+   "fingerprint":"YAoLwH6ySW8fOF8ecYMPeNbUQ28abH8efkt9Vt0UE0BYfvKpCI4K1Zh4tetBstvABACh0V74VDXWnadbHJU9zg=="
+  },
+  {
+   "name":"METH __GET_REQUEST.abap",
+   "fingerprint":"EHHtmBt+1CT/8ZV+ampt8v9AE1jFOh16z7wUSjLbdYrcfMstxT9j5LV1JqrcTvSJQ+SKUiMuDE+apTpUeHBT8g=="
+  },
+  {
+   "name":"METH __JSON2ABAP.abap",
+   "fingerprint":"+EQoICf8HD6Z7pXwgjbiyfxPLDcUPciJ5yEd1OzhJG9Y+RjnQ1A9fJF/qIjZnZAdf3/Hc98N11HqpId1j+rYIg=="
+  },
+  {
+   "name":"REPS ZARETE_DBS_SC_FINTEO_API======CT.abap",
+   "fingerprint":"T9mIk/9vapJOY355d2qWO0303cXNDZK2A/4E0UcFgcAd+SDiVZPVR9TgEsPwbxuyOfVJmp6rXjx3GjWr8aphTg=="
+  }
+ ],
+ "fingerprintAll":"Il7bRkyeSme+NHyktpyfC2vPPcp0V0Ynh5DXbsxgG2ww2KuenFsQEcOwwJBezNae/t9V35vLgejoLwASP1DUdA=="
+}

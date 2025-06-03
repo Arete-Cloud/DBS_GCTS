@@ -1,0 +1,22 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"INTF ZARETE_DBS_IF_LOG.asx.json",
+   "fingerprint":"nN3f3gEW2QRXbMnn33APIQn0wEDFyR6mWDaFR1NtwEfaE4ergSb2hRZKBa6XXE6A1YPqQeupZIatFRdtPeot3w=="
+  },
+  {
+   "name":"REPS ZARETE_DBS_IF_LOG=============IP.abap",
+   "fingerprint":"LDmrJPXfFmo1f6ExGVjOZDzxb6J7RWJoPt3bC4LLvQ01I38+mkHvlPILTzIzcb8nusa5TseuVN9hl6EeNmmaQQ=="
+  },
+  {
+   "name":"REPS ZARETE_DBS_IF_LOG=============IT.abap",
+   "fingerprint":"+yEnup7VTA5IQtGBXNvtG4QY+mfcA4vTAUBObJv8hJRx46eQtSnkpclC2+Nvy2ui2zQLaDHzsH2IIwD+L3e9Ew=="
+  },
+  {
+   "name":"REPS ZARETE_DBS_IF_LOG=============IU.abap",
+   "fingerprint":"gz1KsCjaLCWFzqvM1qSBFdNTSqLNXdssj+/UEI6Qp2ICwtm1LeTjbo3MyCojGyDvArIc5Eu+Nr5y+T5D2GDIMg=="
+  }
+ ],
+ "fingerprintAll":"ogVq5gwaw2vd0Yj6TsbmCa/Tzjhfq5YS4q4SyFqWFDfCobWEt5aCzZi406kff0RGShreuhnx/gUNpGpBvhv7yQ=="
+}

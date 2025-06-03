@@ -1,0 +1,54 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CLAS ZARETE_DBS_SC_BANK_API.asx.json",
+   "fingerprint":"KyiEq8kovB0SXby1rBAoATpaL7Aw/K9WrsDv4+KeSxdkiVEdX0SjSduM7GL5wrc8KfiwgiUGu/i+cKmrxP7U0A=="
+  },
+  {
+   "name":"CLSD ZARETE_DBS_SC_BANK_API.abap",
+   "fingerprint":"4tyb+hJx4mov7fW7KMry1SRg5yBAZ/PEjvw43DALFdbX6tLE2af2TqEcv2+2qOLjuGQOgdBIIpsb/p2eFwQxuQ=="
+  },
+  {
+   "name":"CPRI ZARETE_DBS_SC_BANK_API.abap",
+   "fingerprint":"aTcmcwH/bZfP/pJm9UzPIqxIcU1L+w7Wge85fW8O2C4/nkBO77Bxs4Ols0G/1tQnYazlLYlItfzWMIIiQmi6Qw=="
+  },
+  {
+   "name":"CPRO ZARETE_DBS_SC_BANK_API.abap",
+   "fingerprint":"HvHEbCefCdQhLm/2N1+pyagz/qywJkpfHBqZTs1gUKJrfRgw4RzjiMEot2sMRTNDCQ7MCbTrCFmU++Qz/XQtkQ=="
+  },
+  {
+   "name":"CPUB ZARETE_DBS_SC_BANK_API.abap",
+   "fingerprint":"LurNhcIAofP5c1YlquvpVOKNKExPS/6Axtol6CRe81MhM3Fo1XJWVqSIdrmUuvwjx1lYqNvr2sXIBjgviuC9Og=="
+  },
+  {
+   "name":"METH /IWBEP/IF_V4_MP_BASIC_PM~DEFINE.abap",
+   "fingerprint":"7zcl3Ptn0+E+8zmLgEu7flMSY3d2q9nqEQb0d1UYVCp5QRDUAQWlCDZF8DrNoFBUB+cYFHkApwT/pcBW7ixrYw=="
+  },
+  {
+   "name":"METH DEF_BANK_ADDRESS_TYPE.abap",
+   "fingerprint":"iBzSgFTSELtDuUUePhQlqWCgAf5l2f56ykQB3/1xkIgI8/p25/JiTXgYV6SVFF6v1tls2xpkpAbDtxzvx7z4ag=="
+  },
+  {
+   "name":"METH DEF_BANK_TYPE.abap",
+   "fingerprint":"3od11AlUkIirOJz0rpck3gSYaR02qeWmzWE1Z7tcyLBg6/u9NUzCt7kbA8rfgb5wc+uxmcaFA9qK0xa5ww/zdQ=="
+  },
+  {
+   "name":"METH DEF_BANK_TYPE_2.abap",
+   "fingerprint":"H3dR5Z8dsUHEz3Q5kgl5XSIjtLKdOSh42HOmOCOvCGcxGKLeXeAQuYvqM+4Dy5qQgPAbwUOaYHDyVGXUWk9KqQ=="
+  },
+  {
+   "name":"METH DEF_SAP_MESSAGE.abap",
+   "fingerprint":"yqpqwy140wdVjcFWdv/5B1KxXr4ktPcdoERfTPCJ6wkMJ61AnRKlk7bAR1Deeyde/JahMYhaj5OQeu7Gp5SKVA=="
+  },
+  {
+   "name":"REPS ZARETE_DBS_SC_BANK_API========CL.abap",
+   "fingerprint":"zbU7dMOJeTaen+8RWRf++16h2E7ed/fzRNf4o+bjLt/jRb8V8m5ponSMPXrv2XqXA8lHWcYk9bLr4NA2AGECLw=="
+  },
+  {
+   "name":"REPS ZARETE_DBS_SC_BANK_API========CT.abap",
+   "fingerprint":"xFev0qi2fu+ti0ZEQzL6XbIwsE0kWheH1VlgzXaxK+l5vRpCSnIra8RgRYboSY+Dosc2LuXq2QpHwnMMyaeR0w=="
+  }
+ ],
+ "fingerprintAll":"Degg+OMYYiW+++tBX8zPCQD2VgJs1r71r9tz2hjt4B+YJu2I7qWhaEXSe/LQ2vKxMAFemo2XV4ye65H0+v8CVQ=="
+}

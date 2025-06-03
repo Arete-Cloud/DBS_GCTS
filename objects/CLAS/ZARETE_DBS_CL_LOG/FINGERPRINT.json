@@ -1,0 +1,62 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CINC ZARETE_DBS_CL_LOG=============CCAU.abap",
+   "fingerprint":"ukQCqgFZrij2sa4Vmj/W+5lIWujDpkuM483z+dsgtKB1NSN9ddlA0JDSocreVKeIW5QfEJHLJS5jGWrhrVAdbA=="
+  },
+  {
+   "name":"CINC ZARETE_DBS_CL_LOG=============CCDEF.abap",
+   "fingerprint":"J3SsypO3gY5nX9woTSZrRGzZlCkDKiFg7b9B5/oWsgU29b1vdsQG0JKApDMcTaCrVPKAFsF/TwqofRvBh/sirg=="
+  },
+  {
+   "name":"CINC ZARETE_DBS_CL_LOG=============CCIMP.abap",
+   "fingerprint":"Pqe1sYH8ivJwKi3HFgKaUz2dCDYsPxEaDd97Hc/qSitTc8LZlduHUVfrNbghg2MTj4fy7p/MXAzkQ8c7G2eh7A=="
+  },
+  {
+   "name":"CINC ZARETE_DBS_CL_LOG=============CCMAC.abap",
+   "fingerprint":"83to60++fCvGgKG054QUXT1CJ2gc5k8n7o3C5cADNqBVKGUGggS2vy/TkU8+8XQxqIkDcSqHUMoSbO1RSWMDKw=="
+  },
+  {
+   "name":"CLAS ZARETE_DBS_CL_LOG.asx.json",
+   "fingerprint":"FoQXeggxDiOSRxRYlEHY/0lPOgVgFw1Sk5c79P43WEoGyMh516XXib2FXUYp6oYuuEQtFR8uD1ifWUCe05VxpQ=="
+  },
+  {
+   "name":"CLSD ZARETE_DBS_CL_LOG.abap",
+   "fingerprint":"Xth/pfCod61JAW/fjszjDT2+aO0lKdg0uzM6U7bzMrnH1m3vT3G3Mnt9nFNDrzVZSWamAs9EtOG4+FmaZhVhiw=="
+  },
+  {
+   "name":"CPRI ZARETE_DBS_CL_LOG.abap",
+   "fingerprint":"hX29J9MWJkTGmaubyWuXC0LxI/Z9Go19GxaMr3qB9UDZTUiVWi/uQYh5MPdJdAPuD/HrGwzt69koyhVDd0SuGw=="
+  },
+  {
+   "name":"CPRO ZARETE_DBS_CL_LOG.abap",
+   "fingerprint":"/9J8v0bsi/St1iIIUb9ev8QdDnBQqpqjJNURzRZcnaKrwdThyuGePJkhH5MPgygUvXa1YEDA3GZUcbwzak6zxA=="
+  },
+  {
+   "name":"CPUB ZARETE_DBS_CL_LOG.abap",
+   "fingerprint":"L+BZHl0YJKZdp+Uj2i5u5r7+GU7ttahMw2lA6f/Vo+tL8T6yhukILLd5u1SY2qWB/Y1SKKQ+h86opxOfMKUfcg=="
+  },
+  {
+   "name":"METH GET_FACTORY.abap",
+   "fingerprint":"tgyc6hP8XR/1s9GQKsemqupZjQtBMVlx7LSWRrPfI+g4ETcc5p7EUejHR05BvJB198tw9lN/sUgW0+0soo+g5w=="
+  },
+  {
+   "name":"METH ZARETE_DBS_IF_LOG~ADD_LOG.abap",
+   "fingerprint":"LBWwXKZThSKVlk8+CK2afMyiiQqRUr4sP1M19ktvY5WarXI8m6PDPVmS8GKcLEXd76yq/K/G+5Fw1lkKnaZQVQ=="
+  },
+  {
+   "name":"METH ZARETE_DBS_IF_LOG~REFRESH.abap",
+   "fingerprint":"HGtR0LW/jEFcrjQFECcjxeXcJXJYUkyYkYAR98fizmhZWv1gg7d6VzdeRhc2jFx2OWms9oe9HI3p/TOQAenwGA=="
+  },
+  {
+   "name":"METH ZARETE_DBS_IF_LOG~SET_SAPINVOICEID.abap",
+   "fingerprint":"RJyMRP7eWMzNtT2tXspRhkr/CNyfbjxsj3h5DG1Ni4wlhzgRJ84niUpAywznIcd47RUKYPW7T/Td5aPtnCtpqw=="
+  },
+  {
+   "name":"REPS ZARETE_DBS_CL_LOG=============CT.abap",
+   "fingerprint":"6VoUxJBwn1s0qTo0gyINo96u1tC+OUwiFgGc7j9EptRDOSZTPXaLjbdk/4k6mJJqwrOhaxXOGKkolCaLYvU0WQ=="
+  }
+ ],
+ "fingerprintAll":"EllSqEUxJQc3k1bbBnk8awPj2LryFBlzyN5hjb6IiXPFAzadO7pM5FNyNMNqq4tr71VRhv9o86tDTLXKnnzfig=="
+}

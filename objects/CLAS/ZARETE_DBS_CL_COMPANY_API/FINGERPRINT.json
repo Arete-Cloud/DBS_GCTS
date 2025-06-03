@@ -1,0 +1,54 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CINC ZARETE_DBS_CL_COMPANY_API=====CCAU.abap",
+   "fingerprint":"I30WVZFIzlkm71ql1MhbdOCiB4VP+Na6JBRhwTXgcJ2z8B+YFErOZ+eNZt9/lrNUVKuMtjJPJ6LoGZPfiRnhTg=="
+  },
+  {
+   "name":"CINC ZARETE_DBS_CL_COMPANY_API=====CCDEF.abap",
+   "fingerprint":"SKxvvfSIF/KOcMckvGOQOKXgGTfy4j4sgmBn3D6Pc3yrxgi12HtaG5hcIaUjBsTD28aDlvQiPcnGmVLyHhEfew=="
+  },
+  {
+   "name":"CINC ZARETE_DBS_CL_COMPANY_API=====CCIMP.abap",
+   "fingerprint":"gYD4kKvY+r+fAwZluJnGR98uCr/VJtZKh0WqEx+VpbdgzOyebk47HxPsDuOrgGi5s95xsxVroWJex41LNEf5uA=="
+  },
+  {
+   "name":"CINC ZARETE_DBS_CL_COMPANY_API=====CCMAC.abap",
+   "fingerprint":"mAoDWpYNp+CXG6hK5FjqUbH36k/I/Au+VlArZVWzAgKN4LEc/K61Eosv3bZduUEJfUOieIX34dCdunE+cttlgQ=="
+  },
+  {
+   "name":"CLAS ZARETE_DBS_CL_COMPANY_API.asx.json",
+   "fingerprint":"pqlhQPDlzvT2JrCDHls8RXyaDZbPmX1DGJ2bKWHWhM6MRLAAlQgapR5RUI2tZVsVJHbRVD8K6IUjE5YARK3gSw=="
+  },
+  {
+   "name":"CLSD ZARETE_DBS_CL_COMPANY_API.abap",
+   "fingerprint":"EfAMbm9JDaGwy4OydScYYJ4rCTcLIIXt9hX+oktC1zZWkWeg5O5xxrVW3T8Vb6QuNplV3ohZfUKIItAYpse6YA=="
+  },
+  {
+   "name":"CPRI ZARETE_DBS_CL_COMPANY_API.abap",
+   "fingerprint":"oiK36lrBL+ww2C97oLXwJGGebt2DoaU0NyH+scYRPDf8cUHn9sSIcyYvd/3z8FyecXLKuUIHodVfF/81XbV8tA=="
+  },
+  {
+   "name":"CPRO ZARETE_DBS_CL_COMPANY_API.abap",
+   "fingerprint":"ri59IYJB+Zg2VBTzn4ojpkVQ3Npkocvxf/4VGgJDslB+M5GAQqNShoixZd+0IkFUYmlUOPknVPjdRabkJf3iUw=="
+  },
+  {
+   "name":"CPUB ZARETE_DBS_CL_COMPANY_API.abap",
+   "fingerprint":"ymde50QWpDD7R6FlVL8wZeYbRUQ/8Ar/jtOe/xPrtyD23yeeTfWHOHp8xo255z9WbCiiqdKXzOCItGG+f9IA1A=="
+  },
+  {
+   "name":"METH CONSTRUCTOR.abap",
+   "fingerprint":"5M5rRPOpK1f3A8jCojcoEqO7IRN3qU+krleRI7+ZTJyYb2BCs+up33L4K1AxvopP2+L1ya1dISLiiAzCNWX1cw=="
+  },
+  {
+   "name":"METH IF_RAP_QUERY_PROVIDER~SELECT.abap",
+   "fingerprint":"xpvOEQP+cLhWfAbG1CuE/H5hcHU3NI3UBOxAu13aUCqB6TaeBf6LpbbpoXVqJwu4oLT+Xnu0UkwqZtSUoZRmMQ=="
+  },
+  {
+   "name":"REPS ZARETE_DBS_CL_COMPANY_API=====CT.abap",
+   "fingerprint":"xZEE5PtIk+nNxjp+gYd0c5pK9IuvJIUutTPWiYU2IJIWgDZVCwY2I29kenGVl7g1KgFb11mRvkviOYvgSjP7Ag=="
+  }
+ ],
+ "fingerprintAll":"WQGPfrVZwScbNS00DTkKuB8LTt48Oik+MIPqR4WDhkfruPhBlLGsu93QFCkuN8yidLiyQ6zdqTmcBihyF/e84w=="
+}

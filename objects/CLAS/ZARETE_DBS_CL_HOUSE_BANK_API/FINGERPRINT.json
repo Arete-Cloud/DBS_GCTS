@@ -1,0 +1,54 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CINC ZARETE_DBS_CL_HOUSE_BANK_API==CCAU.abap",
+   "fingerprint":"aNZ5Tj68eT1NbODeS4HU/9clC8iOEM6H7iQz3pSSEmeMhhMWmf7kCQMimxhTVYYNbaEFE2xXvaBPR/K88aN7Bw=="
+  },
+  {
+   "name":"CINC ZARETE_DBS_CL_HOUSE_BANK_API==CCDEF.abap",
+   "fingerprint":"Cwk1vqKCAko2q020z2Wpe+5hc2oFnAnMnH/be5GYnnrXHMHhZlq1oh42FXZ7psAh+/eoo/QilfUILZivURiJpA=="
+  },
+  {
+   "name":"CINC ZARETE_DBS_CL_HOUSE_BANK_API==CCIMP.abap",
+   "fingerprint":"Q6U8Lokn5Qv+DHdB4t7CmDFNhyhtzJBJdMTSCipV+5t1zMlxDKBKuFxuTY2Q92pkPAHU6B+w4yoICenyVDaDtQ=="
+  },
+  {
+   "name":"CINC ZARETE_DBS_CL_HOUSE_BANK_API==CCMAC.abap",
+   "fingerprint":"wyClLhBDp+DsRkgm5e0o3/eRE6a9ijDjTpf3wtQSJzdLW79mKvcqDyjrrHOaSsB8dBXxzhOUOhPBa7a6O5Lg/Q=="
+  },
+  {
+   "name":"CLAS ZARETE_DBS_CL_HOUSE_BANK_API.asx.json",
+   "fingerprint":"y8yWC0OYN/g/JfBkvLxtVm0yZNiFz7OrlE1Eahu8Tccu99b32whTNUcYsSmWJL151LJYlGUuTsSmAW+62PUDbQ=="
+  },
+  {
+   "name":"CLSD ZARETE_DBS_CL_HOUSE_BANK_API.abap",
+   "fingerprint":"OXw2cxM6hNeol7KIAjpasJisZ1KE08tTCp/6i+SJTU8lasBcF66bXO51Bhi8y1vy10ibOGbn0YgOhBei1myEtQ=="
+  },
+  {
+   "name":"CPRI ZARETE_DBS_CL_HOUSE_BANK_API.abap",
+   "fingerprint":"UnRo3Sm+vdDa2HRWtg5ewRMBmwf1NwJYYpPkpyU9xaA0MTQJ87/RaTwpHVHw4CROIsrBfWlcPIR0cbJW8wShBw=="
+  },
+  {
+   "name":"CPRO ZARETE_DBS_CL_HOUSE_BANK_API.abap",
+   "fingerprint":"AGTRHgOv8aVPdFl3SGx7kX0qY7fPyNX9Wvo9KZTIfbwakCivk2S3K0Hk334rMNIjAtx1oNJjLk/iVQcwgnSOmQ=="
+  },
+  {
+   "name":"CPUB ZARETE_DBS_CL_HOUSE_BANK_API.abap",
+   "fingerprint":"C2sMvgeazBrT4Gen77nfCK15FP6+D8VItMmeYAn7xyxVCEZpiENrOKz1QcoWD7WfhsKESDkc7D9KXHDKBpm3oA=="
+  },
+  {
+   "name":"METH CONSTRUCTOR.abap",
+   "fingerprint":"s1USi+tfkavBxhUQK/HSjLU39LrOYGyKc92WSa55SLOey+VD/2EZg9E3yoj0AJzXileS/r5E5LpgWGiHglkZpQ=="
+  },
+  {
+   "name":"METH IF_RAP_QUERY_PROVIDER~SELECT.abap",
+   "fingerprint":"2YpfVWgdMQXWG44xAZKYJqZw+xu1m3cBwpC+7nmV6AtZNSlASdX8yWdRTgxqOt3Qha+0mlzp20Izj2zklMZB8w=="
+  },
+  {
+   "name":"REPS ZARETE_DBS_CL_HOUSE_BANK_API==CT.abap",
+   "fingerprint":"cTTiTO0t1xtvsZl08PNe+o/w2YeUMEtrxmvEcgBf89SM1gKWHL/Ys+D1d8ZvS3oUOYY2WbNnS32b/vPMdQiZiA=="
+  }
+ ],
+ "fingerprintAll":"ggOHWJfQCYccUl/tM2Gs4PCHMH+Lbuc44iQuaHUXVJTbBGsDEnn/zE5RgPxvw/naDMmN5Jvv8kAUi9qYzsdJ9w=="
+}

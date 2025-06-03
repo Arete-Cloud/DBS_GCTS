@@ -1,0 +1,50 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CINC ZARETE_DBS_CL_DD_SH001========CCAU.abap",
+   "fingerprint":"E0cDbkD3dIeGayvBy7gt7LxGNBDESZdO5Qaoy53fqCDoPB23WZC5pF1V1ymdnkdOZWkUQsW8pqJy6StmuW16aQ=="
+  },
+  {
+   "name":"CINC ZARETE_DBS_CL_DD_SH001========CCDEF.abap",
+   "fingerprint":"K24QW0woCYw94jwkbG11SMzX/PlJPmjPqedNQRtR9pzKcVBbrjaYTqbBegA07EaWD8sdHj0TgC7c+N/7WYOXhQ=="
+  },
+  {
+   "name":"CINC ZARETE_DBS_CL_DD_SH001========CCIMP.abap",
+   "fingerprint":"PRTOmG3WTH7Sbsr+cHixhhVH4+8VW8S2Uuo6dpe9RYYv/wj0ETjlr+QDZc/vqXptG6+SmwLSyFVf65rE+7CiZQ=="
+  },
+  {
+   "name":"CINC ZARETE_DBS_CL_DD_SH001========CCMAC.abap",
+   "fingerprint":"DEt+x7vGYiOpgTZJyLLXQT+m7WrMVrR3VetByVfzacOK2DiXLUv0Fj3UP4JwsNPk0SjvpLwhhev9ImJI0FNG9Q=="
+  },
+  {
+   "name":"CLAS ZARETE_DBS_CL_DD_SH001.asx.json",
+   "fingerprint":"cn1v2jRjAudQT1XWAYjnL3nVL4Xaeajs3mDc+fXq08E8hwoIh8aYxv7+yf6qqKSAbxUh39STWfpDRwGuRmvA9g=="
+  },
+  {
+   "name":"CLSD ZARETE_DBS_CL_DD_SH001.abap",
+   "fingerprint":"4D/NAovYOhrYEr8u7oErmQe3QNgIF3ZAkPYHFmPCR2IDpapSnx4Nj8QJSYxJEJEHo18EpzxHDc/P0YU+bsOjcg=="
+  },
+  {
+   "name":"CPRI ZARETE_DBS_CL_DD_SH001.abap",
+   "fingerprint":"8GzOWPX1ybIbjWLnS24QTo0ys9q9qo4FCWlbHjJ99lIFP02wgn451w9QRrgJBQ2mAb6/Yx/kao9FvMxzixzy7g=="
+  },
+  {
+   "name":"CPRO ZARETE_DBS_CL_DD_SH001.abap",
+   "fingerprint":"t6zCrWV89okRtastxdEp7rorIgIn7dFUpf8W0t8pF6ULadsqU6IkM1t4hAA0sc1xLME8+cBGKkSxBSJv5o6Aig=="
+  },
+  {
+   "name":"CPUB ZARETE_DBS_CL_DD_SH001.abap",
+   "fingerprint":"PFAKwvMoOYkachNv73R020ZBQFNV820BE8lbjilSAgmKdEIwVubWMTaqOStdQh5v0YRpUHRL1gLew31kcLauEg=="
+  },
+  {
+   "name":"METH IF_RAP_QUERY_PROVIDER~SELECT.abap",
+   "fingerprint":"69/yqfb7ZUaQB2r5uRxgAdLv7iulglJRFn+6rf7mlv8SOx75oDlPTKSn/+4IzPlsxzO3LPcbQiB65Kdj3vxx3A=="
+  },
+  {
+   "name":"REPS ZARETE_DBS_CL_DD_SH001========CT.abap",
+   "fingerprint":"aOA8BBOtBMlUX4aa15HZFbcLUnfBEP0v8hlO5b+wymdZNQyJKX9W/vXpynE8kS0SqBDVfWuQAwCVrBORJrqkew=="
+  }
+ ],
+ "fingerprintAll":"RJ0095XPVefzHZYXgQctP+FZlPWFGirzxJNOhjdBqPPPUFobThgLgYbrw/tRsVtVG3K6HEBQORqAKzV3FoKCYw=="
+}

@@ -1,0 +1,46 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CINC ZBP_ARETE_DBS_DD_COMPANY_001==CCAU.abap",
+   "fingerprint":"eeVC45mafvnlow34MOT3xQs2xBTzBrlQ79/9msSOtmy2yo7Lj3tdVcpL7g4IStz9/QNP/2FCOEmliFBkbK1DCA=="
+  },
+  {
+   "name":"CINC ZBP_ARETE_DBS_DD_COMPANY_001==CCDEF.abap",
+   "fingerprint":"zxa9YueFLS0bIFdKsapleZbUkpDDxvrHxAcOmM9G+b9Zxac0mWR8NNyYfnaIBX0dys49Bs3ilXzCUoEJHl3q4A=="
+  },
+  {
+   "name":"CINC ZBP_ARETE_DBS_DD_COMPANY_001==CCIMP.abap",
+   "fingerprint":"oax3pJTNk/t0vWScgJet2JNx8EeABTPUFG8KsKcwp1mpGz7a6z0T012iYCvvMOgfr2oOgb99jvOUjoyoY8glMA=="
+  },
+  {
+   "name":"CINC ZBP_ARETE_DBS_DD_COMPANY_001==CCMAC.abap",
+   "fingerprint":"3iXJnpv5876rdAdS8wTuJICGZIrCdyo5B0Nel3673bYwMuIBXJPpM1XYhGzfXLkJJtwhxiVmdiUGLb9FNJGSiQ=="
+  },
+  {
+   "name":"CLAS ZBP_ARETE_DBS_DD_COMPANY_001.asx.json",
+   "fingerprint":"sGybAhELZlLs4xFjvODFNDDjCwSnnmMV31RvIKt9dgu2wt/QnkFTFrTLaMOujQve+w8VdeGIJ9i39Zj1t97ZgQ=="
+  },
+  {
+   "name":"CLSD ZBP_ARETE_DBS_DD_COMPANY_001.abap",
+   "fingerprint":"k8f52v0ELoUZFPZt4pWgnZ6i+9BCzygfyETcj8XTo/Aq5x1zBZygQWWRRRUqjEFKrgSpShJqyRO0sEHBD8T+9w=="
+  },
+  {
+   "name":"CPRI ZBP_ARETE_DBS_DD_COMPANY_001.abap",
+   "fingerprint":"cMHm0/F7B+i+8djLvAsswZM6e7Z2x3RSB1cDhpLii3GnTcZBXD9tHNfVNxvemlb5YQhhy2RfFVqZLvrIFHGQ/Q=="
+  },
+  {
+   "name":"CPRO ZBP_ARETE_DBS_DD_COMPANY_001.abap",
+   "fingerprint":"E0ZqW3fTDeqLutCpH/ig7+r8MdFah467x5uz5XeuIHTttwcHKnoLTjAxBVIO82J2WrW2sCfwIp3tFTyZXgqGQw=="
+  },
+  {
+   "name":"CPUB ZBP_ARETE_DBS_DD_COMPANY_001.abap",
+   "fingerprint":"pxUz3Ho+tE614voBZp6nmK1Cgxl05uie2jWRUlpLGsNg3KeIPqVXQqbOqnNijkzuHiGnK+bKTAxkpi364/r5+w=="
+  },
+  {
+   "name":"REPS ZBP_ARETE_DBS_DD_COMPANY_001==CT.abap",
+   "fingerprint":"wthVk57arqpdCWylV6QYIK5ScVlQX2Exi1H903Fql2ONk8OEe62CGnEawyExAp2N0SRm4J44n1u7jIRoPpFhdA=="
+  }
+ ],
+ "fingerprintAll":"loTNPwfyN7rlk9DylBRZWOrCmQXPIpwxZo5xZH3+rVu7ZWH4MkN992e/yJc4SJj1qt3LUT19CngiQXftwrIQdQ=="
+}

@@ -1,0 +1,42 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CLAS ZARETE_DBS_SC_COMPANY_API.asx.json",
+   "fingerprint":"WJ+Zo81hQ5yOskr/dGlR1juFcr0aXj4qiCTsuodefnvYZQu+HIuXH7L9GbiTJzVYyOkMVyaZcbWJmRLLUsGD1w=="
+  },
+  {
+   "name":"CLSD ZARETE_DBS_SC_COMPANY_API.abap",
+   "fingerprint":"Nw6wHUTyQcZ5BztH8jpyYIsPLu3Tc2PbV5ZeKiNO2AdPWw1Bh8z9xCfEg8C96DOygsZTA+J7BZKdIpAzFwe/7w=="
+  },
+  {
+   "name":"CPRI ZARETE_DBS_SC_COMPANY_API.abap",
+   "fingerprint":"zTLIail+EfiI/K27EFlbmcGPrMrOobh+Hva8JEPVXmbIlcKxuPq8IUpzzbfzuFLHaLBIaT21KvpEHq8bc9IQXQ=="
+  },
+  {
+   "name":"CPRO ZARETE_DBS_SC_COMPANY_API.abap",
+   "fingerprint":"pl5vY1XQXQGg3sx0QCYwdzDWlLK1Wz8QwgYakbkeO42Q7l1vvgm5Qvf0yt/Sg0dPnWfMKDE3y6+sh5qsRYiivA=="
+  },
+  {
+   "name":"CPUB ZARETE_DBS_SC_COMPANY_API.abap",
+   "fingerprint":"qe5gApTcJwJTIP6FpAO7TGZke12HRGj+D7qDf4KIoPAkxpzRUPtTQnIHU8oPlXvnrNZYp40rrZBFZzUvX2l1mQ=="
+  },
+  {
+   "name":"METH /IWBEP/IF_V4_MP_BASIC_PM~DEFINE.abap",
+   "fingerprint":"5sN1l6YY9SmKmyBIn7diAfhBAYQacksItQU7nfruTGJZcffQzMKVTDuf9H1sKP7BOZQv0z3bQvHVbV9DRfVF2A=="
+  },
+  {
+   "name":"METH DEF_A_COMPANY_CODE_TYPE.abap",
+   "fingerprint":"ByAK54Nh2ZWYe2b+J4Q8U1r12epVH5Gkzx1uciVgZnQeI8cMLKQF6Inn+AAn6DL/l60Y9EcIMDu4a7z6ax2f2g=="
+  },
+  {
+   "name":"REPS ZARETE_DBS_SC_COMPANY_API=====CL.abap",
+   "fingerprint":"DmOm2H2ICGAjzBMo38E9Lsuw+bQFePJkh6hQUtIMUJDWKQc/RYtxZdCgBiDGBryycgvthMTAxMLBpX551ZOhig=="
+  },
+  {
+   "name":"REPS ZARETE_DBS_SC_COMPANY_API=====CT.abap",
+   "fingerprint":"i2B3R7K+YrGOTV0kmOLvW0p/9GWo0iD9qQnkQsCnLQmnBCgnfeVkQxqq6Re/6UO7xMOT16lnVhWt4PU8p8uD2A=="
+  }
+ ],
+ "fingerprintAll":"IOxVe5IHFQ5c+zeNgEXs3ULWTdnKWECkrubQz0n9E/t+J/LTnI/27F4MT588gAW+BK5GsCFvsuZqWhyNcjlp+Q=="
+}

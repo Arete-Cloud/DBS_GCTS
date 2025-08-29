@@ -1,4 +1,4 @@
- METHOD constructor.
+  METHOD constructor.
     DATA(lo_log) = zarete_dbs_cl_log=>get_factory( ).
     TRY.
         " Create http client
@@ -20,7 +20,7 @@
 
 
         " Navigate to the resource and create a request for the read operation
-        go_request = go_client_proxy->create_resource_for_entity_set( 'BANK' )->create_request_for_read( ).
+        go_request = go_client_proxy->create_resource_for_entity_set( 'BANK_ADDRESS' )->create_request_for_read( ).
 
       CATCH cx_http_dest_provider_error INTO DATA(lx_dest_provider_error).
         DATA(lv_error_msj) = lx_dest_provider_error->get_longtext(  ).
@@ -58,4 +58,4 @@
                          msgtx = lv_error_msj ).
     ENDTRY.
 
-ENDMETHOD.
+  ENDMETHOD.

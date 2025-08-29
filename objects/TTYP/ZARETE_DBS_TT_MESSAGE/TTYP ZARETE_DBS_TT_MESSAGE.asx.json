@@ -67,7 +67,7 @@
     "SRCSYSTEM":"...",
     "AUTHOR":"SAP_CUSTOMER",
     "SRCDEP":"",
-    "DEVCLASS":"ZARETE_DBS_VDM",
+    "DEVCLASS":"ZARETE_DBS_TAB",
     "GENFLAG":"",
     "EDTFLAG":"",
     "CPROJECT":" S",

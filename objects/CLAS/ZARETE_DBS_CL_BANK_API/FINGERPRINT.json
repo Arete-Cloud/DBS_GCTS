@@ -19,7 +19,7 @@
   },
   {
    "name":"CLAS ZARETE_DBS_CL_BANK_API.asx.json",
-   "fingerprint":"ywHDtsxMkOFcj7lQ/m8P7Z1paGqqUgk/dXqKYefp5HQyoxqfDFxvn/RbKaiRGJ0hAaLOLTdjKeT4yZmFiEdPcw=="
+   "fingerprint":"wtgHVbEK6y6UkU/huWIU2xlMV25oL5oV8VJBgO66KbQPkNgYyGFYuP7kPlM9kV6UExd9Dfowkm7Y92HDrFFazQ=="
   },
   {
    "name":"CLSD ZARETE_DBS_CL_BANK_API.abap",
@@ -27,7 +27,7 @@
   },
   {
    "name":"CPRI ZARETE_DBS_CL_BANK_API.abap",
-   "fingerprint":"BNtNYJNY69VnOWNtcTpqaQjLwvjdE2oprgwqzN42iDUGcnGtcBax3Y+O63tZIgb4QzPNAU3ErLGRYA2tm1Ilcg=="
+   "fingerprint":"SPq5SQE2y9dQlGtrtTqpaNvRfIXTipECxVEax3tIAB58KCtZLWUqjbhxrghk2yNAbkyiKrMrfi8xBTGVS67RsQ=="
   },
   {
    "name":"CPRO ZARETE_DBS_CL_BANK_API.abap",
@@ -35,20 +35,24 @@
   },
   {
    "name":"CPUB ZARETE_DBS_CL_BANK_API.abap",
-   "fingerprint":"jOf9BcY5vHInNpXuqqRX09Wj0WjK820hL0TSryvQcIsExIDMPj3BwmZbDoVXHrp4LKYnZpQrB6z1zcVMlGY+Mw=="
+   "fingerprint":"O1eMBrRAJhV4UkFAKW3oMjdtbv7Gcf03kdgWJlmFHWHR6DlkAr5X8yLpN33CtBEM8r1DH6+PlxU5nZKnk1K9iw=="
   },
   {
    "name":"METH CONSTRUCTOR.abap",
-   "fingerprint":"cCcNNHtrcICcM7YHoAmjuCVWKKA2izkO1QyBwkHcjUngdP7Ki7QvYrplQAjFOf/8W/+ph+Z1MZDJXjJ8RX6NSg=="
+   "fingerprint":"LPMVEvpueBoYiOOFMVZtz9wdjK2Y34ArVNbSOadUkJImgqNvJyZL8lB63emkSql/wU8vA7jKtD0iUbk5pfLjTQ=="
+  },
+  {
+   "name":"METH GET_BANKS.abap",
+   "fingerprint":"kRPCsNFM6tPusrefq2rV1Hru2PMeKL9cub2qJCWtTbWLHwSofioIAhfWXfhNjURFfbqAoKbKzicpyPAZhlSz2Q=="
   },
   {
    "name":"METH IF_RAP_QUERY_PROVIDER~SELECT.abap",
-   "fingerprint":"93GG9HQV8XpFlW/w3hlVMQbp10/6+z1oUt0UuB7J3Vp74CD37nyue4HVBtS/yH5qd5010JwkLEdb0Z/MK1rw8Q=="
+   "fingerprint":"6ZTd0MO+9NDXNSTQQkEzfd5Fyx2p+PBVzeq/9sxHVKJ0gebv2g/jRxAEAe8mkHxNKemJbfyqCdcLkaO/Y8J2XQ=="
   },
   {
    "name":"REPS ZARETE_DBS_CL_BANK_API========CT.abap",
    "fingerprint":"7lqz/z/zIX+ssDijvAtjUI2Yv02Bsf4XS+rYfl75H430iZ4AKcv3opoYyK8HPaQ8VwYSn5q9aKJ4wiiFd/BNhg=="
   }
  ],
- "fingerprintAll":"3rkBJeSxww41xa06UUIEGee5Or6tlxCS4fakW3jttl3jtmHV7SCV+WkrktIRw/bPWYfBSriYBLMc5fmkCtWzRQ=="
+ "fingerprintAll":"r+JOzcp0C7siSVaSjUPaBHKQx3HAKxl7pA1siWwGTnsR/D2BAtjp8BB5P+jwRY2WOsfVaE1Rnk7Q9jhHYHODlQ=="
 }

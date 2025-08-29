@@ -1,5 +1,6 @@
   METHOD if_rap_query_provider~select.
-  DATA mc_request_aggregation TYPE REF TO if_rap_query_aggregation.
+
+    DATA mc_request_aggregation TYPE REF TO if_rap_query_aggregation.
     DATA mc_request_filter      TYPE REF TO if_rap_query_filter.
     DATA mc_request_paging      TYPE REF TO if_rap_query_paging.
     DATA mv_request_page_size   TYPE i VALUE 100.
@@ -33,45 +34,63 @@
     CREATE DATA lt_business_data TYPE TABLE OF (mv_entity_cds).
     ASSIGN lt_business_data->* TO <ft_business_data>.
 
- TRY.
+    TRY.
+*        DATA(filter_range) =  mc_request_filter->get_as_ranges(  ).
+*        " Create http client
+*
+*        IF filter_range IS NOT INITIAL.
+*          lo_filter_factory = go_request->create_filter_factory( ).
+*          LOOP AT filter_range INTO DATA(ls_range).
+*            lo_filter_node  = lo_filter_factory->create_by_range( iv_property_path     = ls_range-name
+*                                                                  it_range             = ls_range-range ).
+*            IF lo_filter_node_root IS INITIAL.
+*              lo_filter_node_root = lo_filter_node.
+*            ELSE.
+*              lo_filter_node_root = lo_filter_node_root->and( lo_filter_node ).
+*            ENDIF.
+*          ENDLOOP.
+        " Create the filter tree
         DATA(filter_range) =  mc_request_filter->get_as_ranges(  ).
-        " Create http client
+*        go_request->set_filter( lo_filter_node_root ).
 
-        IF filter_range IS NOT INITIAL.
-          lo_filter_factory = go_request->create_filter_factory( ).
-          LOOP AT filter_range INTO DATA(ls_range).
-            lo_filter_node  = lo_filter_factory->create_by_range( iv_property_path     = ls_range-name
-                                                                    it_range             = ls_range-range ).
-            IF lo_filter_node_root IS INITIAL.
-              lo_filter_node_root = lo_filter_node.
-            ELSE.
-              lo_filter_node_root = lo_filter_node_root->and( lo_filter_node ).
-            ENDIF.
-          ENDLOOP.
-          " Create the filter tree
-
-          go_request->set_filter( lo_filter_node_root ).
-
-        ENDIF.
+*        ENDIF.
         go_request->set_top( mv_request_page_size )->set_skip( mv_request_offset ).
 
-        go_response = go_request->execute( ).
-         go_response->get_business_data( IMPORTING et_business_data = gt_business_data ).
+        get_banks( EXPORTING
+                      it_filter        = filter_range
+                    IMPORTING
+                      et_business_data = gt_business_data ).
 
-          IF gt_business_data IS NOT INITIAL.
+        IF gt_business_data IS NOT INITIAL.
 
           LOOP AT gt_business_data INTO DATA(ls_data).
-
             MOVE-CORRESPONDING ls_data TO <fs_business_data>.
             APPEND <fs_business_data> TO <ft_business_data>.
-
+            CLEAR: <fs_business_data>.
           ENDLOOP.
 
           io_response->set_data( it_data = <ft_business_data> ).
           io_response->set_total_number_of_records( iv_total_number_of_records = lines( <ft_business_data> ) ).
 
-  ENDIF.
-CATCH cx_rap_query_filter_no_range INTO DATA(lx_filter).
+        ENDIF.
+
+*        go_response = go_request->execute( ).
+*        go_response->get_business_data( IMPORTING et_business_data = gt_business_data ).
+*
+*        IF gt_business_data IS NOT INITIAL.
+*
+*          LOOP AT gt_business_data INTO DATA(ls_data).
+*
+*            MOVE-CORRESPONDING ls_data TO <fs_business_data>.
+*            APPEND <fs_business_data> TO <ft_business_data>.
+*
+*          ENDLOOP.
+*
+*          io_response->set_data( it_data = <ft_business_data> ).
+*          io_response->set_total_number_of_records( iv_total_number_of_records = lines( <ft_business_data> ) ).
+*
+*        ENDIF.
+      CATCH cx_rap_query_filter_no_range INTO DATA(lx_filter).
         DATA(lv_error_msj) = lx_filter->get_longtext(  ).
         lo_log->add_log( msgty = if_abap_behv_message=>severity-error
                          msgno = lx_filter->if_t100_message~t100key-msgno
@@ -124,6 +143,5 @@ CATCH cx_rap_query_filter_no_range INTO DATA(lx_filter).
 
         RAISE SHORTDUMP lx_web_http_client_error.
     ENDTRY.
-
 
   ENDMETHOD.

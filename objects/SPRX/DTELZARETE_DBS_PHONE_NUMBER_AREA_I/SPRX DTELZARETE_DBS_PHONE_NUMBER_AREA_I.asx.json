@@ -80,9 +80,9 @@
     "IFR_NAME":"PhoneNumberAreaID",
     "IFR_NSPCE":"http://sap.com/xi/SAPSCORE/SFIN",
     "IFR_GNSPCE":"http://sap.com/xi/SAPSCORE/SFIN",
-    "CREATED_ON":"+020250603120914",
+    "CREATED_ON":"+020250604115640",
     "CREATED_BY":"SAP_CUSTOMER",
-    "CHANGED_ON":"+020250603121010",
+    "CHANGED_ON":"+020250604122934",
     "CHANGED_BY":"SAP_CUSTOMER",
     "GEN_VERS":5,
     "PREFIX":"ZARETE_DBS_",
@@ -131,8 +131,8 @@
     "CRELEASE":"100",
     "DELFLAG":"",
     "TRANSLTTXT":"",
-    "CREATED_ON":"2025-06-03",
-    "CHECK_DATE":"2025-06-03",
+    "CREATED_ON":"2025-06-04",
+    "CHECK_DATE":"2025-06-04",
     "CHECK_CFG":""
    }
   ]

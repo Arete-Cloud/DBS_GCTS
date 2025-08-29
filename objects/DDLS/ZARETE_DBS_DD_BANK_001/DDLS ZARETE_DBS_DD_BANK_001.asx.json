@@ -9,10 +9,10 @@
     "AS4USER":"SAP_CUSTOMER",
     "AS4DATE":"0000-00-00",
     "AS4TIME":"00:00:00",
-    "SOURCE":"@EndUserText.label: 'Bank API Custom Entity'\r\n@ObjectModel.query.implementedBy:'ABAP:ZARETE_DBS_CL_BANK_API'\r\ndefine root custom entity ZARETE_DBS_DD_BANK_001\r\n{\r\n @UI.lineItem       : [ {\r\n       position          : 10 ,\r\n       importance        : #MEDIUM,\r\n       label             : 'BankCountry'\r\n       } ]\r\n\r\n      @EndUserText.label : 'BankCountry'\r\n  key bank_country          : abap.char( 3 );\r\n   @UI.lineItem       : [ {\r\n       position          : 20 ,\r\n       importance        : #MEDIUM,\r\n       label             : 'BankInternalID'\r\n       } ]\r\n\r\n      @EndUserText.label : 'BankInternalID'\r\n  key bank_internal_id      : abap.char( 15 );\r\n   @UI.lineItem       : [ {\r\n       position          : 30 ,\r\n       importance        : #MEDIUM,\r\n       label             : 'LongBankName'\r\n       } ]\r\n\r\n      @EndUserText.label : 'LongBankName'\r\n      long_bank_name        : abap.char( 80 );\r\n       @UI.lineItem       : [ {\r\n       position          : 40 ,\r\n       importance        : #MEDIUM,\r\n       label             : 'LongBankBranch'\r\n       } ]\r\n\r\n      @EndUserText.label : 'LongBankBranch'\r\n      long_bank_branch      : abap.char( 80 );\r\n       @UI.lineItem       : [ {\r\n       position          : 50 ,\r\n       importance        : #MEDIUM,\r\n       label             : 'SWIFTCode'\r\n       } ]\r\n\r\n      @EndUserText.label : 'SWIFTCode'\r\n      swiftcode             : abap.char( 11 );\r\n       @UI.lineItem       : [ {\r\n       position          : 60 ,\r\n       importance        : #MEDIUM,\r\n       label             : 'BankNetworkGrouping'\r\n       } ]\r\n\r\n      @EndUserText.label : 'BankNetworkGrouping'\r\n      bank_network_grouping : abap.char( 2 );\r\n       @UI.lineItem       : [ {\r\n       position          : 70 ,\r\n       importance        : #MEDIUM,\r\n       label             : 'BankNumber'\r\n       } ]\r\n\r\n      @EndUserText.label : 'BankNumber'\r\n      bank_number           : abap.char( 15 );\r\n\r\n\r\n\r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[],\n\"ASSOCIATED\":\n[],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
+    "SOURCE":"@EndUserText.label: 'Bank API Custom Entity'\r\n@ObjectModel.query.implementedBy:'ABAP:ZARETE_DBS_CL_BANK_API'\r\ndefine root custom entity ZARETE_DBS_DD_BANK_001\r\n{\r\n @UI.lineItem       : [ {\r\n       position          : 10 ,\r\n       importance        : #MEDIUM,\r\n       label             : 'BankCountry'\r\n       } ]\r\n\r\n      @EndUserText.label : 'BankCountry'\r\n  key bank_country          : abap.char( 3 );\r\n   @UI.lineItem       : [ {\r\n       position          : 20 ,\r\n       importance        : #MEDIUM,\r\n       label             : 'BankInternalID'\r\n       } ]\r\n\r\n      @EndUserText.label : 'BankInternalID'\r\n  key bank_internal_id      : abap.char( 15 );\r\n   @UI.lineItem       : [ {\r\n       position          : 30 ,\r\n       importance        : #MEDIUM,\r\n       label             : 'StreetName'\r\n       } ]\r\n\r\n      @EndUserText.label : 'StreetName'\r\n      street_name        : abap.char( 60 );\r\n       @UI.lineItem       : [ {\r\n       position          : 40 ,\r\n       importance        : #MEDIUM,\r\n       label             : 'HouseNumber'\r\n       } ]\r\n\r\n      @EndUserText.label : 'HouseNumber'\r\n      house_number      : abap.char( 10 );\r\n       @UI.lineItem       : [ {\r\n       position          : 50 ,\r\n       importance        : #MEDIUM,\r\n       label             : 'HouseNumberSupplementText'\r\n       } ]\r\n\r\n      @EndUserText.label : 'HouseNumberSupplementText'\r\n      house_number_supplement_te             : abap.char( 10 );\r\n       @UI.lineItem       : [ {\r\n       position          : 60 ,\r\n       importance        : #MEDIUM,\r\n       label             : 'CityName'\r\n       } ]\r\n\r\n      @EndUserText.label : 'CityName'\r\n      city_name : abap.char( 40 );\r\n       @UI.lineItem       : [ {\r\n       position          : 70 ,\r\n       importance        : #MEDIUM,\r\n       label             : 'PostalCode'\r\n       } ]\r\n\r\n      @EndUserText.label : 'PostalCode'\r\n      postal_code           : abap.char( 10 );\r\n\r\n\r\n\r\n\r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[],\n\"ASSOCIATED\":\n[],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
     "PARENTNAME":"",
     "ACTFLAG":"",
-    "CHGFLAG":"",
+    "CHGFLAG":",WT4",
     "SOURCE_TYPE":"Q",
     "SOURCE_ORIGIN":"0",
     "ABAP_LANGUAGE_VERSION":"5"
@@ -66,10 +66,10 @@
     "NODENAME":".NODE1",
     "DDLANGUAGE":"E",
     "AS4LOCAL":"N",
-    "FIELDNAME":"BANK_NETWORK_GROUPING",
+    "FIELDNAME":"CITY_NAME",
     "DEPTH":0,
     "DDTEXT":"",
-    "FIELDLABEL":"BankNetworkGrouping",
+    "FIELDLABEL":"CityName",
     "QUICKINFO":""
    },
    {
@@ -78,10 +78,10 @@
     "NODENAME":".NODE1",
     "DDLANGUAGE":"E",
     "AS4LOCAL":"N",
-    "FIELDNAME":"BANK_NUMBER",
+    "FIELDNAME":"HOUSE_NUMBER",
     "DEPTH":0,
     "DDTEXT":"",
-    "FIELDLABEL":"BankNumber",
+    "FIELDLABEL":"HouseNumber",
     "QUICKINFO":""
    },
    {
@@ -90,10 +90,10 @@
     "NODENAME":".NODE1",
     "DDLANGUAGE":"E",
     "AS4LOCAL":"N",
-    "FIELDNAME":"LONG_BANK_BRANCH",
+    "FIELDNAME":"HOUSE_NUMBER_SUPPLEMENT_TE",
     "DEPTH":0,
     "DDTEXT":"",
-    "FIELDLABEL":"LongBankBranch",
+    "FIELDLABEL":"HouseNumberSupplementText",
     "QUICKINFO":""
    },
    {
@@ -102,10 +102,10 @@
     "NODENAME":".NODE1",
     "DDLANGUAGE":"E",
     "AS4LOCAL":"N",
-    "FIELDNAME":"LONG_BANK_NAME",
+    "FIELDNAME":"POSTAL_CODE",
     "DEPTH":0,
     "DDTEXT":"",
-    "FIELDLABEL":"LongBankName",
+    "FIELDLABEL":"PostalCode",
     "QUICKINFO":""
    },
    {
@@ -114,10 +114,10 @@
     "NODENAME":".NODE1",
     "DDLANGUAGE":"E",
     "AS4LOCAL":"N",
-    "FIELDNAME":"SWIFTCODE",
+    "FIELDNAME":"STREET_NAME",
     "DEPTH":0,
     "DDTEXT":"",
-    "FIELDLABEL":"SWIFTCode",
+    "FIELDLABEL":"StreetName",
     "QUICKINFO":""
    }
   ]
@@ -224,213 +224,213 @@
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"BANK_NETWORK_GROUPING",
+    "LFIELDNAME":"CITY_NAME",
     "NAME":"ENDUSERTEXT",
     "POSITION":35,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"BANK_NETWORK_GROUPING",
+    "LFIELDNAME":"CITY_NAME",
     "NAME":"ENDUSERTEXT.LABEL",
     "POSITION":36,
-    "VALUE":"'BankNetworkGrouping'"
+    "VALUE":"'CityName'"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"BANK_NETWORK_GROUPING",
+    "LFIELDNAME":"CITY_NAME",
     "NAME":"UI",
     "POSITION":31,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"BANK_NETWORK_GROUPING",
+    "LFIELDNAME":"CITY_NAME",
     "NAME":"UI.LINEITEM$1$.IMPORTANCE",
     "POSITION":33,
     "VALUE":"#MEDIUM"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"BANK_NETWORK_GROUPING",
+    "LFIELDNAME":"CITY_NAME",
     "NAME":"UI.LINEITEM$1$.LABEL",
     "POSITION":34,
-    "VALUE":"'BankNetworkGrouping'"
+    "VALUE":"'CityName'"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"BANK_NETWORK_GROUPING",
+    "LFIELDNAME":"CITY_NAME",
     "NAME":"UI.LINEITEM$1$.POSITION",
     "POSITION":32,
     "VALUE":"60"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"BANK_NUMBER",
-    "NAME":"ENDUSERTEXT",
-    "POSITION":41,
-    "VALUE":""
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"BANK_NUMBER",
-    "NAME":"ENDUSERTEXT.LABEL",
-    "POSITION":42,
-    "VALUE":"'BankNumber'"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"BANK_NUMBER",
-    "NAME":"UI",
-    "POSITION":37,
-    "VALUE":""
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"BANK_NUMBER",
-    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
-    "POSITION":39,
-    "VALUE":"#MEDIUM"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"BANK_NUMBER",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "POSITION":40,
-    "VALUE":"'BankNumber'"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"BANK_NUMBER",
-    "NAME":"UI.LINEITEM$1$.POSITION",
-    "POSITION":38,
-    "VALUE":"70"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"LONG_BANK_BRANCH",
+    "LFIELDNAME":"HOUSE_NUMBER",
     "NAME":"ENDUSERTEXT",
     "POSITION":23,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"LONG_BANK_BRANCH",
+    "LFIELDNAME":"HOUSE_NUMBER",
     "NAME":"ENDUSERTEXT.LABEL",
     "POSITION":24,
-    "VALUE":"'LongBankBranch'"
+    "VALUE":"'HouseNumber'"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"LONG_BANK_BRANCH",
+    "LFIELDNAME":"HOUSE_NUMBER",
     "NAME":"UI",
     "POSITION":19,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"LONG_BANK_BRANCH",
+    "LFIELDNAME":"HOUSE_NUMBER",
     "NAME":"UI.LINEITEM$1$.IMPORTANCE",
     "POSITION":21,
     "VALUE":"#MEDIUM"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"LONG_BANK_BRANCH",
+    "LFIELDNAME":"HOUSE_NUMBER",
     "NAME":"UI.LINEITEM$1$.LABEL",
     "POSITION":22,
-    "VALUE":"'LongBankBranch'"
+    "VALUE":"'HouseNumber'"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"LONG_BANK_BRANCH",
+    "LFIELDNAME":"HOUSE_NUMBER",
     "NAME":"UI.LINEITEM$1$.POSITION",
     "POSITION":20,
     "VALUE":"40"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"LONG_BANK_NAME",
-    "NAME":"ENDUSERTEXT",
-    "POSITION":17,
-    "VALUE":""
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"LONG_BANK_NAME",
-    "NAME":"ENDUSERTEXT.LABEL",
-    "POSITION":18,
-    "VALUE":"'LongBankName'"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"LONG_BANK_NAME",
-    "NAME":"UI",
-    "POSITION":13,
-    "VALUE":""
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"LONG_BANK_NAME",
-    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
-    "POSITION":15,
-    "VALUE":"#MEDIUM"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"LONG_BANK_NAME",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "POSITION":16,
-    "VALUE":"'LongBankName'"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"LONG_BANK_NAME",
-    "NAME":"UI.LINEITEM$1$.POSITION",
-    "POSITION":14,
-    "VALUE":"30"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"SWIFTCODE",
+    "LFIELDNAME":"HOUSE_NUMBER_SUPPLEMENT_TE",
     "NAME":"ENDUSERTEXT",
     "POSITION":29,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"SWIFTCODE",
+    "LFIELDNAME":"HOUSE_NUMBER_SUPPLEMENT_TE",
     "NAME":"ENDUSERTEXT.LABEL",
     "POSITION":30,
-    "VALUE":"'SWIFTCode'"
+    "VALUE":"'HouseNumberSupplementText'"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"SWIFTCODE",
+    "LFIELDNAME":"HOUSE_NUMBER_SUPPLEMENT_TE",
     "NAME":"UI",
     "POSITION":25,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"SWIFTCODE",
+    "LFIELDNAME":"HOUSE_NUMBER_SUPPLEMENT_TE",
     "NAME":"UI.LINEITEM$1$.IMPORTANCE",
     "POSITION":27,
     "VALUE":"#MEDIUM"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"SWIFTCODE",
+    "LFIELDNAME":"HOUSE_NUMBER_SUPPLEMENT_TE",
     "NAME":"UI.LINEITEM$1$.LABEL",
     "POSITION":28,
-    "VALUE":"'SWIFTCode'"
+    "VALUE":"'HouseNumberSupplementText'"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
-    "LFIELDNAME":"SWIFTCODE",
+    "LFIELDNAME":"HOUSE_NUMBER_SUPPLEMENT_TE",
     "NAME":"UI.LINEITEM$1$.POSITION",
     "POSITION":26,
     "VALUE":"50"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
+    "LFIELDNAME":"POSTAL_CODE",
+    "NAME":"ENDUSERTEXT",
+    "POSITION":41,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
+    "LFIELDNAME":"POSTAL_CODE",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "POSITION":42,
+    "VALUE":"'PostalCode'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
+    "LFIELDNAME":"POSTAL_CODE",
+    "NAME":"UI",
+    "POSITION":37,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
+    "LFIELDNAME":"POSTAL_CODE",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "POSITION":39,
+    "VALUE":"#MEDIUM"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
+    "LFIELDNAME":"POSTAL_CODE",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "POSITION":40,
+    "VALUE":"'PostalCode'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
+    "LFIELDNAME":"POSTAL_CODE",
+    "NAME":"UI.LINEITEM$1$.POSITION",
+    "POSITION":38,
+    "VALUE":"70"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
+    "LFIELDNAME":"STREET_NAME",
+    "NAME":"ENDUSERTEXT",
+    "POSITION":17,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
+    "LFIELDNAME":"STREET_NAME",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "POSITION":18,
+    "VALUE":"'StreetName'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
+    "LFIELDNAME":"STREET_NAME",
+    "NAME":"UI",
+    "POSITION":13,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
+    "LFIELDNAME":"STREET_NAME",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "POSITION":15,
+    "VALUE":"#MEDIUM"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
+    "LFIELDNAME":"STREET_NAME",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "POSITION":16,
+    "VALUE":"'StreetName'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
+    "LFIELDNAME":"STREET_NAME",
+    "NAME":"UI.LINEITEM$1$.POSITION",
+    "POSITION":14,
+    "VALUE":"30"
    }
   ]
  },
@@ -455,37 +455,37 @@
    {
     "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
     "DDLANGUAGE":"E",
-    "LFIELDNAME":"BANK_NETWORK_GROUPING",
+    "LFIELDNAME":"CITY_NAME",
     "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"BankNetworkGrouping"
+    "TEXT":"CityName"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
     "DDLANGUAGE":"E",
-    "LFIELDNAME":"BANK_NUMBER",
+    "LFIELDNAME":"HOUSE_NUMBER",
     "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"BankNumber"
+    "TEXT":"HouseNumber"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
     "DDLANGUAGE":"E",
-    "LFIELDNAME":"LONG_BANK_BRANCH",
+    "LFIELDNAME":"HOUSE_NUMBER_SUPPLEMENT_TE",
     "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"LongBankBranch"
+    "TEXT":"HouseNumberSupplementText"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
     "DDLANGUAGE":"E",
-    "LFIELDNAME":"LONG_BANK_NAME",
+    "LFIELDNAME":"POSTAL_CODE",
     "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"LongBankName"
+    "TEXT":"PostalCode"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_BANK_001",
     "DDLANGUAGE":"E",
-    "LFIELDNAME":"SWIFTCODE",
+    "LFIELDNAME":"STREET_NAME",
     "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"SWIFTCode"
+    "TEXT":"StreetName"
    }
   ]
  },

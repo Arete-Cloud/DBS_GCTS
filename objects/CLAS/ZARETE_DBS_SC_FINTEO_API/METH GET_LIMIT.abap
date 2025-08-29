@@ -1,6 +1,5 @@
   METHOD get_limit.
 
-
     DATA(lo_log) = zarete_dbs_cl_log=>get_factory( ).
 
     TYPES :
@@ -41,17 +40,16 @@
 
     ENDTRY.
 
-    IF rv_limit IS INITIAL.
-      lo_log->add_log(
-                   msgno = '002'
-                   msgty = if_abap_behv_message=>severity-information
-                 ).
-    ELSE.
-      lo_log->add_log(
-              msgno = '004'
-              msgty = if_abap_behv_message=>severity-success
-            ).
-    ENDIF.
+*    IF rv_limit IS INITIAL.
+*      lo_log->add_log(
+*                   msgno = '002'
+*                   msgty = if_abap_behv_message=>severity-information
+*                 ).
+*    ELSE.
+*      lo_log->add_log(
+*              msgno = '004'
+*              msgty = if_abap_behv_message=>severity-success
+*            ).
+*    ENDIF.
 
-
-  ENDMETHOD. "#EC CI_VALPAR
+  ENDMETHOD.                                             "#EC CI_VALPAR

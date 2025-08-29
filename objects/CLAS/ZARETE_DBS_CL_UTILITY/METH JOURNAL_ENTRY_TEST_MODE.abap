@@ -1,6 +1,5 @@
   METHOD journal_entry_test_mode.
 
-
     DATA(lo_log) = zarete_dbs_cl_log=>get_factory( ).
     DATA ls_mesaj TYPE REF TO if_abap_behv_message.
     TRY.
@@ -38,6 +37,7 @@
 
             ENDIF.
           ENDLOOP.
+
         ENDLOOP.
 
       CATCH cx_soap_destination_error INTO DATA(lc_cx).

@@ -19,7 +19,7 @@
   },
   {
    "name":"CLAS ZARETE_DBS_CL_DOC_READ_API.asx.json",
-   "fingerprint":"taPZJcD/tlhMcJP4/pt7EqDJrFM6xjgNvSZUqQqdu9rTwimRRi21eDkcqerVXGS4bIUUrDFmd4hZe9mtfKOLtA=="
+   "fingerprint":"o6QvJcSpEqdFWhj2OxlMKq1U7ihWOdILJghmyS57sd7PXCw+PYhP0Cbxn0PNSs9APzolAmV6NepKzq5sPlxwLw=="
   },
   {
    "name":"CLSD ZARETE_DBS_CL_DOC_READ_API.abap",
@@ -27,7 +27,7 @@
   },
   {
    "name":"CPRI ZARETE_DBS_CL_DOC_READ_API.abap",
-   "fingerprint":"/fsIQ5Dve8MCXRGbhAx3r2LEE4ocFRBk3Hpzv8UffRNcTtMmbfdX2k7+VjJ+O0XirqpvTAdwG/Kk9RTNOxHEAA=="
+   "fingerprint":"b3pteFdDBm+/ki7PCJRa3L96ooPIVV8XmWVlhze9lBxpI1gwoEgjPjFxZInpwxYQYluNzQAglbo2/D7ShXBf/w=="
   },
   {
    "name":"CPRO ZARETE_DBS_CL_DOC_READ_API.abap",
@@ -35,20 +35,24 @@
   },
   {
    "name":"CPUB ZARETE_DBS_CL_DOC_READ_API.abap",
-   "fingerprint":"TSJEOULri36NCeH9AZLZ+ElekR3iHd2ZBRiqxonNECpGs5b9D8JJOM8hK0Z6KIeQNRsK6Jwtv5WEc+4oz1CvNQ=="
+   "fingerprint":"VcTztYLIONUFE0zs9l1QzAOHBmBucgCCxNXEMu/OSIp4NVTCTfWuTqTVRbbfi9DmHSMUbRLbs+r37lYGTH4yOQ=="
   },
   {
    "name":"METH CONSTRUCTOR.abap",
-   "fingerprint":"d6QFyzUAe3lFLsuMAtAxtfCDofw4IHQiMO5PRai7P6px2RDYYzDApQ2p1DRByhxtZfoAJ7fb7pROeyUtvHydqQ=="
+   "fingerprint":"0azpijAtFCYS+cX+W6qyaV1liTh6xk771+cc3+A7eeX2QLcGaay/hS/yB6iWPbkyMBUP70Mh+0u9lhQy8qex4A=="
+  },
+  {
+   "name":"METH GET_ACCOUNTING_DOCUMENT.abap",
+   "fingerprint":"csGw7vQoxtbDR+vO/T7iO9KVEBqF5nIDkf4ZmsLCnZ+im+sSxlMqs5B8+L70quHHoRCi49JeGEGcUXdHFID64g=="
   },
   {
    "name":"METH IF_RAP_QUERY_PROVIDER~SELECT.abap",
-   "fingerprint":"J9CDFE3VoT7XIJGr0AEVpRrgU3AQUUODht5IxzKBERMiMV6PCcpf05j7uX6pgAiFbOURX2zrTbSzqk1AtIb37g=="
+   "fingerprint":"avb0gMLnVIDG5FBkYJM8tAluUPHb9Cs0fXE+0lDfzk2AdgCdvCNFKjLL/U92KfcPGOIoDrSdbJAd6zypT5v8bg=="
   },
   {
    "name":"REPS ZARETE_DBS_CL_DOC_READ_API====CT.abap",
    "fingerprint":"4Bddnbs7IubmAeGRi1ERK0Q7ft8YWCT/+AXBMZtVlpTtv+2DAAVCTJNCnWD0u7Pn16oMg+BvjhsL631LjDzrqA=="
   }
  ],
- "fingerprintAll":"xP/j0M5msjqccZn45DAhehS4EWYEFFIKgTYa6JpuHCgG7zZ7ZC2wr6odv2ahajy8+mpMuulrgJfY1mo6Rg/rmw=="
+ "fingerprintAll":"cbJFrCEAyjPNZT5eeuTFQwZyt5+fM06abPMe8HME1Lw09ngzy/OPFsdhvq3uFJn3TVm0vtEv0DQWvR944nfxSw=="
 }

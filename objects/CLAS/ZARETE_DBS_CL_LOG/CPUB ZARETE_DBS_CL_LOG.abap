@@ -7,7 +7,9 @@ CLASS zarete_dbs_cl_log DEFINITION
 
     INTERFACES zarete_dbs_if_log .
 
-    ALIASES: sapinvoiceid FOR zarete_dbs_if_log~sapinvoiceid.
+    ALIASES: sapinvoiceno FOR zarete_dbs_if_log~sapinvoiceno,
+             id           FOR zarete_dbs_if_log~id,
+             bankcode    FOR zarete_dbs_if_log~bankcode.
 
     CLASS-DATA mo_factory TYPE REF TO zarete_dbs_if_log.
 

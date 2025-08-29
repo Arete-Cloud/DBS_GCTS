@@ -1,6 +1,5 @@
   METHOD upload_invoice.
 
-
     DATA(lo_log) = zarete_dbs_cl_log=>get_factory( ).
 
     TYPES :
@@ -14,13 +13,17 @@
         currencycode   TYPE    string,
       END OF struct.
 
-    DATA(lo_request) = __get_request( gv_invoiceurl ).
+    DATA(lo_request) = __get_request( gv_sendinvoiceurl ).
+
+    DATA(lv_invoicenumber) = iv_invoicenumber.
+
+*    IF lv_invoicenumber = 'KKS2023TEST00048'. lv_invoicenumber = 'Yasin4'. ENDIF. "yasin
 
     DATA(ls_body) = VALUE struct( bankeftcode = iv_bankeftcode
                                   partycode = iv_partycode
                                   identifier = iv_identifier
                                   amount = iv_amount
-                                  invoicenumber = iv_invoicenumber
+                                  invoicenumber = lv_invoicenumber
                                   invoiceduedate = iv_invoiceduedate
                                   currencycode = iv_currencycode
                                        ).
@@ -51,17 +54,16 @@
 
     ENDTRY.
 
-    IF rv_upload_invoice IS INITIAL.
-      lo_log->add_log(
-                   msgno = '002'
-                   msgty = if_abap_behv_message=>severity-information
-                 ).
-    ELSE.
-      lo_log->add_log(
-              msgno = '004'
-              msgty = if_abap_behv_message=>severity-success
-            ).
-    ENDIF.
+*    IF rv_upload_invoice IS INITIAL.
+*      lo_log->add_log(
+*                   msgno = '002'
+*                   msgty = if_abap_behv_message=>severity-information
+*                 ).
+*    ELSE.
+*      lo_log->add_log(
+*              msgno = '004'
+*              msgty = if_abap_behv_message=>severity-success
+*            ).
+*    ENDIF.
 
-
-  ENDMETHOD. "#EC CI_VALPAR
+  ENDMETHOD.                                             "#EC CI_VALPAR

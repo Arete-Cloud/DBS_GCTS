@@ -9,10 +9,10 @@
     "AS4USER":"SAP_CUSTOMER",
     "AS4DATE":"0000-00-00",
     "AS4TIME":"00:00:00",
-    "SOURCE":"@EndUserText.label: 'Document Read API Custom Entity'\r\n@ObjectModel.query.implementedBy:'ABAP:ZARETE_DBS_CL_DOC_READ_API'\r\ndefine root custom entity ZARETE_DBS_DD_DOC_READ_001\r\n{\r\n\r\n@UI.lineItem       : [ {\r\n       position          : 10 ,\r\n       importance        : #MEDIUM,\r\n       label             : 'CompanyCode'\r\n       } ]\r\n\r\n      @EndUserText.label : 'CompanyCode'\r\n     key   company_code      : abap.char( 4 );  \r\n     @UI.lineItem       : [ {\r\n       position          : 20 ,\r\n       importance        : #MEDIUM,\r\n       label             : 'FiscalYear'\r\n       } ]\r\n\r\n      @EndUserText.label : 'FiscalYear'\r\n\r\n     key   fiscal_year   : abap.char( 4 );      \r\n     @UI.lineItem       : [ {\r\n       position          : 30 ,\r\n       importance        : #MEDIUM,\r\n       label             : 'AccountingDocument'\r\n       } ]\r\n\r\n      @EndUserText.label : 'AccountingDocument'      \r\n     key   accounting_document  : abap.char( 10 );     \r\n     @UI.lineItem       : [ {\r\n       position          : 40 ,\r\n       importance        : #MEDIUM,\r\n       label             : 'AccountingDocumentItem'\r\n       } ]\r\n\r\n      @EndUserText.label : 'AccountingDocumentItem' \r\n      key  accounting_document_item  : abap.char( 3 );  \r\n  \r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[],\n\"ASSOCIATED\":\n[],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
+    "SOURCE":"@EndUserText.label: 'Document Read API Custom Entity'\r\n@ObjectModel.query.implementedBy:'ABAP:ZARETE_DBS_CL_DOC_READ_API'\r\ndefine root custom entity ZARETE_DBS_DD_DOC_READ_001\r\n{\r\n\r\n      @UI.lineItem               : [ { position          : 10, importance        : #MEDIUM, label             : 'Şirket Kodu' } ]\r\n      @EndUserText.label         : 'Şirket Kodu'\r\n  key company_code               : abap.char( 4 );\r\n      @UI.lineItem               : [ { position          : 20, importance        : #MEDIUM, label             : 'Mali Yıl' } ]\r\n      @EndUserText.label         : 'Mali Yıl'\r\n  key fiscal_year                : abap.char( 4 );\r\n      @UI.lineItem               : [ { position          : 30, importance        : #MEDIUM, label             : 'Belge No' } ]\r\n      @EndUserText.label         : 'Belge No'\r\n  key accounting_document        : abap.char( 10 );\r\n      @UI.lineItem               : [ { position          : 40, importance        : #MEDIUM, label             : 'Belge Kalemi' } ]\r\n      @EndUserText.label         : 'Belge Kalemi'\r\n  key accounting_document_item   : abap.char( 3 );\r\n      @UI.lineItem               : [ { position          : 50, importance        : #MEDIUM, label             : 'B/A Göstergesi' } ]\r\n      @EndUserText.label         : 'B/A Göstergesi'\r\n      debit_credit_code          : abap.char( 1 );\r\n      @UI.lineItem               : [ { position          : 60, importance        : #MEDIUM, label             : 'Açıklama' } ]\r\n      @EndUserText.label         : 'Açıklama'\r\n      document_item_text         : abap.char( 50 );\r\n      @UI.lineItem               : [ { position          : 70, importance        : #MEDIUM, label             : 'Müşteri' } ]\r\n      @EndUserText.label         : 'Müşteri'\r\n      customer                   : abap.char( 10 );\r\n      @UI.lineItem               : [ { position          : 80, importance        : #MEDIUM, label             : 'Kayıt Tarihi' } ]\r\n      @EndUserText.label         : 'Kayıt Tarihi'\r\n      posting_date               : abap.dats;\r\n      @UI.lineItem               : [ { position          : 90, importance        : #MEDIUM, label             : 'Belge Tarihi' } ]\r\n      @EndUserText.label         : 'Belge Tarihi'\r\n      document_date              : abap.dats;\r\n      @UI.lineItem               : [ { position          : 100, importance        : #MEDIUM, label             : 'Vade Tarihi' } ]\r\n      @EndUserText.label         : 'Vade Tarihi'\r\n      net_due_date               : abap.dats;\r\n      @UI.lineItem               : [ { position          : 110, importance        : #MEDIUM, label             : 'Valör Tarihi' } ]\r\n      @EndUserText.label         : 'Valör Tarihi'\r\n      value_date                 : abap.dats;\r\n      @UI.lineItem               : [ { position          : 120, importance        : #MEDIUM, label             : 'Ana Banka' } ]\r\n      @EndUserText.label         : 'Ana Banka'\r\n      house_bank                 : abap.char( 5 );\r\n      @UI.lineItem               : [ { position          : 130, importance        : #MEDIUM, label             : 'Belge Türü' } ]\r\n      @EndUserText.label         : 'Belge Türü'\r\n      accounting_document_type   : abap.char( 1 );\r\n      @UI.lineItem               : [ { position          : 140, importance        : #MEDIUM, label             : 'İşlem Tutarı' } ]\r\n      @EndUserText.label         : 'İşlem Tutarı'\r\n      amount_in_transaction_curr : abap.dec(9,2);\r\n      @UI.lineItem               : [ { position          : 150, importance        : #MEDIUM, label             : 'PB' } ]\r\n      @EndUserText.label         : 'PB'\r\n      transaction_currency       : abap.char( 3 );\r\n      @UI.lineItem               : [ { position          : 160, importance        : #MEDIUM, label             : 'Referans Fatura No' } ]\r\n      @EndUserText.label         : 'Referans Fatura No'\r\n      document_reference_id      : abap.char( 16 );\r\n      @UI.lineItem               : [ { position          : 170, importance        : #MEDIUM, label             : 'Tayin' } ]\r\n      @EndUserText.label         : 'Tayin'\r\n      assignment_reference       : abap.char( 10 );\r\n      @UI.lineItem               : [ { position          : 70, importance        : #MEDIUM, label             : 'Müşteri Adı' } ]\r\n      @EndUserText.label         : 'Müşteri Adı'\r\n      customer_name              : abap.char( 80 );\r\n\r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[],\n\"ASSOCIATED\":\n[],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
     "PARENTNAME":"",
     "ACTFLAG":"",
-    "CHGFLAG":"W",
+    "CHGFLAG":",WT4",
     "SOURCE_TYPE":"Q",
     "SOURCE_ORIGIN":"0",
     "ABAP_LANGUAGE_VERSION":"5"
@@ -45,7 +45,7 @@
     "FIELDNAME":"ACCOUNTING_DOCUMENT",
     "DEPTH":0,
     "DDTEXT":"",
-    "FIELDLABEL":"AccountingDocument",
+    "FIELDLABEL":"Belge No",
     "QUICKINFO":""
    },
    {
@@ -57,7 +57,43 @@
     "FIELDNAME":"ACCOUNTING_DOCUMENT_ITEM",
     "DEPTH":0,
     "DDTEXT":"",
-    "FIELDLABEL":"AccountingDocumentItem",
+    "FIELDLABEL":"Belge Kalemi",
+    "QUICKINFO":""
+   },
+   {
+    "DDLNAME":"ZARETE_DBS_DD_DOC_READ_001",
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "NODENAME":".NODE1",
+    "DDLANGUAGE":"E",
+    "AS4LOCAL":"N",
+    "FIELDNAME":"ACCOUNTING_DOCUMENT_TYPE",
+    "DEPTH":0,
+    "DDTEXT":"",
+    "FIELDLABEL":"Belge Türü",
+    "QUICKINFO":""
+   },
+   {
+    "DDLNAME":"ZARETE_DBS_DD_DOC_READ_001",
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "NODENAME":".NODE1",
+    "DDLANGUAGE":"E",
+    "AS4LOCAL":"N",
+    "FIELDNAME":"AMOUNT_IN_TRANSACTION_CURR",
+    "DEPTH":0,
+    "DDTEXT":"",
+    "FIELDLABEL":"İşlem Tutarı",
+    "QUICKINFO":""
+   },
+   {
+    "DDLNAME":"ZARETE_DBS_DD_DOC_READ_001",
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "NODENAME":".NODE1",
+    "DDLANGUAGE":"E",
+    "AS4LOCAL":"N",
+    "FIELDNAME":"ASSIGNMENT_REFERENCE",
+    "DEPTH":0,
+    "DDTEXT":"",
+    "FIELDLABEL":"Tayin",
     "QUICKINFO":""
    },
    {
@@ -69,7 +105,79 @@
     "FIELDNAME":"COMPANY_CODE",
     "DEPTH":0,
     "DDTEXT":"",
-    "FIELDLABEL":"CompanyCode",
+    "FIELDLABEL":"Şirket Kodu",
+    "QUICKINFO":""
+   },
+   {
+    "DDLNAME":"ZARETE_DBS_DD_DOC_READ_001",
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "NODENAME":".NODE1",
+    "DDLANGUAGE":"E",
+    "AS4LOCAL":"N",
+    "FIELDNAME":"CUSTOMER",
+    "DEPTH":0,
+    "DDTEXT":"",
+    "FIELDLABEL":"Müşteri",
+    "QUICKINFO":""
+   },
+   {
+    "DDLNAME":"ZARETE_DBS_DD_DOC_READ_001",
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "NODENAME":".NODE1",
+    "DDLANGUAGE":"E",
+    "AS4LOCAL":"N",
+    "FIELDNAME":"CUSTOMER_NAME",
+    "DEPTH":0,
+    "DDTEXT":"",
+    "FIELDLABEL":"Müşteri Adı",
+    "QUICKINFO":""
+   },
+   {
+    "DDLNAME":"ZARETE_DBS_DD_DOC_READ_001",
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "NODENAME":".NODE1",
+    "DDLANGUAGE":"E",
+    "AS4LOCAL":"N",
+    "FIELDNAME":"DEBIT_CREDIT_CODE",
+    "DEPTH":0,
+    "DDTEXT":"",
+    "FIELDLABEL":"B/A Göstergesi",
+    "QUICKINFO":""
+   },
+   {
+    "DDLNAME":"ZARETE_DBS_DD_DOC_READ_001",
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "NODENAME":".NODE1",
+    "DDLANGUAGE":"E",
+    "AS4LOCAL":"N",
+    "FIELDNAME":"DOCUMENT_DATE",
+    "DEPTH":0,
+    "DDTEXT":"",
+    "FIELDLABEL":"Belge Tarihi",
+    "QUICKINFO":""
+   },
+   {
+    "DDLNAME":"ZARETE_DBS_DD_DOC_READ_001",
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "NODENAME":".NODE1",
+    "DDLANGUAGE":"E",
+    "AS4LOCAL":"N",
+    "FIELDNAME":"DOCUMENT_ITEM_TEXT",
+    "DEPTH":0,
+    "DDTEXT":"",
+    "FIELDLABEL":"Açıklama",
+    "QUICKINFO":""
+   },
+   {
+    "DDLNAME":"ZARETE_DBS_DD_DOC_READ_001",
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "NODENAME":".NODE1",
+    "DDLANGUAGE":"E",
+    "AS4LOCAL":"N",
+    "FIELDNAME":"DOCUMENT_REFERENCE_ID",
+    "DEPTH":0,
+    "DDTEXT":"",
+    "FIELDLABEL":"Referans Fatura No",
     "QUICKINFO":""
    },
    {
@@ -81,7 +189,67 @@
     "FIELDNAME":"FISCAL_YEAR",
     "DEPTH":0,
     "DDTEXT":"",
-    "FIELDLABEL":"FiscalYear",
+    "FIELDLABEL":"Mali Yıl",
+    "QUICKINFO":""
+   },
+   {
+    "DDLNAME":"ZARETE_DBS_DD_DOC_READ_001",
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "NODENAME":".NODE1",
+    "DDLANGUAGE":"E",
+    "AS4LOCAL":"N",
+    "FIELDNAME":"HOUSE_BANK",
+    "DEPTH":0,
+    "DDTEXT":"",
+    "FIELDLABEL":"Ana Banka",
+    "QUICKINFO":""
+   },
+   {
+    "DDLNAME":"ZARETE_DBS_DD_DOC_READ_001",
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "NODENAME":".NODE1",
+    "DDLANGUAGE":"E",
+    "AS4LOCAL":"N",
+    "FIELDNAME":"NET_DUE_DATE",
+    "DEPTH":0,
+    "DDTEXT":"",
+    "FIELDLABEL":"Vade Tarihi",
+    "QUICKINFO":""
+   },
+   {
+    "DDLNAME":"ZARETE_DBS_DD_DOC_READ_001",
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "NODENAME":".NODE1",
+    "DDLANGUAGE":"E",
+    "AS4LOCAL":"N",
+    "FIELDNAME":"POSTING_DATE",
+    "DEPTH":0,
+    "DDTEXT":"",
+    "FIELDLABEL":"Kayıt Tarihi",
+    "QUICKINFO":""
+   },
+   {
+    "DDLNAME":"ZARETE_DBS_DD_DOC_READ_001",
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "NODENAME":".NODE1",
+    "DDLANGUAGE":"E",
+    "AS4LOCAL":"N",
+    "FIELDNAME":"TRANSACTION_CURRENCY",
+    "DEPTH":0,
+    "DDTEXT":"",
+    "FIELDLABEL":"PB",
+    "QUICKINFO":""
+   },
+   {
+    "DDLNAME":"ZARETE_DBS_DD_DOC_READ_001",
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "NODENAME":".NODE1",
+    "DDLANGUAGE":"E",
+    "AS4LOCAL":"N",
+    "FIELDNAME":"VALUE_DATE",
+    "DEPTH":0,
+    "DDTEXT":"",
+    "FIELDLABEL":"Valör Tarihi",
     "QUICKINFO":""
    }
   ]
@@ -114,7 +282,7 @@
     "LFIELDNAME":"ACCOUNTING_DOCUMENT",
     "NAME":"ENDUSERTEXT.LABEL",
     "POSITION":18,
-    "VALUE":"'AccountingDocument'"
+    "VALUE":"'Belge No'"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
@@ -135,7 +303,7 @@
     "LFIELDNAME":"ACCOUNTING_DOCUMENT",
     "NAME":"UI.LINEITEM$1$.LABEL",
     "POSITION":16,
-    "VALUE":"'AccountingDocument'"
+    "VALUE":"'Belge No'"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
@@ -156,7 +324,7 @@
     "LFIELDNAME":"ACCOUNTING_DOCUMENT_ITEM",
     "NAME":"ENDUSERTEXT.LABEL",
     "POSITION":24,
-    "VALUE":"'AccountingDocumentItem'"
+    "VALUE":"'Belge Kalemi'"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
@@ -177,7 +345,7 @@
     "LFIELDNAME":"ACCOUNTING_DOCUMENT_ITEM",
     "NAME":"UI.LINEITEM$1$.LABEL",
     "POSITION":22,
-    "VALUE":"'AccountingDocumentItem'"
+    "VALUE":"'Belge Kalemi'"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
@@ -185,6 +353,132 @@
     "NAME":"UI.LINEITEM$1$.POSITION",
     "POSITION":20,
     "VALUE":"40"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"ACCOUNTING_DOCUMENT_TYPE",
+    "NAME":"ENDUSERTEXT",
+    "POSITION":77,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"ACCOUNTING_DOCUMENT_TYPE",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "POSITION":78,
+    "VALUE":"'Belge Türü'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"ACCOUNTING_DOCUMENT_TYPE",
+    "NAME":"UI",
+    "POSITION":73,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"ACCOUNTING_DOCUMENT_TYPE",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "POSITION":75,
+    "VALUE":"#MEDIUM"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"ACCOUNTING_DOCUMENT_TYPE",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "POSITION":76,
+    "VALUE":"'Belge Türü'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"ACCOUNTING_DOCUMENT_TYPE",
+    "NAME":"UI.LINEITEM$1$.POSITION",
+    "POSITION":74,
+    "VALUE":"130"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"AMOUNT_IN_TRANSACTION_CURR",
+    "NAME":"ENDUSERTEXT",
+    "POSITION":83,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"AMOUNT_IN_TRANSACTION_CURR",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "POSITION":84,
+    "VALUE":"'İşlem Tutarı'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"AMOUNT_IN_TRANSACTION_CURR",
+    "NAME":"UI",
+    "POSITION":79,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"AMOUNT_IN_TRANSACTION_CURR",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "POSITION":81,
+    "VALUE":"#MEDIUM"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"AMOUNT_IN_TRANSACTION_CURR",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "POSITION":82,
+    "VALUE":"'İşlem Tutarı'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"AMOUNT_IN_TRANSACTION_CURR",
+    "NAME":"UI.LINEITEM$1$.POSITION",
+    "POSITION":80,
+    "VALUE":"140"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"ASSIGNMENT_REFERENCE",
+    "NAME":"ENDUSERTEXT",
+    "POSITION":101,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"ASSIGNMENT_REFERENCE",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "POSITION":102,
+    "VALUE":"'Tayin'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"ASSIGNMENT_REFERENCE",
+    "NAME":"UI",
+    "POSITION":97,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"ASSIGNMENT_REFERENCE",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "POSITION":99,
+    "VALUE":"#MEDIUM"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"ASSIGNMENT_REFERENCE",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "POSITION":100,
+    "VALUE":"'Tayin'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"ASSIGNMENT_REFERENCE",
+    "NAME":"UI.LINEITEM$1$.POSITION",
+    "POSITION":98,
+    "VALUE":"170"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
@@ -198,7 +492,7 @@
     "LFIELDNAME":"COMPANY_CODE",
     "NAME":"ENDUSERTEXT.LABEL",
     "POSITION":6,
-    "VALUE":"'CompanyCode'"
+    "VALUE":"'Şirket Kodu'"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
@@ -219,7 +513,7 @@
     "LFIELDNAME":"COMPANY_CODE",
     "NAME":"UI.LINEITEM$1$.LABEL",
     "POSITION":4,
-    "VALUE":"'CompanyCode'"
+    "VALUE":"'Şirket Kodu'"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
@@ -227,6 +521,258 @@
     "NAME":"UI.LINEITEM$1$.POSITION",
     "POSITION":2,
     "VALUE":"10"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"CUSTOMER",
+    "NAME":"ENDUSERTEXT",
+    "POSITION":41,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"CUSTOMER",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "POSITION":42,
+    "VALUE":"'Müşteri'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"CUSTOMER",
+    "NAME":"UI",
+    "POSITION":37,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"CUSTOMER",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "POSITION":39,
+    "VALUE":"#MEDIUM"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"CUSTOMER",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "POSITION":40,
+    "VALUE":"'Müşteri'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"CUSTOMER",
+    "NAME":"UI.LINEITEM$1$.POSITION",
+    "POSITION":38,
+    "VALUE":"70"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"CUSTOMER_NAME",
+    "NAME":"ENDUSERTEXT",
+    "POSITION":107,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"CUSTOMER_NAME",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "POSITION":108,
+    "VALUE":"'Müşteri Adı'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"CUSTOMER_NAME",
+    "NAME":"UI",
+    "POSITION":103,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"CUSTOMER_NAME",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "POSITION":105,
+    "VALUE":"#MEDIUM"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"CUSTOMER_NAME",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "POSITION":106,
+    "VALUE":"'Müşteri Adı'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"CUSTOMER_NAME",
+    "NAME":"UI.LINEITEM$1$.POSITION",
+    "POSITION":104,
+    "VALUE":"70"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"DEBIT_CREDIT_CODE",
+    "NAME":"ENDUSERTEXT",
+    "POSITION":29,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"DEBIT_CREDIT_CODE",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "POSITION":30,
+    "VALUE":"'B/A Göstergesi'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"DEBIT_CREDIT_CODE",
+    "NAME":"UI",
+    "POSITION":25,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"DEBIT_CREDIT_CODE",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "POSITION":27,
+    "VALUE":"#MEDIUM"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"DEBIT_CREDIT_CODE",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "POSITION":28,
+    "VALUE":"'B/A Göstergesi'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"DEBIT_CREDIT_CODE",
+    "NAME":"UI.LINEITEM$1$.POSITION",
+    "POSITION":26,
+    "VALUE":"50"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"DOCUMENT_DATE",
+    "NAME":"ENDUSERTEXT",
+    "POSITION":53,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"DOCUMENT_DATE",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "POSITION":54,
+    "VALUE":"'Belge Tarihi'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"DOCUMENT_DATE",
+    "NAME":"UI",
+    "POSITION":49,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"DOCUMENT_DATE",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "POSITION":51,
+    "VALUE":"#MEDIUM"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"DOCUMENT_DATE",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "POSITION":52,
+    "VALUE":"'Belge Tarihi'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"DOCUMENT_DATE",
+    "NAME":"UI.LINEITEM$1$.POSITION",
+    "POSITION":50,
+    "VALUE":"90"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"DOCUMENT_ITEM_TEXT",
+    "NAME":"ENDUSERTEXT",
+    "POSITION":35,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"DOCUMENT_ITEM_TEXT",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "POSITION":36,
+    "VALUE":"'Açıklama'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"DOCUMENT_ITEM_TEXT",
+    "NAME":"UI",
+    "POSITION":31,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"DOCUMENT_ITEM_TEXT",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "POSITION":33,
+    "VALUE":"#MEDIUM"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"DOCUMENT_ITEM_TEXT",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "POSITION":34,
+    "VALUE":"'Açıklama'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"DOCUMENT_ITEM_TEXT",
+    "NAME":"UI.LINEITEM$1$.POSITION",
+    "POSITION":32,
+    "VALUE":"60"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"DOCUMENT_REFERENCE_ID",
+    "NAME":"ENDUSERTEXT",
+    "POSITION":95,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"DOCUMENT_REFERENCE_ID",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "POSITION":96,
+    "VALUE":"'Referans Fatura No'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"DOCUMENT_REFERENCE_ID",
+    "NAME":"UI",
+    "POSITION":91,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"DOCUMENT_REFERENCE_ID",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "POSITION":93,
+    "VALUE":"#MEDIUM"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"DOCUMENT_REFERENCE_ID",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "POSITION":94,
+    "VALUE":"'Referans Fatura No'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"DOCUMENT_REFERENCE_ID",
+    "NAME":"UI.LINEITEM$1$.POSITION",
+    "POSITION":92,
+    "VALUE":"160"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
@@ -240,7 +786,7 @@
     "LFIELDNAME":"FISCAL_YEAR",
     "NAME":"ENDUSERTEXT.LABEL",
     "POSITION":12,
-    "VALUE":"'FiscalYear'"
+    "VALUE":"'Mali Yıl'"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
@@ -261,7 +807,7 @@
     "LFIELDNAME":"FISCAL_YEAR",
     "NAME":"UI.LINEITEM$1$.LABEL",
     "POSITION":10,
-    "VALUE":"'FiscalYear'"
+    "VALUE":"'Mali Yıl'"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
@@ -269,6 +815,216 @@
     "NAME":"UI.LINEITEM$1$.POSITION",
     "POSITION":8,
     "VALUE":"20"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"HOUSE_BANK",
+    "NAME":"ENDUSERTEXT",
+    "POSITION":71,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"HOUSE_BANK",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "POSITION":72,
+    "VALUE":"'Ana Banka'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"HOUSE_BANK",
+    "NAME":"UI",
+    "POSITION":67,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"HOUSE_BANK",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "POSITION":69,
+    "VALUE":"#MEDIUM"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"HOUSE_BANK",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "POSITION":70,
+    "VALUE":"'Ana Banka'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"HOUSE_BANK",
+    "NAME":"UI.LINEITEM$1$.POSITION",
+    "POSITION":68,
+    "VALUE":"120"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"NET_DUE_DATE",
+    "NAME":"ENDUSERTEXT",
+    "POSITION":59,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"NET_DUE_DATE",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "POSITION":60,
+    "VALUE":"'Vade Tarihi'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"NET_DUE_DATE",
+    "NAME":"UI",
+    "POSITION":55,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"NET_DUE_DATE",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "POSITION":57,
+    "VALUE":"#MEDIUM"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"NET_DUE_DATE",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "POSITION":58,
+    "VALUE":"'Vade Tarihi'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"NET_DUE_DATE",
+    "NAME":"UI.LINEITEM$1$.POSITION",
+    "POSITION":56,
+    "VALUE":"100"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"POSTING_DATE",
+    "NAME":"ENDUSERTEXT",
+    "POSITION":47,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"POSTING_DATE",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "POSITION":48,
+    "VALUE":"'Kayıt Tarihi'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"POSTING_DATE",
+    "NAME":"UI",
+    "POSITION":43,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"POSTING_DATE",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "POSITION":45,
+    "VALUE":"#MEDIUM"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"POSTING_DATE",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "POSITION":46,
+    "VALUE":"'Kayıt Tarihi'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"POSTING_DATE",
+    "NAME":"UI.LINEITEM$1$.POSITION",
+    "POSITION":44,
+    "VALUE":"80"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"TRANSACTION_CURRENCY",
+    "NAME":"ENDUSERTEXT",
+    "POSITION":89,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"TRANSACTION_CURRENCY",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "POSITION":90,
+    "VALUE":"'PB'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"TRANSACTION_CURRENCY",
+    "NAME":"UI",
+    "POSITION":85,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"TRANSACTION_CURRENCY",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "POSITION":87,
+    "VALUE":"#MEDIUM"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"TRANSACTION_CURRENCY",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "POSITION":88,
+    "VALUE":"'PB'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"TRANSACTION_CURRENCY",
+    "NAME":"UI.LINEITEM$1$.POSITION",
+    "POSITION":86,
+    "VALUE":"150"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"VALUE_DATE",
+    "NAME":"ENDUSERTEXT",
+    "POSITION":65,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"VALUE_DATE",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "POSITION":66,
+    "VALUE":"'Valör Tarihi'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"VALUE_DATE",
+    "NAME":"UI",
+    "POSITION":61,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"VALUE_DATE",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "POSITION":63,
+    "VALUE":"#MEDIUM"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"VALUE_DATE",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "POSITION":64,
+    "VALUE":"'Valör Tarihi'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "LFIELDNAME":"VALUE_DATE",
+    "NAME":"UI.LINEITEM$1$.POSITION",
+    "POSITION":62,
+    "VALUE":"110"
    }
   ]
  },
@@ -281,28 +1037,126 @@
     "DDLANGUAGE":"E",
     "LFIELDNAME":"ACCOUNTING_DOCUMENT",
     "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"AccountingDocument"
+    "TEXT":"Belge No"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
     "DDLANGUAGE":"E",
     "LFIELDNAME":"ACCOUNTING_DOCUMENT_ITEM",
     "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"AccountingDocumentItem"
+    "TEXT":"Belge Kalemi"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "DDLANGUAGE":"E",
+    "LFIELDNAME":"ACCOUNTING_DOCUMENT_TYPE",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "TEXT":"Belge Türü"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "DDLANGUAGE":"E",
+    "LFIELDNAME":"AMOUNT_IN_TRANSACTION_CURR",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "TEXT":"İşlem Tutarı"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "DDLANGUAGE":"E",
+    "LFIELDNAME":"ASSIGNMENT_REFERENCE",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "TEXT":"Tayin"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
     "DDLANGUAGE":"E",
     "LFIELDNAME":"COMPANY_CODE",
     "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"CompanyCode"
+    "TEXT":"Şirket Kodu"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "DDLANGUAGE":"E",
+    "LFIELDNAME":"CUSTOMER",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "TEXT":"Müşteri"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "DDLANGUAGE":"E",
+    "LFIELDNAME":"CUSTOMER_NAME",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "TEXT":"Müşteri Adı"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "DDLANGUAGE":"E",
+    "LFIELDNAME":"DEBIT_CREDIT_CODE",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "TEXT":"B/A Göstergesi"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "DDLANGUAGE":"E",
+    "LFIELDNAME":"DOCUMENT_DATE",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "TEXT":"Belge Tarihi"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "DDLANGUAGE":"E",
+    "LFIELDNAME":"DOCUMENT_ITEM_TEXT",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "TEXT":"Açıklama"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "DDLANGUAGE":"E",
+    "LFIELDNAME":"DOCUMENT_REFERENCE_ID",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "TEXT":"Referans Fatura No"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
     "DDLANGUAGE":"E",
     "LFIELDNAME":"FISCAL_YEAR",
     "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"FiscalYear"
+    "TEXT":"Mali Yıl"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "DDLANGUAGE":"E",
+    "LFIELDNAME":"HOUSE_BANK",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "TEXT":"Ana Banka"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "DDLANGUAGE":"E",
+    "LFIELDNAME":"NET_DUE_DATE",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "TEXT":"Vade Tarihi"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "DDLANGUAGE":"E",
+    "LFIELDNAME":"POSTING_DATE",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "TEXT":"Kayıt Tarihi"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "DDLANGUAGE":"E",
+    "LFIELDNAME":"TRANSACTION_CURRENCY",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "TEXT":"PB"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_DOC_READ_001",
+    "DDLANGUAGE":"E",
+    "LFIELDNAME":"VALUE_DATE",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "TEXT":"Valör Tarihi"
    }
   ]
  },

@@ -105,7 +105,7 @@
     "EDITORDER":1,
     "LOCKED":"",
     "DISPID":0,
-    "R3RELEASE":"915",
+    "R3RELEASE":"",
     "AUTHOR":"",
     "CREATEDON":"2025-05-31",
     "CHANGEDBY":"",
@@ -201,6 +201,14 @@
     "CMPTYPE":1,
     "MTDTYPE":0,
     "SCOTYPE":0
+   },
+   {
+    "CLSNAME":"ZARETE_DBS_CL_FINTEO_LMT",
+    "CMPNAME":"FILL_T013",
+    "SCONAME":"IV_COMPANY_CODE",
+    "CMPTYPE":1,
+    "MTDTYPE":0,
+    "SCOTYPE":0
    }
   ]
  },
@@ -234,6 +242,33 @@
     "PARPREFERD":"",
     "EXCDECLTYP":0,
     "IS_RESUMABLE":""
+   },
+   {
+    "CLSNAME":"ZARETE_DBS_CL_FINTEO_LMT",
+    "CMPNAME":"FILL_T013",
+    "SCONAME":"IV_COMPANY_CODE",
+    "VERSION":1,
+    "EDITORDER":2,
+    "LOCKED":"",
+    "DISPID":0,
+    "AUTHOR":"SAP_CUSTOMER",
+    "CREATEDON":"2025-08-12",
+    "CHANGEDBY":"",
+    "CHANGEDON":"0000-00-00",
+    "PARDECLTYP":0,
+    "PARPASSTYP":1,
+    "TYPTYPE":1,
+    "TYPE":"ZARETE_DBS_T014-COMPANY_CODE",
+    "TABLEOF":"",
+    "SRCROW1":0,
+    "SRCCOLUMN1":0,
+    "SRCROW2":0,
+    "SRCCOLUMN2":0,
+    "PARVALUE":"",
+    "PAROPTIONL":"",
+    "PARPREFERD":"",
+    "EXCDECLTYP":0,
+    "IS_RESUMABLE":""
    }
   ]
  },
@@ -245,6 +280,13 @@
     "CLSNAME":"ZARETE_DBS_CL_FINTEO_LMT",
     "CMPNAME":"FILL_T013",
     "SCONAME":"IT_LIMIT",
+    "LANGU":"E",
+    "DESCRIPT":""
+   },
+   {
+    "CLSNAME":"ZARETE_DBS_CL_FINTEO_LMT",
+    "CMPNAME":"FILL_T013",
+    "SCONAME":"IV_COMPANY_CODE",
     "LANGU":"E",
     "DESCRIPT":""
    }

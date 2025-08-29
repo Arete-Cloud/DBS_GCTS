@@ -9,8 +9,6 @@
 
     DATA:lt_business_data TYPE TABLE OF ty_data.
 
-
-
     TRY.
         lo_expand_root = go_request->create_expand_node( ).
         lo_expand = lo_expand_root->add_expand( 'TO_BUSINESS_PARTNER_TAX' ).

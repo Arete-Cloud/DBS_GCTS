@@ -63,7 +63,7 @@ CLASS zarete_dbs_sc_finteo_api DEFINITION
       BEGIN OF ty_upload_invoice,
         status        TYPE string,
         statusMessage TYPE string,
-        data          TYPE STANDARD TABLE OF ty_upload_invoice_data WITH DEFAULT KEY,
+        data          TYPE ty_upload_invoice_data,
       END OF ty_upload_invoice,
 
       BEGIN OF ty_delete_invoice,
@@ -84,7 +84,7 @@ CLASS zarete_dbs_sc_finteo_api DEFINITION
 
       get_invoice
         IMPORTING VALUE(iv_startdate)         TYPE string
-                  VALUE(iv_finishdate)           TYPE string
+                  VALUE(iv_finishdate)        TYPE string
                   VALUE(iv_bankid)            TYPE string OPTIONAL
                   VALUE(iv_partycode)         TYPE string OPTIONAL
                   VALUE(iv_identifier)        TYPE string OPTIONAL
@@ -94,8 +94,7 @@ CLASS zarete_dbs_sc_finteo_api DEFINITION
         RETURNING VALUE(rv_invoice)           TYPE ty_invoice,
 
       upload_invoice
-        IMPORTING
-                  VALUE(iv_bankeftcode)    TYPE string
+        IMPORTING VALUE(iv_bankeftcode)    TYPE string
                   VALUE(iv_partycode)      TYPE string
                   VALUE(iv_identifier)     TYPE string
                   VALUE(iv_amount)         TYPE zarete_dbs_de_finteo_amount
@@ -105,8 +104,7 @@ CLASS zarete_dbs_sc_finteo_api DEFINITION
         RETURNING VALUE(rv_upload_invoice) TYPE ty_upload_invoice,
 
       update_invoice
-        IMPORTING
-                  VALUE(iv_bankeftcode)    TYPE string
+        IMPORTING VALUE(iv_bankeftcode)    TYPE string
                   VALUE(iv_partycode)      TYPE string
                   VALUE(iv_identifier)     TYPE string
                   VALUE(iv_amount)         TYPE zarete_dbs_de_finteo_amount
@@ -116,6 +114,7 @@ CLASS zarete_dbs_sc_finteo_api DEFINITION
         RETURNING VALUE(rv_update_invoice) TYPE ty_upload_invoice,
 
       delete_invoice
+        IMPORTING VALUE(iv_invoiceno)      TYPE string
         RETURNING VALUE(rv_delete_invoice) TYPE ty_delete_invoice.
 
     DATA:
@@ -123,6 +122,7 @@ CLASS zarete_dbs_sc_finteo_api DEFINITION
       mv_client           TYPE REF TO if_web_http_client,
       gv_limiturl         TYPE string,
       gv_invoiceurl       TYPE string,
+      gv_sendinvoiceurl   TYPE string,
       gv_token            TYPE string.
 
     METHODS:

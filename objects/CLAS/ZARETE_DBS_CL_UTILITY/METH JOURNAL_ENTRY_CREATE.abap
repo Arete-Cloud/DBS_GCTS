@@ -1,7 +1,9 @@
   METHOD journal_entry_create.
 
     DATA(lo_log) = zarete_dbs_cl_log=>get_factory( ).
+
     CLEAR: ev_document_number,ev_fiscal_year,ev_company_code.
+
     DATA ls_mesaj TYPE REF TO if_abap_behv_message.
     TRY.
         DATA(destination) = cl_soap_destination_provider=>create_by_comm_arrangement(
@@ -19,23 +21,23 @@
 
           IF ls_journal-journal_entry_create_confirmat-accounting_document NE '0000000000' AND
              ls_journal-journal_entry_create_confirmat-accounting_document IS NOT INITIAL .
-            IF lines( ls_response-journal_entry_bulk_create_conf-journal_entry_create_confirmat   ) EQ 1.
+            IF lines( ls_response-journal_entry_bulk_create_conf-journal_entry_create_confirmat ) EQ 1.
 
               ev_document_number = ls_journal-journal_entry_create_confirmat-accounting_document .
-              ev_fiscal_year = ls_journal-journal_entry_create_confirmat-fiscal_year .
-              ev_company_code = ls_journal-journal_entry_create_confirmat-company_code .
+              ev_fiscal_year     = ls_journal-journal_entry_create_confirmat-fiscal_year .
+              ev_company_code    = ls_journal-journal_entry_create_confirmat-company_code .
 
             ENDIF.
 
             APPEND VALUE #(
-            reference_id = ls_journal-message_header-reference_id-content
-             accounting_document = ls_journal-journal_entry_create_confirmat-accounting_document
-             company_code = ls_journal-journal_entry_create_confirmat-company_code
-             fiscal_year  = ls_journal-journal_entry_create_confirmat-fiscal_year
-                          ) TO et_fi_documents.
-
+            reference_id        = ls_journal-message_header-reference_id-content
+            accounting_document = ls_journal-journal_entry_create_confirmat-accounting_document
+            company_code        = ls_journal-journal_entry_create_confirmat-company_code
+            fiscal_year         = ls_journal-journal_entry_create_confirmat-fiscal_year
+            ) TO et_fi_documents.
 
           ENDIF.
+
           LOOP AT ls_journal-log-item INTO DATA(ls_log).
             IF ls_log-severity_code > 1.
               DATA(lv_error_msj) = ls_log-note.
@@ -50,6 +52,7 @@
 
             ENDIF.
           ENDLOOP.
+
         ENDLOOP.
 
       CATCH cx_soap_destination_error INTO DATA(lc_cx).

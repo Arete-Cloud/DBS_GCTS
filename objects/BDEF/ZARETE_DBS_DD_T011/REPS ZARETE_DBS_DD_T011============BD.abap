@@ -9,7 +9,7 @@ authorization master ( global )
 {
   field ( mandatory : create )
   FinteoStatusCode,
-  FinteoBankCode;
+  FinteoStatusDescription;
 
   field ( readonly )
   CreatedBy,
@@ -20,7 +20,7 @@ authorization master ( global )
 
   field ( readonly : update )
   FinteoStatusCode,
-  FinteoBankCode;
+  FinteoStatusDescription;
 
   create;
   update;
@@ -28,13 +28,14 @@ authorization master ( global )
 
   mapping for zarete_dbs_t011
     {
-      FinteoStatusCode       = finteo_status_code;
-      FinteoBankCode         = finteo_bank_code;
-      FinteoStatusDefinition = finteo_status_definition;
-      CreatedBy              = created_by;
-      CreatedAt              = created_at;
-      LastChangedAt          = last_changed_at;
-      LocalLastChangedBy     = local_last_changed_by;
-      LocalLastChangedAt     = local_last_changed_at;
+      FinteoStatusCode        = finteo_status_code;
+      FinteoStatusDescription = finteo_status_description;
+      FinteoStatusCodeText    = finteo_status_code_text;
+      FinteoStatusDescText    = finteo_status_desc_text;
+      CreatedBy               = created_by;
+      CreatedAt               = created_at;
+      LastChangedAt           = last_changed_at;
+      LocalLastChangedBy      = local_last_changed_by;
+      LocalLastChangedAt      = local_last_changed_at;
     }
 }

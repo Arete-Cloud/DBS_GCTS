@@ -39,11 +39,11 @@
   },
   {
    "name":"METH CONSTRUCTOR.abap",
-   "fingerprint":"gCQ1zzafUGrFEUrFoqZ5buI6S/e8Ow5msbutYOLl4ctXXjZ4fc1K0/hcVKGZdbiZuh/TiGyZB518z8krOYAdvg=="
+   "fingerprint":"CeJyWMwnCY4q6GQusM6QO26JyYTewhEtw9KDGn9kWBUkDBSLVK4A4vEEfLSknerP5l5075opxjopHfnaOKHakg=="
   },
   {
    "name":"METH GET_TAXNUMBER.abap",
-   "fingerprint":"IIUaLXbG8lyoAkxfDtLukF7R0szWQjQoHnYvBELBOXuUHkgaB6IKJAWOxJy5KbLVOA2rqPQoPYctsdGr6KF/Vg=="
+   "fingerprint":"rRUMzTjoRwMY/X28gjoV0yY7/kvAS9We4FjigtNpB9QjhcM/0r675gtVmKg6kkZzmCujdhCaawm36h/QwAJEyA=="
   },
   {
    "name":"METH IF_RAP_QUERY_PROVIDER~SELECT.abap",
@@ -54,5 +54,5 @@
    "fingerprint":"2NaYlKcEnSkwYUvPJubHWhCuUOoP8vu80O/oYrhovbM2Lsep5ykpsW2l4y9r0UkzNZMESCW25oIe64VYIBJTrQ=="
   }
  ],
- "fingerprintAll":"wp7sUkQdfTSGXYfXuArn2kXsvx99JN91d/gGAGaX+/ZHiOE6bneJ6GUCrrI3LVP4Iihd8x3FY8oE6waIe7D2pQ=="
+ "fingerprintAll":"ckmdqODZXw7zxjailp6SNXSDBPq/QEXPVvveOPJ7x7+xGXZ9oq6B9uX1powG3pVK5K2nQqz87UgV3As12n6Piw=="
 }

@@ -1,5 +1,5 @@
 INTERFACE zarete_dbs_if_log
-  PUBLIC .
+  PUBLIC.
 
   TYPES: BEGIN OF ty_message ,
            id       TYPE symsgid,
@@ -11,8 +11,9 @@ INTERFACE zarete_dbs_if_log
            v4       TYPE symsgv,
          END OF ty_message.
 
-
-  DATA sapinvoiceid TYPE int4.
+  DATA: sapinvoiceno TYPE zarete_dbs_t001-sapinvoiceno,
+        id           TYPE zarete_dbs_t001-id,
+        bankcode     TYPE zarete_dbs_t001-bankcode.
 
   METHODS add_log IMPORTING msgid TYPE symsgid DEFAULT 'ZARETE_DBS_MC_001'
                             msgno TYPE symsgno DEFAULT '000'
@@ -23,9 +24,9 @@ INTERFACE zarete_dbs_if_log
                             msgv4 TYPE symsgv OPTIONAL
                             msgtx TYPE string OPTIONAL.
 
-  METHODS : set_sapinvoiceid IMPORTING iv_sapinvoiceid TYPE int4.
-
-  METHODS : refresh.
-
+  METHODS : set_sapinvoiceno IMPORTING iv_sapinvoiceno TYPE zarete_dbs_t001-sapinvoiceno OPTIONAL
+                                       iv_id           TYPE zarete_dbs_t001-id OPTIONAL
+                                       iv_bankcode     TYPE zarete_dbs_t001-bankcode OPTIONAL,
+    refresh.
 
 ENDINTERFACE.

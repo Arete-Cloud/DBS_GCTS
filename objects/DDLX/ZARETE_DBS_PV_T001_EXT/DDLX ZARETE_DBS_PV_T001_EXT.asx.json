@@ -7,9 +7,9 @@
     "DDLXNAME":"ZARETE_DBS_PV_T001_EXT",
     "VERSION":"A",
     "CHANGED_BY":"SAP_CUSTOMER",
-    "CHANGED_ON":"2025-05-05",
-    "CHANGED_AT":"12:42:20",
-    "UUID":"8ABEB36CD6611FE08AB5CC3D8838BFA5",
+    "CHANGED_ON":"2025-08-18",
+    "CHANGED_AT":"11:06:29",
+    "UUID":"92664E2200F21FE09F846C7402A1FECD",
     "ABAP_LANGUAGE_VERSION":"5"
    }
   ]
@@ -34,7 +34,7 @@
     "DDLXNAME":"ZARETE_DBS_PV_T001_EXT",
     "VERSION":"A",
     "UUID":"",
-    "SOURCE":"@Metadata.layer: #CORE\r\nannotate entity ZARETE_DBS_PV_T001 with\r\n{\r\n  @UI.lineItem: [{ importance: #MEDIUM }]\r\n  @UI.identification: [{ importance: #MEDIUM }]\r\n  LogId;\r\n  @UI.lineItem: [{ importance: #MEDIUM }]\r\n  @UI.identification: [{ importance: #MEDIUM }]\r\n  Sapinvoiceid;\r\n  @UI.lineItem: [{ importance: #MEDIUM }]\r\n  @UI.identification: [{ importance: #MEDIUM }]\r\n  Msgid;\r\n  @UI.lineItem: [{ importance: #MEDIUM }]\r\n  @UI.identification: [{ importance: #MEDIUM }]\r\n  Msgno;\r\n  @UI.lineItem: [{ importance: #MEDIUM }]\r\n  @UI.identification: [{ importance: #MEDIUM }]\r\n  Msgty;\r\n  @UI.lineItem: [{ importance: #MEDIUM }]\r\n  @UI.identification: [{ importance: #MEDIUM }]\r\n  Msgv1;\r\n  @UI.lineItem: [{ importance: #MEDIUM }]\r\n  @UI.identification: [{ importance: #MEDIUM }]\r\n  Msgv2;\r\n  @UI.lineItem: [{ importance: #MEDIUM }]\r\n  @UI.identification: [{ importance: #MEDIUM }]\r\n  Msgv3;\r\n  @UI.lineItem: [{ importance: #MEDIUM }]\r\n  @UI.identification: [{ importance: #MEDIUM }]\r\n  Msgv4;\r\n  @UI.lineItem: [{ importance: #MEDIUM }]\r\n  @UI.identification: [{ importance: #MEDIUM }]\r\n  Message;\r\n  @UI.lineItem: [{ importance: #MEDIUM }]\r\n  @UI.identification: [{ importance: #MEDIUM }]\r\n  LocalLastChangedAt;\r\n}"
+    "SOURCE":"@Metadata.layer: #CORE\r\nannotate entity ZARETE_DBS_PV_T001 with\r\n{\r\n  @UI.lineItem: [{ importance: #MEDIUM }]\r\n  @UI.identification: [{ importance: #MEDIUM }]\r\n  LogId;\r\n  @UI.lineItem: [{ importance: #MEDIUM }]\r\n  @UI.identification: [{ importance: #MEDIUM }]\r\n  SapInvoiceNo;\r\n  @UI.lineItem: [{ importance: #MEDIUM }]\r\n  @UI.identification: [{ importance: #MEDIUM }]\r\n  Id;\r\n  @UI.lineItem: [{ importance: #MEDIUM }]\r\n  @UI.identification: [{ importance: #MEDIUM }]\r\n  BankCode;\r\n  @UI.lineItem: [{ importance: #MEDIUM }]\r\n  @UI.identification: [{ importance: #MEDIUM }]\r\n  Msgid;\r\n  @UI.lineItem: [{ importance: #MEDIUM }]\r\n  @UI.identification: [{ importance: #MEDIUM }]\r\n  Msgno;\r\n  @UI.lineItem: [{ importance: #MEDIUM }]\r\n  @UI.identification: [{ importance: #MEDIUM }]\r\n  Msgty;\r\n  @UI.lineItem: [{ importance: #MEDIUM }]\r\n  @UI.identification: [{ importance: #MEDIUM }]\r\n  Msgv1;\r\n  @UI.lineItem: [{ importance: #MEDIUM }]\r\n  @UI.identification: [{ importance: #MEDIUM }]\r\n  Msgv2;\r\n  @UI.lineItem: [{ importance: #MEDIUM }]\r\n  @UI.identification: [{ importance: #MEDIUM }]\r\n  Msgv3;\r\n  @UI.lineItem: [{ importance: #MEDIUM }]\r\n  @UI.identification: [{ importance: #MEDIUM }]\r\n  Msgv4;\r\n  @UI.lineItem: [{ importance: #MEDIUM }]\r\n  @UI.identification: [{ importance: #MEDIUM }]\r\n  Message;\r\n  @UI.lineItem: [{ importance: #MEDIUM }]\r\n  @UI.identification: [{ importance: #MEDIUM }]\r\n  LocalLastChangedAt;\r\n}"
    }
   ]
  },
@@ -44,6 +44,34 @@
   [
    {
     "DDLXNAME":"ZARETE_DBS_PV_T001_EXT",
+    "ELEMENT":"BANKCODE",
+    "NAME":"UI.IDENTIFICATION$1$.IMPORTANCE",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"#MEDIUM"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T001_EXT",
+    "ELEMENT":"BANKCODE",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"#MEDIUM"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T001_EXT",
+    "ELEMENT":"ID",
+    "NAME":"UI.IDENTIFICATION$1$.IMPORTANCE",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"#MEDIUM"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T001_EXT",
+    "ELEMENT":"ID",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"#MEDIUM"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T001_EXT",
     "ELEMENT":"LOCALLASTCHANGEDAT",
     "NAME":"UI.IDENTIFICATION$1$.IMPORTANCE",
     "ELEMENT_TYPE":"S",
@@ -184,14 +212,14 @@
    },
    {
     "DDLXNAME":"ZARETE_DBS_PV_T001_EXT",
-    "ELEMENT":"SAPINVOICEID",
+    "ELEMENT":"SAPINVOICENO",
     "NAME":"UI.IDENTIFICATION$1$.IMPORTANCE",
     "ELEMENT_TYPE":"S",
     "VALUE":"#MEDIUM"
    },
    {
     "DDLXNAME":"ZARETE_DBS_PV_T001_EXT",
-    "ELEMENT":"SAPINVOICEID",
+    "ELEMENT":"SAPINVOICENO",
     "NAME":"UI.LINEITEM$1$.IMPORTANCE",
     "ELEMENT_TYPE":"S",
     "VALUE":"#MEDIUM"
@@ -207,8 +235,8 @@
     "EXTENDED_ARTIFACT":"ZARETE_DBS_PV_T001",
     "VARIANT":"",
     "LAYER":1500,
-    "DT_UUID":"8ABEB36CD6611FE08AB5CC3D8838BFA5",
-    "RT_HASH":"4C9BA73D726E33AD7FF6B6400CB9DEBE443B8C5F",
+    "DT_UUID":"92664E2200F21FE09F846C7402A1FECD",
+    "RT_HASH":"C7C9C597C4FF34D675C66335079E28356E3BACBD",
     "GEN_VERSION":"0",
     "TYPE":"0"
    }

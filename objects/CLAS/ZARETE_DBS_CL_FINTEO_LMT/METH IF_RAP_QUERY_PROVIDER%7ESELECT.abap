@@ -1,6 +1,7 @@
   METHOD if_rap_query_provider~select.
 
-    DATA lt_limit TYPE zarete_dbs_sc_finteo_api=>ty_limit.
+    DATA: lt_limit     TYPE zarete_dbs_sc_finteo_api=>ty_limit,
+          lt_limit_tmp TYPE zarete_dbs_sc_finteo_api=>ty_limit.
 
     DATA(lo_finteo_lmt) = NEW zarete_dbs_sc_finteo_api( ).
 
@@ -43,32 +44,101 @@
       WHEN 'ZARETE_DBS_DD_FINTEO_LMT_001'.
         io_request->is_total_numb_of_rec_requested(
           RECEIVING
-            rv_is_requested = data(lv_numb)
-        ).
-        if lv_numb = abap_true.
-          lo_finteo_lmt->get_limit(
-      EXPORTING
-        iv_identifier = '5760511994'
-      RECEIVING
-        rv_limit      = lt_limit ).
+            rv_is_requested = DATA(lv_numb) ).
 
-          me->fill_t013( it_limit = lt_limit ).
+        IF lv_numb = abap_true.
+
+          SELECT * FROM zarete_dbs_t014 INTO TABLE @DATA(lt_t014).
+
+          LOOP AT lt_t014 ASSIGNING FIELD-SYMBOL(<fs_t014>).
+
+            lo_finteo_lmt->get_limit(
+            EXPORTING
+            iv_identifier = <fs_t014>-company_identifier
+            RECEIVING
+            rv_limit      = lt_limit_tmp ).
+
+            IF lt_limit_tmp-status EQ 'OK'.
+
+              me->fill_t013( it_limit = lt_limit iv_company_code = <fs_t014>-company_code ).
+              APPEND LINES OF lt_limit_tmp-data TO lt_limit-data.
+
+            ELSE.
+
+              RAISE EXCEPTION NEW zarete_dbs_cl_error( msgid  = 'ZARETE_DBS_MC_001'
+                                                       msgno  = '012'
+                                                       iv_msg = lt_limit_tmp-statusmessage
+                                                       ).
+
+            ENDIF.
+
+          ENDLOOP.
+
         ENDIF.
+
     ENDCASE.
 
     IF lt_limit-data IS NOT INITIAL.
 
       LOOP AT lt_limit-data INTO DATA(ls_data).
         MOVE-CORRESPONDING ls_data TO <fs_business_data>.
+        ASSIGN COMPONENT 'limit' OF STRUCTURE <fs_business_data> TO FIELD-SYMBOL(<fs_toplamlimit>).
+        IF sy-subrc EQ 0.
+          ASSIGN COMPONENT 'activeLimit' OF STRUCTURE <fs_business_data> TO FIELD-SYMBOL(<fs_kalanlimit>).
+          IF sy-subrc EQ 0.
+            ASSIGN COMPONENT 'kullanilanLimit' OF STRUCTURE <fs_business_data> TO FIELD-SYMBOL(<fs_kullanilanlimit>).
+            IF sy-subrc EQ 0.
+              <fs_kullanilanlimit> = <fs_toplamlimit> - <fs_kalanlimit>.
+            ENDIF.
+          ENDIF.
+        ENDIF.
+
+        READ ENTITIES OF zarete_dbs_dd_t012
+        ENTITY t012
+        ALL FIELDS WITH VALUE #( ( CompanyIdentifier = ls_data-identifier
+                                   LimitId           = ls_data-limitid
+                                   %control-PartyTaxNumber = ls_data-partytaxnumber ) )
+        RESULT DATA(lt_t012).
+
+        READ TABLE lt_t012 ASSIGNING FIELD-SYMBOL(<fs_t012>) WITH KEY CompanyIdentifier = ls_data-identifier
+                                                                      PartyTaxNumber    = ls_data-partytaxnumber
+                                                                      LimitId           = ls_data-limitid.
+        IF sy-subrc EQ 0.
+          ASSIGN COMPONENT 'BPNO' OF STRUCTURE <fs_business_data> TO FIELD-SYMBOL(<fs_bpno>).
+          IF sy-subrc EQ 0.
+            <fs_bpno> = <fs_t012>-BpNo.
+          ENDIF.
+          ASSIGN COMPONENT 'BPNAME' OF STRUCTURE <fs_business_data> TO FIELD-SYMBOL(<fs_bpname>).
+          IF sy-subrc EQ 0.
+            <fs_bpname> = <fs_t012>-BpName.
+          ENDIF.
+          ASSIGN COMPONENT 'BPTAXNUMBER' OF STRUCTURE <fs_business_data> TO FIELD-SYMBOL(<fs_bptaxno>).
+          IF sy-subrc EQ 0.
+            <fs_bptaxno> = <fs_t012>-BpTaxNumber.
+          ENDIF.
+        ENDIF.
 
         APPEND <fs_business_data> TO <ft_business_data>.
 
+        CLEAR <fs_business_data>.
       ENDLOOP.
 
+      DATA(filter_range) =  mc_request_filter->get_as_ranges(  ).
 
-      io_response->set_data( it_data = <ft_business_data> ).
-      io_response->set_total_number_of_records( iv_total_number_of_records = lines( <ft_business_data> ) ).
+      LOOP AT filter_range ASSIGNING FIELD-SYMBOL(<fs_filter>).
+        LOOP AT <ft_business_data> ASSIGNING FIELD-SYMBOL(<fs_limit>).
+          ASSIGN COMPONENT <fs_filter>-name OF STRUCTURE <fs_limit> TO FIELD-SYMBOL(<fs_value>).
+          IF sy-subrc EQ 0.
+            IF <fs_value> NOT IN <fs_filter>-range.
+              DELETE <ft_business_data>.
+            ENDIF.
+          ENDIF.
+        ENDLOOP.
+      ENDLOOP.
 
     ENDIF.
+
+    io_response->set_data( it_data = <ft_business_data> ).
+    io_response->set_total_number_of_records( iv_total_number_of_records = lines( <ft_business_data> ) ).
 
   ENDMETHOD.

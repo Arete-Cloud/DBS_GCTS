@@ -42,7 +42,7 @@
           lo_filter_factory = go_request->create_filter_factory( ).
           LOOP AT filter_range INTO DATA(ls_range).
             lo_filter_node  = lo_filter_factory->create_by_range( iv_property_path     = ls_range-name
-                                                                    it_range             = ls_range-range ).
+                                                                  it_range             = ls_range-range ).
             IF lo_filter_node_root IS INITIAL.
               lo_filter_node_root = lo_filter_node.
             ELSE.

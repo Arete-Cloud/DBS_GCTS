@@ -9,10 +9,10 @@
     "AS4USER":"SAP_CUSTOMER",
     "AS4DATE":"0000-00-00",
     "AS4TIME":"00:00:00",
-    "SOURCE":"@AccessControl.authorizationCheck: #NOT_REQUIRED\r\n@EndUserText.label: 'Log Bilgileri PV'\r\n@Metadata.ignorePropagatedAnnotations: true\r\n@Metadata.allowExtensions: true\r\ndefine root view entity ZARETE_DBS_PV_T001\r\n  provider contract transactional_query\r\n  as projection on ZARETE_DBS_DD_T001\r\n{\r\n  key LogId,\r\n      Sapinvoiceid,\r\n      Msgid,\r\n      Msgno,\r\n      Msgty,\r\n      Msgv1,\r\n      Msgv2,\r\n      Msgv3,\r\n      Msgv4,\r\n      Message,\r\n      CreatedBy,\r\n      CreatedAt,\r\n      LastChangedAt,\r\n      LocalLastChangedBy,\r\n      LocalLastChangedAt\r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[\n\"ZARETE_DBS_DD_T001\"\n],\n\"ASSOCIATED\":\n[],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
+    "SOURCE":"@AccessControl.authorizationCheck: #NOT_REQUIRED\r\n@EndUserText.label: 'Log Bilgileri PV'\r\n@Metadata.ignorePropagatedAnnotations: true\r\n@Metadata.allowExtensions: true\r\ndefine root view entity ZARETE_DBS_PV_T001\r\n  provider contract transactional_query\r\n  as projection on ZARETE_DBS_DD_T001\r\n{\r\n  key LogId,\r\n      SapInvoiceNo,\r\n      BankCode,\r\n      Id,\r\n      Msgid,\r\n      Msgno,\r\n      Msgty,\r\n      Msgv1,\r\n      Msgv2,\r\n      Msgv3,\r\n      Msgv4,\r\n      Message,\r\n      CreatedBy,\r\n      CreatedAt,\r\n      LastChangedAt,\r\n      LocalLastChangedBy,\r\n      LocalLastChangedAt\r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[\n\"ZARETE_DBS_DD_T001\"\n],\n\"ASSOCIATED\":\n[],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
     "PARENTNAME":"",
     "ACTFLAG":"",
-    "CHGFLAG":"",
+    "CHGFLAG":"45",
     "SOURCE_TYPE":"P",
     "SOURCE_ORIGIN":"0",
     "ABAP_LANGUAGE_VERSION":"5"

@@ -7,8 +7,9 @@ lock master
 authorization master ( global )
 //etag master <field_name>
 {
-  create ( authorization : global );
-  update;
-  delete;
-  field ( readonly : update ) identifier, limitid;
+  //  create ( authorization : global );
+  //  update;
+  //  delete;
+  action musteri_ekle result [1] $self;
+  field ( readonly : update ) partyTaxNumber, bankCode, bankName;
 }

@@ -46,6 +46,4 @@
                          msgtx = lv_error_msj ).
     ENDTRY.
 
-
-
   ENDMETHOD.

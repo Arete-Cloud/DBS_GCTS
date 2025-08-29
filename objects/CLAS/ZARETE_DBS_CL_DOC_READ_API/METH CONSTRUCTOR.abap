@@ -1,4 +1,4 @@
- METHOD constructor.
+  METHOD constructor.
     DATA(lo_log) = zarete_dbs_cl_log=>get_factory( ).
     TRY.
         " Create http client
@@ -58,4 +58,4 @@
                          msgtx = lv_error_msj ).
     ENDTRY.
 
-ENDMETHOD.
+  ENDMETHOD.

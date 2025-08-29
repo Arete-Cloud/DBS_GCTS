@@ -49,6 +49,78 @@
     "ARBGB":"ZARETE_DBS_MC_001",
     "MSGNR":"000",
     "TEXT":"&1 &2 &3 &4"
+   },
+   {
+    "SPRSL":"E",
+    "ARBGB":"ZARETE_DBS_MC_001",
+    "MSGNR":"001",
+    "TEXT":"Yeni bir istekte bulunmadan önce 10 saniye beklemelisiniz."
+   },
+   {
+    "SPRSL":"E",
+    "ARBGB":"ZARETE_DBS_MC_001",
+    "MSGNR":"002",
+    "TEXT":"Muhasebe Belgesi Oluşturulamadı"
+   },
+   {
+    "SPRSL":"E",
+    "ARBGB":"ZARETE_DBS_MC_001",
+    "MSGNR":"003",
+    "TEXT":"Muhasebe Belgesi Oluşturuldu"
+   },
+   {
+    "SPRSL":"E",
+    "ARBGB":"ZARETE_DBS_MC_001",
+    "MSGNR":"004",
+    "TEXT":"Ana Hesap Bilgisi Bulunamadı"
+   },
+   {
+    "SPRSL":"E",
+    "ARBGB":"ZARETE_DBS_MC_001",
+    "MSGNR":"005",
+    "TEXT":"SAP Belge Detayı Bulunamadı"
+   },
+   {
+    "SPRSL":"E",
+    "ARBGB":"ZARETE_DBS_MC_001",
+    "MSGNR":"006",
+    "TEXT":"Fatura Geri Alındı"
+   },
+   {
+    "SPRSL":"E",
+    "ARBGB":"ZARETE_DBS_MC_001",
+    "MSGNR":"007",
+    "TEXT":"Fatura Geri Alınamadı"
+   },
+   {
+    "SPRSL":"E",
+    "ARBGB":"ZARETE_DBS_MC_001",
+    "MSGNR":"008",
+    "TEXT":"Fatura Yaratıldı"
+   },
+   {
+    "SPRSL":"E",
+    "ARBGB":"ZARETE_DBS_MC_001",
+    "MSGNR":"009",
+    "TEXT":"Gönderilen Tutar Belge Tutarından Yüksek"
+   },
+   {
+    "SPRSL":"E",
+    "ARBGB":"ZARETE_DBS_MC_001",
+    "MSGNR":"010",
+    "TEXT":"Banka Bilgisi Bulunamadı"
+   },
+   {
+    "SPRSL":"E",
+    "ARBGB":"ZARETE_DBS_MC_001",
+    "MSGNR":"011",
+    "TEXT":"Vade Tarihi Güncellendi"
+   },
+   {
+    "SPRSL":"E",
+    "ARBGB":"ZARETE_DBS_MC_001",
+    "MSGNR":"012",
+    "TEXT":"&1"
    }
   ]
  },
@@ -89,6 +161,90 @@
     "NAME":"SAP_CUSTOMER",
     "DATUM":"2025-06-03",
     "SELFDEF":"3"
+   },
+   {
+    "ARBGB":"ZARETE_DBS_MC_001",
+    "MSGNR":"001",
+    "NAME":"SAP_CUSTOMER",
+    "DATUM":"2025-08-29",
+    "SELFDEF":"3"
+   },
+   {
+    "ARBGB":"ZARETE_DBS_MC_001",
+    "MSGNR":"002",
+    "NAME":"SAP_CUSTOMER",
+    "DATUM":"2025-08-29",
+    "SELFDEF":"3"
+   },
+   {
+    "ARBGB":"ZARETE_DBS_MC_001",
+    "MSGNR":"003",
+    "NAME":"SAP_CUSTOMER",
+    "DATUM":"2025-08-29",
+    "SELFDEF":"3"
+   },
+   {
+    "ARBGB":"ZARETE_DBS_MC_001",
+    "MSGNR":"004",
+    "NAME":"SAP_CUSTOMER",
+    "DATUM":"2025-08-29",
+    "SELFDEF":"3"
+   },
+   {
+    "ARBGB":"ZARETE_DBS_MC_001",
+    "MSGNR":"005",
+    "NAME":"SAP_CUSTOMER",
+    "DATUM":"2025-08-29",
+    "SELFDEF":"3"
+   },
+   {
+    "ARBGB":"ZARETE_DBS_MC_001",
+    "MSGNR":"006",
+    "NAME":"SAP_CUSTOMER",
+    "DATUM":"2025-08-29",
+    "SELFDEF":"3"
+   },
+   {
+    "ARBGB":"ZARETE_DBS_MC_001",
+    "MSGNR":"007",
+    "NAME":"SAP_CUSTOMER",
+    "DATUM":"2025-08-29",
+    "SELFDEF":"3"
+   },
+   {
+    "ARBGB":"ZARETE_DBS_MC_001",
+    "MSGNR":"008",
+    "NAME":"SAP_CUSTOMER",
+    "DATUM":"2025-08-29",
+    "SELFDEF":"3"
+   },
+   {
+    "ARBGB":"ZARETE_DBS_MC_001",
+    "MSGNR":"009",
+    "NAME":"SAP_CUSTOMER",
+    "DATUM":"2025-08-29",
+    "SELFDEF":"3"
+   },
+   {
+    "ARBGB":"ZARETE_DBS_MC_001",
+    "MSGNR":"010",
+    "NAME":"SAP_CUSTOMER",
+    "DATUM":"2025-08-29",
+    "SELFDEF":"3"
+   },
+   {
+    "ARBGB":"ZARETE_DBS_MC_001",
+    "MSGNR":"011",
+    "NAME":"SAP_CUSTOMER",
+    "DATUM":"2025-08-29",
+    "SELFDEF":"3"
+   },
+   {
+    "ARBGB":"ZARETE_DBS_MC_001",
+    "MSGNR":"012",
+    "NAME":"SAP_CUSTOMER",
+    "DATUM":"2025-08-29",
+    "SELFDEF":"3"
    }
   ]
  },
@@ -116,8 +272,8 @@
     "CRELEASE":"100",
     "DELFLAG":"",
     "TRANSLTTXT":"",
-    "CREATED_ON":"2025-06-03",
-    "CHECK_DATE":"2025-06-03",
+    "CREATED_ON":"2025-08-22",
+    "CHECK_DATE":"2025-08-22",
     "CHECK_CFG":""
    }
   ]

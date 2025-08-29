@@ -19,8 +19,6 @@
 
         ASSERT go_http_client IS BOUND.
 
-
-
 *
         " Navigate to the resource and create a request for the read operation
         go_request = go_client_proxy->create_resource_for_entity_set( 'A_BUSINESS_PARTNER' )->create_request_for_read( ).

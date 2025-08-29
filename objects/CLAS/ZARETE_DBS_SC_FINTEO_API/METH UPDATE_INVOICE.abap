@@ -1,6 +1,5 @@
   METHOD update_invoice.
 
-
     DATA(lo_log) = zarete_dbs_cl_log=>get_factory( ).
 
     TYPES :
@@ -14,7 +13,7 @@
         currencycode   TYPE    string,
       END OF struct.
 
-    DATA(lo_request) = __get_request( gv_invoiceurl ).
+    DATA(lo_request) = __get_request( gv_sendinvoiceurl ).
 
     DATA(ls_body) = VALUE struct( bankeftcode = iv_bankeftcode
                                   partycode = iv_partycode
@@ -51,17 +50,16 @@
 
     ENDTRY.
 
-    IF rv_update_invoice IS INITIAL.
-      lo_log->add_log(
-                   msgno = '002'
-                   msgty = if_abap_behv_message=>severity-information
-                 ).
-    ELSE.
-      lo_log->add_log(
-              msgno = '004'
-              msgty = if_abap_behv_message=>severity-success
-            ).
-    ENDIF.
+*    IF rv_update_invoice IS INITIAL.
+*      lo_log->add_log(
+*                   msgno = '002'
+*                   msgty = if_abap_behv_message=>severity-information
+*                 ).
+*    ELSE.
+*      lo_log->add_log(
+*              msgno = '004'
+*              msgty = if_abap_behv_message=>severity-success
+*            ).
+*    ENDIF.
 
-
-  ENDMETHOD. "#EC CI_VALPAR
+  ENDMETHOD.                                             "#EC CI_VALPAR

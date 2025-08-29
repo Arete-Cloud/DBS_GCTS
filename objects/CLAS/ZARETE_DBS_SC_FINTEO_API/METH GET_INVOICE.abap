@@ -1,12 +1,11 @@
   METHOD get_invoice.
 
-
     DATA(lo_log) = zarete_dbs_cl_log=>get_factory( ).
 
     TYPES :
       BEGIN OF struct,
         startdate         TYPE    string,
-        finishdate           TYPE    string,
+        finishdate        TYPE    string,
         bankid            TYPE    string,
         partycode         TYPE    string,
         identifier        TYPE    string,
@@ -53,16 +52,16 @@
 
     ENDTRY.
 
-    IF rv_invoice IS INITIAL.
-      lo_log->add_log(
-                   msgno = '002'
-                   msgty = if_abap_behv_message=>severity-information
-                 ).
-    ELSE.
-      lo_log->add_log(
-              msgno = '004'
-              msgty = if_abap_behv_message=>severity-success
-            ).
-    ENDIF.
+*    IF rv_invoice IS INITIAL.
+*      lo_log->add_log(
+*                   msgno = '002'
+*                   msgty = if_abap_behv_message=>severity-information
+*                 ).
+*    ELSE.
+*      lo_log->add_log(
+*              msgno = '004'
+*              msgty = if_abap_behv_message=>severity-success
+*            ).
+*    ENDIF.
 
-  ENDMETHOD. "#EC CI_VALPAR
+  ENDMETHOD.                                             "#EC CI_VALPAR

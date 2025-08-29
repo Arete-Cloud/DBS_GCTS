@@ -9,10 +9,10 @@
     "AS4USER":"SAP_CUSTOMER",
     "AS4DATE":"0000-00-00",
     "AS4TIME":"00:00:00",
-    "SOURCE":"@EndUserText.label: 'Finteo Limit Apisi Alanları'\r\n@ObjectModel.query.implementedBy:'ABAP:ZARETE_DBS_CL_FINTEO_LMT'\r\ndefine root custom entity ZARETE_DBS_DD_FINTEO_LMT_001\r\n{\r\n      @UI.lineItem         : [ {\r\n            position       : 10 ,\r\n            importance     : #MEDIUM,\r\n            label          : 'Limit ID'\r\n            } ]\r\n\r\n      @EndUserText.label   : 'Limit ID'\r\n  key limitId              : abap.int4;\r\n      @UI.lineItem         : [ {\r\n           position        : 20 ,\r\n           importance      : #MEDIUM,\r\n           label           : 'Identifier'\r\n           } ]\r\n\r\n      @EndUserText.label   : 'Identifier'\r\n  key identifier           : abap.sstring( 11 );\r\n      @UI.lineItem         : [ {\r\n           position        : 30 ,\r\n           importance      : #MEDIUM,\r\n           label           : 'Party Code'\r\n           } ]\r\n\r\n      @EndUserText.label   : 'Party Code'\r\n      partyCode            : abap.sstring( 6 );\r\n      @UI.lineItem         : [ {\r\n       position            : 40 ,\r\n       importance          : #MEDIUM,\r\n       label               : 'Party Tax Number'\r\n       } ]\r\n\r\n      @EndUserText.label   : 'Party Tax Number'\r\n      partyTaxNumber       : abap.sstring( 11 );\r\n      @UI.lineItem         : [ {\r\n       position            : 50 ,\r\n       importance          : #MEDIUM,\r\n       label               : 'Party Title'\r\n       } ]\r\n\r\n      @EndUserText.label   : 'Party Title'\r\n      partyTitle           : abap.sstring( 200 );\r\n      @UI.lineItem         : [ {\r\n       position            : 60 ,\r\n       importance          : #MEDIUM,\r\n       label               : 'Limit'\r\n       } ]\r\n\r\n      @EndUserText.label   : 'Limit'\r\n      limit                : abap.dec( 9, 2 );\r\n      @UI.lineItem         : [ {\r\n       position            : 70 ,\r\n       importance          : #MEDIUM,\r\n       label               : 'Active Limit'\r\n       } ]\r\n\r\n      @EndUserText.label   : 'Active Limit'\r\n      activeLimit          : abap.dec( 9, 2 );\r\n      @UI.lineItem         : [ {\r\n       position            : 80 ,\r\n       importance          : #MEDIUM,\r\n       label               : 'Pending Invoice Count'\r\n       } ]\r\n\r\n      @EndUserText.label   : 'Pending Invoice Count'\r\n      pendingInvoiceCount  : abap.int4;\r\n      @UI.lineItem         : [ {\r\n       position            : 90 ,\r\n       importance          : #MEDIUM,\r\n       label               : 'Pending Invoice Amount'\r\n       } ]\r\n\r\n      @EndUserText.label   : 'Pending Invoice Amount'\r\n      pendingInvoiceAmount : abap.dec( 9, 2 );\r\n      @UI.lineItem         : [ {\r\n       position            : 100 ,\r\n       importance          : #MEDIUM,\r\n       label               : 'Bank Code'\r\n       } ]\r\n\r\n      @EndUserText.label   : 'Bank Code'\r\n      bankCode             : abap.sstring( 4 );\r\n      @UI.lineItem         : [ {\r\n       position            : 110 ,\r\n       importance          : #MEDIUM,\r\n       label               : 'Bank Name'\r\n       } ]\r\n\r\n      @EndUserText.label   : 'Bank Name'\r\n      bankName             : abap.sstring( 100 );\r\n      @UI.lineItem         : [ {\r\n       position            : 120 ,\r\n       importance          : #MEDIUM,\r\n       label               : 'Currency Code'\r\n       } ]\r\n\r\n      @EndUserText.label   : 'Currency Code'\r\n      currencyCode         : abap.sstring( 3 );\r\n\r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[],\n\"ASSOCIATED\":\n[],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
+    "SOURCE":"@EndUserText.label: 'Finteo Limit Apisi Alanları'\r\n@ObjectModel.query.implementedBy:'ABAP:ZARETE_DBS_CL_FINTEO_LMT'\r\n@Metadata.allowExtensions: true\r\ndefine root custom entity ZARETE_DBS_DD_FINTEO_LMT_001\r\n{\r\n\r\n      @UI                  : {\r\n         selectionField    :[{position:10}],\r\n        lineItem           :[\r\n         {position         :10,type:#FOR_ACTION ,dataAction:'Musteri_Ekle',label:'Müşteri Ekle',invocationGrouping:#CHANGE_SET}\r\n         ] }\r\n\r\n      @UI.lineItem         : [ { importance : #MEDIUM } ]\r\n      @EndUserText.label   : 'VKN'\r\n  key identifier           : abap.sstring( 11 );\r\n\r\n      @UI.lineItem         : [ { importance : #MEDIUM } ]\r\n      @EndUserText.label   : 'İlgili VKN'\r\n  key partyTaxNumber       : abap.sstring( 11 );\r\n\r\n      @UI.lineItem         : [ { importance : #MEDIUM } ]\r\n      @EndUserText.label   : 'Müşteri VKN'\r\n  key bpTaxNumber          : abap.char( 11 );\r\n\r\n      @UI.lineItem         : [ { importance : #MEDIUM } ]\r\n      @EndUserText.label   : 'Banka Kodu'\r\n      @Consumption.valueHelpDefinition: [{ entity: {name: 'ZARETE_DBS_DD_T019', element: 'BankCode'}}] //,\r\n      //      additionalBinding: [{ localElement: 'bankName', element: 'BankName' }] }]\r\n  key bankCode             : abap.char( 4 );\r\n\r\n      @UI.lineItem         : [ { importance : #MEDIUM } ]\r\n      @EndUserText.label   : 'Banka'\r\n  key bankName             : abap.sstring( 100 );\r\n\r\n      @UI.lineItem         : [ { importance : #MEDIUM } ]\r\n      @EndUserText.label   : 'Müşteri No'\r\n//      @Consumption.valueHelpDefinition: [{ entity: {name: 'ZARETE_DBS_DD_T018', element: 'BusinessPartner'} }]\r\n      @Consumption.valueHelpDefinition: [{entity: {name: 'ZARETE_DBS_DD_BP_001', element: 'business_partner' } }]\r\n      bpNo                 : abap.char( 11 );\r\n\r\n      @UI.lineItem         : [ { importance : #MEDIUM } ]\r\n      @EndUserText.label   : 'Müşteri Adı'\r\n      bpName               : abap.sstring( 100 );\r\n\r\n      @UI.lineItem         : [ { importance : #MEDIUM } ]\r\n      @EndUserText.label   : 'İlgili Adı'\r\n      partyTitle           : abap.sstring( 100 );\r\n\r\n      @UI.lineItem         : [ { importance : #MEDIUM } ]\r\n      @EndUserText.label   : 'İlgili Kişi'\r\n      partyCode            : abap.sstring( 50 );\r\n\r\n      @UI.lineItem         : [ { importance : #MEDIUM } ]\r\n      @EndUserText.label   : 'Toplam Limit'\r\n      limit                : abap.dec( 9, 2 );\r\n\r\n      @UI.lineItem         : [ { importance : #MEDIUM } ]\r\n      @EndUserText.label   : 'Kalan Limit'\r\n      activeLimit          : abap.dec( 9, 2 );\r\n\r\n      @UI.lineItem         : [ { importance : #MEDIUM } ]\r\n      @EndUserText.label   : 'Kullanılan Limit'\r\n      kullanilanLimit      : abap.dec( 9, 2 );\r\n\r\n      @UI.lineItem         : [ {importance : #MEDIUM} ]\r\n      @EndUserText.label   : 'Bekleyen Fatura Tutarı'\r\n      pendingInvoiceAmount : abap.dec( 9, 2 );\r\n\r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[],\n\"ASSOCIATED\":\n[],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
     "PARENTNAME":"",
     "ACTFLAG":"",
-    "CHGFLAG":"",
+    "CHGFLAG":",W4T",
     "SOURCE_TYPE":"Q",
     "SOURCE_ORIGIN":"0",
     "ABAP_LANGUAGE_VERSION":"5"
@@ -45,7 +45,7 @@
     "FIELDNAME":"ACTIVELIMIT",
     "DEPTH":0,
     "DDTEXT":"",
-    "FIELDLABEL":"Active Limit",
+    "FIELDLABEL":"Kalan Limit",
     "QUICKINFO":""
    },
    {
@@ -57,7 +57,7 @@
     "FIELDNAME":"BANKCODE",
     "DEPTH":0,
     "DDTEXT":"",
-    "FIELDLABEL":"Bank Code",
+    "FIELDLABEL":"Banka Kodu",
     "QUICKINFO":""
    },
    {
@@ -69,7 +69,7 @@
     "FIELDNAME":"BANKNAME",
     "DEPTH":0,
     "DDTEXT":"",
-    "FIELDLABEL":"Bank Name",
+    "FIELDLABEL":"Banka",
     "QUICKINFO":""
    },
    {
@@ -78,10 +78,34 @@
     "NODENAME":".NODE1",
     "DDLANGUAGE":"E",
     "AS4LOCAL":"N",
-    "FIELDNAME":"CURRENCYCODE",
+    "FIELDNAME":"BPNAME",
     "DEPTH":0,
     "DDTEXT":"",
-    "FIELDLABEL":"Currency Code",
+    "FIELDLABEL":"Müşteri Adı",
+    "QUICKINFO":""
+   },
+   {
+    "DDLNAME":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "NODENAME":".NODE1",
+    "DDLANGUAGE":"E",
+    "AS4LOCAL":"N",
+    "FIELDNAME":"BPNO",
+    "DEPTH":0,
+    "DDTEXT":"",
+    "FIELDLABEL":"Müşteri No",
+    "QUICKINFO":""
+   },
+   {
+    "DDLNAME":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "NODENAME":".NODE1",
+    "DDLANGUAGE":"E",
+    "AS4LOCAL":"N",
+    "FIELDNAME":"BPTAXNUMBER",
+    "DEPTH":0,
+    "DDTEXT":"",
+    "FIELDLABEL":"Müşteri VKN",
     "QUICKINFO":""
    },
    {
@@ -93,7 +117,19 @@
     "FIELDNAME":"IDENTIFIER",
     "DEPTH":0,
     "DDTEXT":"",
-    "FIELDLABEL":"Identifier",
+    "FIELDLABEL":"VKN",
+    "QUICKINFO":""
+   },
+   {
+    "DDLNAME":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "NODENAME":".NODE1",
+    "DDLANGUAGE":"E",
+    "AS4LOCAL":"N",
+    "FIELDNAME":"KULLANILANLIMIT",
+    "DEPTH":0,
+    "DDTEXT":"",
+    "FIELDLABEL":"Kullanılan Limit",
     "QUICKINFO":""
    },
    {
@@ -105,19 +141,7 @@
     "FIELDNAME":"LIMIT",
     "DEPTH":0,
     "DDTEXT":"",
-    "FIELDLABEL":"Limit",
-    "QUICKINFO":""
-   },
-   {
-    "DDLNAME":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "NODENAME":".NODE1",
-    "DDLANGUAGE":"E",
-    "AS4LOCAL":"N",
-    "FIELDNAME":"LIMITID",
-    "DEPTH":0,
-    "DDTEXT":"",
-    "FIELDLABEL":"Limit ID",
+    "FIELDLABEL":"Toplam Limit",
     "QUICKINFO":""
    },
    {
@@ -129,7 +153,7 @@
     "FIELDNAME":"PARTYCODE",
     "DEPTH":0,
     "DDTEXT":"",
-    "FIELDLABEL":"Party Code",
+    "FIELDLABEL":"İlgili Kişi",
     "QUICKINFO":""
    },
    {
@@ -141,7 +165,7 @@
     "FIELDNAME":"PARTYTAXNUMBER",
     "DEPTH":0,
     "DDTEXT":"",
-    "FIELDLABEL":"Party Tax Number",
+    "FIELDLABEL":"İlgili VKN",
     "QUICKINFO":""
    },
    {
@@ -153,7 +177,7 @@
     "FIELDNAME":"PARTYTITLE",
     "DEPTH":0,
     "DDTEXT":"",
-    "FIELDLABEL":"Party Title",
+    "FIELDLABEL":"İlgili Adı",
     "QUICKINFO":""
    },
    {
@@ -165,19 +189,7 @@
     "FIELDNAME":"PENDINGINVOICEAMOUNT",
     "DEPTH":0,
     "DDTEXT":"",
-    "FIELDLABEL":"Pending Invoice Amount",
-    "QUICKINFO":""
-   },
-   {
-    "DDLNAME":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "NODENAME":".NODE1",
-    "DDLANGUAGE":"E",
-    "AS4LOCAL":"N",
-    "FIELDNAME":"PENDINGINVOICECOUNT",
-    "DEPTH":0,
-    "DDTEXT":"",
-    "FIELDLABEL":"Pending Invoice Count",
+    "FIELDLABEL":"Bekleyen Fatura Tutarı",
     "QUICKINFO":""
    }
   ]
@@ -202,68 +214,26 @@
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
     "LFIELDNAME":"ACTIVELIMIT",
     "NAME":"ENDUSERTEXT",
-    "POSITION":41,
+    "POSITION":58,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
     "LFIELDNAME":"ACTIVELIMIT",
     "NAME":"ENDUSERTEXT.LABEL",
-    "POSITION":42,
-    "VALUE":"'Active Limit'"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"ACTIVELIMIT",
-    "NAME":"UI",
-    "POSITION":37,
-    "VALUE":""
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"ACTIVELIMIT",
-    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
-    "POSITION":39,
-    "VALUE":"#MEDIUM"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"ACTIVELIMIT",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "POSITION":40,
-    "VALUE":"'Active Limit'"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"ACTIVELIMIT",
-    "NAME":"UI.LINEITEM$1$.POSITION",
-    "POSITION":38,
-    "VALUE":"70"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"BANKCODE",
-    "NAME":"ENDUSERTEXT",
     "POSITION":59,
-    "VALUE":""
+    "VALUE":"'Kalan Limit'"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"BANKCODE",
-    "NAME":"ENDUSERTEXT.LABEL",
-    "POSITION":60,
-    "VALUE":"'Bank Code'"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"BANKCODE",
+    "LFIELDNAME":"ACTIVELIMIT",
     "NAME":"UI",
-    "POSITION":55,
+    "POSITION":56,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"BANKCODE",
+    "LFIELDNAME":"ACTIVELIMIT",
     "NAME":"UI.LINEITEM$1$.IMPORTANCE",
     "POSITION":57,
     "VALUE":"#MEDIUM"
@@ -271,121 +241,233 @@
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
     "LFIELDNAME":"BANKCODE",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "POSITION":58,
-    "VALUE":"'Bank Code'"
+    "NAME":"CONSUMPTION",
+    "POSITION":24,
+    "VALUE":""
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
     "LFIELDNAME":"BANKCODE",
-    "NAME":"UI.LINEITEM$1$.POSITION",
-    "POSITION":56,
-    "VALUE":"100"
+    "NAME":"CONSUMPTION.VALUEHELPDEFINITION$1$.ENTITY",
+    "POSITION":25,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"BANKCODE",
+    "NAME":"CONSUMPTION.VALUEHELPDEFINITION$1$.ENTITY.ELEMENT",
+    "POSITION":27,
+    "VALUE":"'BankCode'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"BANKCODE",
+    "NAME":"CONSUMPTION.VALUEHELPDEFINITION$1$.ENTITY.NAME",
+    "POSITION":26,
+    "VALUE":"'ZARETE_DBS_DD_T019'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"BANKCODE",
+    "NAME":"ENDUSERTEXT",
+    "POSITION":22,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"BANKCODE",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "POSITION":23,
+    "VALUE":"'Banka Kodu'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"BANKCODE",
+    "NAME":"UI",
+    "POSITION":20,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"BANKCODE",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "POSITION":21,
+    "VALUE":"#MEDIUM"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
     "LFIELDNAME":"BANKNAME",
     "NAME":"ENDUSERTEXT",
-    "POSITION":65,
+    "POSITION":30,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
     "LFIELDNAME":"BANKNAME",
     "NAME":"ENDUSERTEXT.LABEL",
-    "POSITION":66,
-    "VALUE":"'Bank Name'"
+    "POSITION":31,
+    "VALUE":"'Banka'"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
     "LFIELDNAME":"BANKNAME",
     "NAME":"UI",
-    "POSITION":61,
+    "POSITION":28,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
     "LFIELDNAME":"BANKNAME",
     "NAME":"UI.LINEITEM$1$.IMPORTANCE",
-    "POSITION":63,
+    "POSITION":29,
     "VALUE":"#MEDIUM"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"BANKNAME",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "POSITION":64,
-    "VALUE":"'Bank Name'"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"BANKNAME",
-    "NAME":"UI.LINEITEM$1$.POSITION",
-    "POSITION":62,
-    "VALUE":"110"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"CURRENCYCODE",
+    "LFIELDNAME":"BPNAME",
     "NAME":"ENDUSERTEXT",
-    "POSITION":71,
+    "POSITION":42,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"CURRENCYCODE",
+    "LFIELDNAME":"BPNAME",
     "NAME":"ENDUSERTEXT.LABEL",
-    "POSITION":72,
-    "VALUE":"'Currency Code'"
+    "POSITION":43,
+    "VALUE":"'Müşteri Adı'"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"CURRENCYCODE",
+    "LFIELDNAME":"BPNAME",
     "NAME":"UI",
-    "POSITION":67,
+    "POSITION":40,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"CURRENCYCODE",
+    "LFIELDNAME":"BPNAME",
     "NAME":"UI.LINEITEM$1$.IMPORTANCE",
-    "POSITION":69,
+    "POSITION":41,
     "VALUE":"#MEDIUM"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"CURRENCYCODE",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "POSITION":70,
-    "VALUE":"'Currency Code'"
+    "LFIELDNAME":"BPNO",
+    "NAME":"CONSUMPTION",
+    "POSITION":36,
+    "VALUE":""
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"CURRENCYCODE",
-    "NAME":"UI.LINEITEM$1$.POSITION",
-    "POSITION":68,
-    "VALUE":"120"
+    "LFIELDNAME":"BPNO",
+    "NAME":"CONSUMPTION.VALUEHELPDEFINITION$1$.ENTITY",
+    "POSITION":37,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"BPNO",
+    "NAME":"CONSUMPTION.VALUEHELPDEFINITION$1$.ENTITY.ELEMENT",
+    "POSITION":39,
+    "VALUE":"'business_partner'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"BPNO",
+    "NAME":"CONSUMPTION.VALUEHELPDEFINITION$1$.ENTITY.NAME",
+    "POSITION":38,
+    "VALUE":"'ZARETE_DBS_DD_BP_001'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"BPNO",
+    "NAME":"ENDUSERTEXT",
+    "POSITION":34,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"BPNO",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "POSITION":35,
+    "VALUE":"'Müşteri No'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"BPNO",
+    "NAME":"UI",
+    "POSITION":32,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"BPNO",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "POSITION":33,
+    "VALUE":"#MEDIUM"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"BPTAXNUMBER",
+    "NAME":"ENDUSERTEXT",
+    "POSITION":18,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"BPTAXNUMBER",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "POSITION":19,
+    "VALUE":"'Müşteri VKN'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"BPTAXNUMBER",
+    "NAME":"UI",
+    "POSITION":16,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"BPTAXNUMBER",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "POSITION":17,
+    "VALUE":"#MEDIUM"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
     "LFIELDNAME":"IDENTIFIER",
     "NAME":"ENDUSERTEXT",
+    "POSITION":10,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"IDENTIFIER",
+    "NAME":"ENDUSERTEXT.LABEL",
     "POSITION":11,
-    "VALUE":""
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"IDENTIFIER",
-    "NAME":"ENDUSERTEXT.LABEL",
-    "POSITION":12,
-    "VALUE":"'Identifier'"
+    "VALUE":"'VKN'"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
     "LFIELDNAME":"IDENTIFIER",
     "NAME":"UI",
-    "POSITION":7,
+    "POSITION":1,
     "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"IDENTIFIER",
+    "NAME":"UI",
+    "POSITION":8,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"IDENTIFIER",
+    "NAME":"UI.LINEITEM$1$.DATAACTION",
+    "POSITION":5,
+    "VALUE":"'Musteri_Ekle'"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
@@ -397,310 +479,205 @@
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
     "LFIELDNAME":"IDENTIFIER",
+    "NAME":"UI.LINEITEM$1$.INVOCATIONGROUPING",
+    "POSITION":7,
+    "VALUE":"#CHANGE_SET"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"IDENTIFIER",
     "NAME":"UI.LINEITEM$1$.LABEL",
-    "POSITION":10,
-    "VALUE":"'Identifier'"
+    "POSITION":6,
+    "VALUE":"'Müşteri Ekle'"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
     "LFIELDNAME":"IDENTIFIER",
     "NAME":"UI.LINEITEM$1$.POSITION",
-    "POSITION":8,
-    "VALUE":"20"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"LIMIT",
-    "NAME":"ENDUSERTEXT",
-    "POSITION":35,
-    "VALUE":""
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"LIMIT",
-    "NAME":"ENDUSERTEXT.LABEL",
-    "POSITION":36,
-    "VALUE":"'Limit'"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"LIMIT",
-    "NAME":"UI",
-    "POSITION":31,
-    "VALUE":""
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"LIMIT",
-    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
-    "POSITION":33,
-    "VALUE":"#MEDIUM"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"LIMIT",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "POSITION":34,
-    "VALUE":"'Limit'"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"LIMIT",
-    "NAME":"UI.LINEITEM$1$.POSITION",
-    "POSITION":32,
-    "VALUE":"60"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"LIMITID",
-    "NAME":"ENDUSERTEXT",
-    "POSITION":5,
-    "VALUE":""
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"LIMITID",
-    "NAME":"ENDUSERTEXT.LABEL",
-    "POSITION":6,
-    "VALUE":"'Limit ID'"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"LIMITID",
-    "NAME":"UI",
-    "POSITION":1,
-    "VALUE":""
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"LIMITID",
-    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
     "POSITION":3,
-    "VALUE":"#MEDIUM"
+    "VALUE":"10"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"LIMITID",
-    "NAME":"UI.LINEITEM$1$.LABEL",
+    "LFIELDNAME":"IDENTIFIER",
+    "NAME":"UI.LINEITEM$1$.TYPE",
     "POSITION":4,
-    "VALUE":"'Limit ID'"
+    "VALUE":"#FOR_ACTION"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"LIMITID",
-    "NAME":"UI.LINEITEM$1$.POSITION",
+    "LFIELDNAME":"IDENTIFIER",
+    "NAME":"UI.SELECTIONFIELD$1$.POSITION",
     "POSITION":2,
     "VALUE":"10"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PARTYCODE",
+    "LFIELDNAME":"KULLANILANLIMIT",
     "NAME":"ENDUSERTEXT",
-    "POSITION":17,
+    "POSITION":62,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PARTYCODE",
+    "LFIELDNAME":"KULLANILANLIMIT",
     "NAME":"ENDUSERTEXT.LABEL",
-    "POSITION":18,
-    "VALUE":"'Party Code'"
+    "POSITION":63,
+    "VALUE":"'Kullanılan Limit'"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PARTYCODE",
+    "LFIELDNAME":"KULLANILANLIMIT",
     "NAME":"UI",
-    "POSITION":13,
+    "POSITION":60,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PARTYCODE",
+    "LFIELDNAME":"KULLANILANLIMIT",
     "NAME":"UI.LINEITEM$1$.IMPORTANCE",
-    "POSITION":15,
+    "POSITION":61,
     "VALUE":"#MEDIUM"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PARTYCODE",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "POSITION":16,
-    "VALUE":"'Party Code'"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PARTYCODE",
-    "NAME":"UI.LINEITEM$1$.POSITION",
-    "POSITION":14,
-    "VALUE":"30"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PARTYTAXNUMBER",
+    "LFIELDNAME":"LIMIT",
     "NAME":"ENDUSERTEXT",
-    "POSITION":23,
-    "VALUE":""
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PARTYTAXNUMBER",
-    "NAME":"ENDUSERTEXT.LABEL",
-    "POSITION":24,
-    "VALUE":"'Party Tax Number'"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PARTYTAXNUMBER",
-    "NAME":"UI",
-    "POSITION":19,
-    "VALUE":""
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PARTYTAXNUMBER",
-    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
-    "POSITION":21,
-    "VALUE":"#MEDIUM"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PARTYTAXNUMBER",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "POSITION":22,
-    "VALUE":"'Party Tax Number'"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PARTYTAXNUMBER",
-    "NAME":"UI.LINEITEM$1$.POSITION",
-    "POSITION":20,
-    "VALUE":"40"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PARTYTITLE",
-    "NAME":"ENDUSERTEXT",
-    "POSITION":29,
-    "VALUE":""
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PARTYTITLE",
-    "NAME":"ENDUSERTEXT.LABEL",
-    "POSITION":30,
-    "VALUE":"'Party Title'"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PARTYTITLE",
-    "NAME":"UI",
-    "POSITION":25,
-    "VALUE":""
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PARTYTITLE",
-    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
-    "POSITION":27,
-    "VALUE":"#MEDIUM"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PARTYTITLE",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "POSITION":28,
-    "VALUE":"'Party Title'"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PARTYTITLE",
-    "NAME":"UI.LINEITEM$1$.POSITION",
-    "POSITION":26,
-    "VALUE":"50"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PENDINGINVOICEAMOUNT",
-    "NAME":"ENDUSERTEXT",
-    "POSITION":53,
-    "VALUE":""
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PENDINGINVOICEAMOUNT",
-    "NAME":"ENDUSERTEXT.LABEL",
     "POSITION":54,
-    "VALUE":"'Pending Invoice Amount'"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PENDINGINVOICEAMOUNT",
-    "NAME":"UI",
-    "POSITION":49,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PENDINGINVOICEAMOUNT",
+    "LFIELDNAME":"LIMIT",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "POSITION":55,
+    "VALUE":"'Toplam Limit'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"LIMIT",
+    "NAME":"UI",
+    "POSITION":52,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"LIMIT",
     "NAME":"UI.LINEITEM$1$.IMPORTANCE",
-    "POSITION":51,
+    "POSITION":53,
     "VALUE":"#MEDIUM"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PENDINGINVOICEAMOUNT",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "POSITION":52,
-    "VALUE":"'Pending Invoice Amount'"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PENDINGINVOICEAMOUNT",
-    "NAME":"UI.LINEITEM$1$.POSITION",
-    "POSITION":50,
-    "VALUE":"90"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PENDINGINVOICECOUNT",
+    "LFIELDNAME":"PARTYCODE",
     "NAME":"ENDUSERTEXT",
-    "POSITION":47,
+    "POSITION":50,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PENDINGINVOICECOUNT",
+    "LFIELDNAME":"PARTYCODE",
     "NAME":"ENDUSERTEXT.LABEL",
-    "POSITION":48,
-    "VALUE":"'Pending Invoice Count'"
+    "POSITION":51,
+    "VALUE":"'İlgili Kişi'"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PENDINGINVOICECOUNT",
+    "LFIELDNAME":"PARTYCODE",
     "NAME":"UI",
-    "POSITION":43,
+    "POSITION":48,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PENDINGINVOICECOUNT",
+    "LFIELDNAME":"PARTYCODE",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "POSITION":49,
+    "VALUE":"#MEDIUM"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"PARTYTAXNUMBER",
+    "NAME":"ENDUSERTEXT",
+    "POSITION":14,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"PARTYTAXNUMBER",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "POSITION":15,
+    "VALUE":"'İlgili VKN'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"PARTYTAXNUMBER",
+    "NAME":"UI",
+    "POSITION":12,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"PARTYTAXNUMBER",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "POSITION":13,
+    "VALUE":"#MEDIUM"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"PARTYTITLE",
+    "NAME":"ENDUSERTEXT",
+    "POSITION":46,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"PARTYTITLE",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "POSITION":47,
+    "VALUE":"'İlgili Adı'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"PARTYTITLE",
+    "NAME":"UI",
+    "POSITION":44,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"PARTYTITLE",
     "NAME":"UI.LINEITEM$1$.IMPORTANCE",
     "POSITION":45,
     "VALUE":"#MEDIUM"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PENDINGINVOICECOUNT",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "POSITION":46,
-    "VALUE":"'Pending Invoice Count'"
+    "LFIELDNAME":"PENDINGINVOICEAMOUNT",
+    "NAME":"ENDUSERTEXT",
+    "POSITION":66,
+    "VALUE":""
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "LFIELDNAME":"PENDINGINVOICECOUNT",
-    "NAME":"UI.LINEITEM$1$.POSITION",
-    "POSITION":44,
-    "VALUE":"80"
+    "LFIELDNAME":"PENDINGINVOICEAMOUNT",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "POSITION":67,
+    "VALUE":"'Bekleyen Fatura Tutarı'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"PENDINGINVOICEAMOUNT",
+    "NAME":"UI",
+    "POSITION":64,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "LFIELDNAME":"PENDINGINVOICEAMOUNT",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "POSITION":65,
+    "VALUE":"#MEDIUM"
    }
   ]
  },
@@ -711,86 +688,9 @@
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
     "DDLANGUAGE":"E",
-    "LFIELDNAME":"ACTIVELIMIT",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"Active Limit"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "DDLANGUAGE":"E",
-    "LFIELDNAME":"BANKCODE",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"Bank Code"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "DDLANGUAGE":"E",
-    "LFIELDNAME":"BANKNAME",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"Bank Name"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "DDLANGUAGE":"E",
-    "LFIELDNAME":"CURRENCYCODE",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"Currency Code"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "DDLANGUAGE":"E",
     "LFIELDNAME":"IDENTIFIER",
     "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"Identifier"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "DDLANGUAGE":"E",
-    "LFIELDNAME":"LIMIT",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"Limit"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "DDLANGUAGE":"E",
-    "LFIELDNAME":"LIMITID",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"Limit ID"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "DDLANGUAGE":"E",
-    "LFIELDNAME":"PARTYCODE",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"Party Code"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "DDLANGUAGE":"E",
-    "LFIELDNAME":"PARTYTAXNUMBER",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"Party Tax Number"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "DDLANGUAGE":"E",
-    "LFIELDNAME":"PARTYTITLE",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"Party Title"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "DDLANGUAGE":"E",
-    "LFIELDNAME":"PENDINGINVOICEAMOUNT",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"Pending Invoice Amount"
-   },
-   {
-    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
-    "DDLANGUAGE":"E",
-    "LFIELDNAME":"PENDINGINVOICECOUNT",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"Pending Invoice Count"
+    "TEXT":"Müşteri Ekle"
    }
   ]
  },
@@ -809,6 +709,18 @@
     "NAME":"ENDUSERTEXT.LABEL",
     "POSITION":2,
     "VALUE":"'Finteo Limit Apisi Alanları'"
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "NAME":"METADATA",
+    "POSITION":5,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",
+    "NAME":"METADATA.ALLOWEXTENSIONS",
+    "POSITION":6,
+    "VALUE":"true"
    },
    {
     "STRUCOBJN":"ZARETE_DBS_DD_FINTEO_LMT_001",

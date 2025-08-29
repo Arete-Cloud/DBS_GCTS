@@ -9,10 +9,10 @@
     "AS4USER":"SAP_CUSTOMER",
     "AS4DATE":"0000-00-00",
     "AS4TIME":"00:00:00",
-    "SOURCE":"@AccessControl.authorizationCheck: #NOT_REQUIRED\r\n@EndUserText.label: 'Finteo Statüleri'\r\n@Metadata.ignorePropagatedAnnotations: true\r\ndefine root view entity ZARETE_DBS_DD_T011 as select from zarete_dbs_t011\r\n{\r\n    key finteo_bank_code as FinteoBankCode,\r\n    key finteo_status_code as FinteoStatusCode,\r\n    finteo_status_definition as FinteoStatusDefinition,\r\n    created_by as CreatedBy,\r\n    created_at as CreatedAt,\r\n    last_changed_at as LastChangedAt,\r\n    local_last_changed_by as LocalLastChangedBy,\r\n    local_last_changed_at as LocalLastChangedAt\r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[\n\"ZARETE_DBS_T011\"\n],\n\"ASSOCIATED\":\n[],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
+    "SOURCE":"@AccessControl.authorizationCheck: #NOT_REQUIRED\r\n@EndUserText.label: 'Finteo Statüleri'\r\n@Metadata.ignorePropagatedAnnotations: true\r\ndefine root view entity ZARETE_DBS_DD_T011\r\n  as select from zarete_dbs_t011\r\n{\r\n  key finteo_status_code        as FinteoStatusCode,\r\n  key finteo_status_description as FinteoStatusDescription,\r\n      finteo_status_code_text   as FinteoStatusCodeText,\r\n      finteo_status_desc_text   as FinteoStatusDescText,\r\n      created_by                as CreatedBy,\r\n      created_at                as CreatedAt,\r\n      last_changed_at           as LastChangedAt,\r\n      local_last_changed_by     as LocalLastChangedBy,\r\n      local_last_changed_at     as LocalLastChangedAt\r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[\n\"ZARETE_DBS_T011\"\n],\n\"ASSOCIATED\":\n[],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
     "PARENTNAME":"",
     "ACTFLAG":"",
-    "CHGFLAG":"",
+    "CHGFLAG":"J,W4T2",
     "SOURCE_TYPE":"W",
     "SOURCE_ORIGIN":"0",
     "ABAP_LANGUAGE_VERSION":"5"

@@ -1,3 +1,3 @@
   METHOD zarete_dbs_if_log~refresh.
-    CLEAR  me->sapinvoiceid.
+    CLEAR: me->sapinvoiceno, me->id, me->bankcode.
   ENDMETHOD.

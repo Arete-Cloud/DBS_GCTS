@@ -7,9 +7,9 @@
     "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
     "VERSION":"A",
     "CHANGED_BY":"SAP_CUSTOMER",
-    "CHANGED_ON":"2025-05-16",
-    "CHANGED_AT":"13:04:36",
-    "UUID":"2A4C3D79E2E91FD08CCACA2D6F7D13C1",
+    "CHANGED_ON":"2025-07-17",
+    "CHANGED_AT":"12:05:33",
+    "UUID":"F296263EC5CB1FD098E0CAE38E415BC4",
     "ABAP_LANGUAGE_VERSION":"5"
    }
   ]
@@ -34,7 +34,7 @@
     "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
     "VERSION":"A",
     "UUID":"",
-    "SOURCE":"@Metadata.layer: #CORE\r\n@UI: {\r\n  headerInfo: {\r\n    typeName: 'A_FinteoStatus',\r\n    typeNamePlural: 'A_FinteoStatus'\r\n  }\r\n}\r\nannotate entity ZARETE_DBS_PV_T011 with\r\n{\r\n  @UI.facet: [\r\n    { id: 'idheader' ,\r\n              purpose: #HEADER,\r\n              label: 'Finteo Status Değerleri' ,\r\n              type: #FIELDGROUP_REFERENCE,\r\n              targetQualifier: 'hdFi',\r\n              position: 10 } ,\r\n      { id:'idFi' ,\r\n                   type: #COLLECTION ,\r\n                   label: 'Finteo Status Değerleri' ,\r\n                   position: 10 } ,\r\n\r\n                    { type: #IDENTIFICATION_REFERENCE ,\r\n                   label : 'Finteo Status',\r\n                   parentId: 'idFi',\r\n                   id: 'idSAPVeri' ,\r\n                   position: 10 }\r\n                                 ]\r\n\r\n  @UI.fieldGroup: [{ qualifier: 'Finteo Status Değerleri' , position: 10 }]\r\n  @UI.lineItem: [ {\r\n  position: 10 ,\r\n  importance: #MEDIUM,\r\n  label: 'Finteo Status'\r\n   } ]\r\n  @UI.identification: [ {\r\n  position: 10 ,\r\n  label: 'Finteo Status'\r\n  } ]\r\n  @EndUserText.label: 'Finteo Status'\r\n  FinteoStatusCode;\r\n\r\n  @UI.fieldGroup: [{ qualifier: 'Finteo Status Değerleri' , position: 10 }]\r\n  @UI.lineItem: [ {\r\n  position: 20 ,\r\n  importance: #MEDIUM,\r\n  label: 'Finteo Bank Code'\r\n   } ]\r\n  @UI.identification: [ {\r\n  position: 20 ,\r\n  label: 'Finteo Bank Code'\r\n  } ]\r\n  @EndUserText.label: 'Finteo Bank Code'\r\n  FinteoBankCode;\r\n\r\n  @UI.fieldGroup: [{ qualifier: 'Finteo Status Değerleri' , position: 10 }]\r\n  @UI.lineItem: [ {\r\n  position: 30 ,\r\n  importance: #MEDIUM,\r\n  label: 'Finteo Status Definition'\r\n   } ]\r\n  @UI.identification: [ {\r\n  position: 30 ,\r\n  label: 'Finteo Status Definition'\r\n  } ]\r\n  @EndUserText.label: 'Finteo Status Definition'\r\n  FinteoStatusDefinition;\r\n}"
+    "SOURCE":"@Metadata.layer: #CORE\r\n@UI: {\r\n  headerInfo: {\r\n    typeName: 'A_FinteoStatus',\r\n    typeNamePlural: 'A_FinteoStatus'\r\n  }\r\n}\r\nannotate entity ZARETE_DBS_PV_T011 with\r\n{\r\n  @UI.facet: [\r\n    { id: 'idheader' ,\r\n              purpose: #HEADER,\r\n              label: 'Finteo Status Değerleri' ,\r\n              type: #FIELDGROUP_REFERENCE,\r\n              targetQualifier: 'hdFi',\r\n              position: 10 } ,\r\n      { id:'idFi' ,\r\n                   type: #COLLECTION ,\r\n                   label: 'Finteo Status Değerleri' ,\r\n                   position: 10 } ,\r\n\r\n                    { type: #IDENTIFICATION_REFERENCE ,\r\n                   label : 'Finteo Status',\r\n                   parentId: 'idFi',\r\n                   id: 'idSAPVeri' ,\r\n                   position: 10 }\r\n                                 ]\r\n\r\n  @UI.fieldGroup: [{ qualifier: 'Finteo Status Değerleri' , position: 10 }]\r\n  @UI.lineItem: [ {\r\n  position: 10 ,\r\n  importance: #MEDIUM,\r\n  label: 'Finteo Statü Kodu'\r\n   } ]\r\n  @UI.identification: [ {\r\n  position: 10 ,\r\n  label: 'Finteo Statü Kodu'\r\n  } ]\r\n  @EndUserText.label: 'Finteo Statü Kodu'\r\n  FinteoStatusCode;\r\n\r\n  @UI.fieldGroup: [{ qualifier: 'Finteo Status Değerleri' , position: 10 }]\r\n  @UI.lineItem: [ {\r\n  position: 20 ,\r\n  importance: #MEDIUM,\r\n  label: 'Finteo Statü Kodu Açıklaması'\r\n   } ]\r\n  @UI.identification: [ {\r\n  position: 20 ,\r\n  label: 'Finteo Statü Kodu Açıklaması'\r\n  } ]\r\n  @EndUserText.label: 'Finteo Statü Kodu Açıklaması'\r\n  FinteoStatusCodeText;\r\n\r\n  @UI.fieldGroup: [{ qualifier: 'Finteo Status Değerleri' , position: 10 }]\r\n  @UI.lineItem: [ {\r\n  position: 30 ,\r\n  importance: #MEDIUM,\r\n  label: 'Finteo Statü Detayı'\r\n   } ]\r\n  @UI.identification: [ {\r\n  position: 30 ,\r\n  label: 'Finteo Statü Detayı'\r\n  } ]\r\n  @EndUserText.label: 'Finteo Statü Detayı'\r\n  FinteoStatusDescription;\r\n\r\n  @UI.fieldGroup: [{ qualifier: 'Finteo Status Değerleri' , position: 10 }]\r\n  @UI.lineItem: [ {\r\n  position: 40 ,\r\n  importance: #MEDIUM,\r\n  label: 'Finteo Statü Detayı Açıklaması'\r\n   } ]\r\n  @UI.identification: [ {\r\n  position: 40 ,\r\n  label: 'Finteo Statü Detayı Açıklaması'\r\n  } ]\r\n  @EndUserText.label: 'Finteo Statü Detayı Açıklaması'\r\n  FinteoStatusDescText;\r\n}"
    }
   ]
  },
@@ -58,66 +58,10 @@
    },
    {
     "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
-    "ELEMENT":"FINTEOBANKCODE",
-    "NAME":"ENDUSERTEXT.LABEL",
-    "ELEMENT_TYPE":"S",
-    "VALUE":"'Finteo Bank Code'"
-   },
-   {
-    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
-    "ELEMENT":"FINTEOBANKCODE",
-    "NAME":"UI.FIELDGROUP$1$.POSITION",
-    "ELEMENT_TYPE":"S",
-    "VALUE":"10"
-   },
-   {
-    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
-    "ELEMENT":"FINTEOBANKCODE",
-    "NAME":"UI.FIELDGROUP$1$.QUALIFIER",
-    "ELEMENT_TYPE":"S",
-    "VALUE":"'Finteo Status Değerleri'"
-   },
-   {
-    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
-    "ELEMENT":"FINTEOBANKCODE",
-    "NAME":"UI.IDENTIFICATION$1$.LABEL",
-    "ELEMENT_TYPE":"S",
-    "VALUE":"'Finteo Bank Code'"
-   },
-   {
-    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
-    "ELEMENT":"FINTEOBANKCODE",
-    "NAME":"UI.IDENTIFICATION$1$.POSITION",
-    "ELEMENT_TYPE":"S",
-    "VALUE":"20"
-   },
-   {
-    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
-    "ELEMENT":"FINTEOBANKCODE",
-    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
-    "ELEMENT_TYPE":"S",
-    "VALUE":"#MEDIUM"
-   },
-   {
-    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
-    "ELEMENT":"FINTEOBANKCODE",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "ELEMENT_TYPE":"S",
-    "VALUE":"'Finteo Bank Code'"
-   },
-   {
-    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
-    "ELEMENT":"FINTEOBANKCODE",
-    "NAME":"UI.LINEITEM$1$.POSITION",
-    "ELEMENT_TYPE":"S",
-    "VALUE":"20"
-   },
-   {
-    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
     "ELEMENT":"FINTEOSTATUSCODE",
     "NAME":"ENDUSERTEXT.LABEL",
     "ELEMENT_TYPE":"S",
-    "VALUE":"'Finteo Status'"
+    "VALUE":"'Finteo Statü Kodu'"
    },
    {
     "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
@@ -243,7 +187,7 @@
     "ELEMENT":"FINTEOSTATUSCODE",
     "NAME":"UI.IDENTIFICATION$1$.LABEL",
     "ELEMENT_TYPE":"S",
-    "VALUE":"'Finteo Status'"
+    "VALUE":"'Finteo Statü Kodu'"
    },
    {
     "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
@@ -264,7 +208,7 @@
     "ELEMENT":"FINTEOSTATUSCODE",
     "NAME":"UI.LINEITEM$1$.LABEL",
     "ELEMENT_TYPE":"S",
-    "VALUE":"'Finteo Status'"
+    "VALUE":"'Finteo Statü Kodu'"
    },
    {
     "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
@@ -275,59 +219,171 @@
    },
    {
     "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
-    "ELEMENT":"FINTEOSTATUSDEFINITION",
+    "ELEMENT":"FINTEOSTATUSCODETEXT",
     "NAME":"ENDUSERTEXT.LABEL",
     "ELEMENT_TYPE":"S",
-    "VALUE":"'Finteo Status Definition'"
+    "VALUE":"'Finteo Statü Kodu Açıklaması'"
    },
    {
     "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
-    "ELEMENT":"FINTEOSTATUSDEFINITION",
+    "ELEMENT":"FINTEOSTATUSCODETEXT",
     "NAME":"UI.FIELDGROUP$1$.POSITION",
     "ELEMENT_TYPE":"S",
     "VALUE":"10"
    },
    {
     "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
-    "ELEMENT":"FINTEOSTATUSDEFINITION",
+    "ELEMENT":"FINTEOSTATUSCODETEXT",
     "NAME":"UI.FIELDGROUP$1$.QUALIFIER",
     "ELEMENT_TYPE":"S",
     "VALUE":"'Finteo Status Değerleri'"
    },
    {
     "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
-    "ELEMENT":"FINTEOSTATUSDEFINITION",
+    "ELEMENT":"FINTEOSTATUSCODETEXT",
     "NAME":"UI.IDENTIFICATION$1$.LABEL",
     "ELEMENT_TYPE":"S",
-    "VALUE":"'Finteo Status Definition'"
+    "VALUE":"'Finteo Statü Kodu Açıklaması'"
    },
    {
     "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
-    "ELEMENT":"FINTEOSTATUSDEFINITION",
+    "ELEMENT":"FINTEOSTATUSCODETEXT",
     "NAME":"UI.IDENTIFICATION$1$.POSITION",
     "ELEMENT_TYPE":"S",
-    "VALUE":"30"
+    "VALUE":"20"
    },
    {
     "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
-    "ELEMENT":"FINTEOSTATUSDEFINITION",
+    "ELEMENT":"FINTEOSTATUSCODETEXT",
     "NAME":"UI.LINEITEM$1$.IMPORTANCE",
     "ELEMENT_TYPE":"S",
     "VALUE":"#MEDIUM"
    },
    {
     "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
-    "ELEMENT":"FINTEOSTATUSDEFINITION",
+    "ELEMENT":"FINTEOSTATUSCODETEXT",
     "NAME":"UI.LINEITEM$1$.LABEL",
     "ELEMENT_TYPE":"S",
-    "VALUE":"'Finteo Status Definition'"
+    "VALUE":"'Finteo Statü Kodu Açıklaması'"
    },
    {
     "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
-    "ELEMENT":"FINTEOSTATUSDEFINITION",
+    "ELEMENT":"FINTEOSTATUSCODETEXT",
+    "NAME":"UI.LINEITEM$1$.POSITION",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"20"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
+    "ELEMENT":"FINTEOSTATUSDESCRIPTION",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"'Finteo Statü Detayı'"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
+    "ELEMENT":"FINTEOSTATUSDESCRIPTION",
+    "NAME":"UI.FIELDGROUP$1$.POSITION",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"10"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
+    "ELEMENT":"FINTEOSTATUSDESCRIPTION",
+    "NAME":"UI.FIELDGROUP$1$.QUALIFIER",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"'Finteo Status Değerleri'"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
+    "ELEMENT":"FINTEOSTATUSDESCRIPTION",
+    "NAME":"UI.IDENTIFICATION$1$.LABEL",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"'Finteo Statü Detayı'"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
+    "ELEMENT":"FINTEOSTATUSDESCRIPTION",
+    "NAME":"UI.IDENTIFICATION$1$.POSITION",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"30"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
+    "ELEMENT":"FINTEOSTATUSDESCRIPTION",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"#MEDIUM"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
+    "ELEMENT":"FINTEOSTATUSDESCRIPTION",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"'Finteo Statü Detayı'"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
+    "ELEMENT":"FINTEOSTATUSDESCRIPTION",
     "NAME":"UI.LINEITEM$1$.POSITION",
     "ELEMENT_TYPE":"S",
     "VALUE":"30"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
+    "ELEMENT":"FINTEOSTATUSDESCTEXT",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"'Finteo Statü Detayı Açıklaması'"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
+    "ELEMENT":"FINTEOSTATUSDESCTEXT",
+    "NAME":"UI.FIELDGROUP$1$.POSITION",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"10"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
+    "ELEMENT":"FINTEOSTATUSDESCTEXT",
+    "NAME":"UI.FIELDGROUP$1$.QUALIFIER",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"'Finteo Status Değerleri'"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
+    "ELEMENT":"FINTEOSTATUSDESCTEXT",
+    "NAME":"UI.IDENTIFICATION$1$.LABEL",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"'Finteo Statü Detayı Açıklaması'"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
+    "ELEMENT":"FINTEOSTATUSDESCTEXT",
+    "NAME":"UI.IDENTIFICATION$1$.POSITION",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"40"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
+    "ELEMENT":"FINTEOSTATUSDESCTEXT",
+    "NAME":"UI.LINEITEM$1$.IMPORTANCE",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"#MEDIUM"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
+    "ELEMENT":"FINTEOSTATUSDESCTEXT",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"'Finteo Statü Detayı Açıklaması'"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
+    "ELEMENT":"FINTEOSTATUSDESCTEXT",
+    "NAME":"UI.LINEITEM$1$.POSITION",
+    "ELEMENT_TYPE":"S",
+    "VALUE":"40"
    }
   ]
  },
@@ -352,30 +408,9 @@
    {
     "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
     "DDLANGUAGE":"E",
-    "ELEMENT":"FINTEOBANKCODE",
-    "NAME":"ENDUSERTEXT.LABEL",
-    "TEXT":"Finteo Bank Code"
-   },
-   {
-    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
-    "DDLANGUAGE":"E",
-    "ELEMENT":"FINTEOBANKCODE",
-    "NAME":"UI.IDENTIFICATION$1$.LABEL",
-    "TEXT":"Finteo Bank Code"
-   },
-   {
-    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
-    "DDLANGUAGE":"E",
-    "ELEMENT":"FINTEOBANKCODE",
-    "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"Finteo Bank Code"
-   },
-   {
-    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
-    "DDLANGUAGE":"E",
     "ELEMENT":"FINTEOSTATUSCODE",
     "NAME":"ENDUSERTEXT.LABEL",
-    "TEXT":"Finteo Status"
+    "TEXT":"Finteo Statü Kodu"
    },
    {
     "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
@@ -403,35 +438,77 @@
     "DDLANGUAGE":"E",
     "ELEMENT":"FINTEOSTATUSCODE",
     "NAME":"UI.IDENTIFICATION$1$.LABEL",
-    "TEXT":"Finteo Status"
+    "TEXT":"Finteo Statü Kodu"
    },
    {
     "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
     "DDLANGUAGE":"E",
     "ELEMENT":"FINTEOSTATUSCODE",
     "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"Finteo Status"
+    "TEXT":"Finteo Statü Kodu"
    },
    {
     "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
     "DDLANGUAGE":"E",
-    "ELEMENT":"FINTEOSTATUSDEFINITION",
+    "ELEMENT":"FINTEOSTATUSCODETEXT",
     "NAME":"ENDUSERTEXT.LABEL",
-    "TEXT":"Finteo Status Definition"
+    "TEXT":"Finteo Statü Kodu Açıklaması"
    },
    {
     "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
     "DDLANGUAGE":"E",
-    "ELEMENT":"FINTEOSTATUSDEFINITION",
+    "ELEMENT":"FINTEOSTATUSCODETEXT",
     "NAME":"UI.IDENTIFICATION$1$.LABEL",
-    "TEXT":"Finteo Status Definition"
+    "TEXT":"Finteo Statü Kodu Açıklaması"
    },
    {
     "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
     "DDLANGUAGE":"E",
-    "ELEMENT":"FINTEOSTATUSDEFINITION",
+    "ELEMENT":"FINTEOSTATUSCODETEXT",
     "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"Finteo Status Definition"
+    "TEXT":"Finteo Statü Kodu Açıklaması"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
+    "DDLANGUAGE":"E",
+    "ELEMENT":"FINTEOSTATUSDESCRIPTION",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "TEXT":"Finteo Statü Detayı"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
+    "DDLANGUAGE":"E",
+    "ELEMENT":"FINTEOSTATUSDESCRIPTION",
+    "NAME":"UI.IDENTIFICATION$1$.LABEL",
+    "TEXT":"Finteo Statü Detayı"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
+    "DDLANGUAGE":"E",
+    "ELEMENT":"FINTEOSTATUSDESCRIPTION",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "TEXT":"Finteo Statü Detayı"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
+    "DDLANGUAGE":"E",
+    "ELEMENT":"FINTEOSTATUSDESCTEXT",
+    "NAME":"ENDUSERTEXT.LABEL",
+    "TEXT":"Finteo Statü Detayı Açıklaması"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
+    "DDLANGUAGE":"E",
+    "ELEMENT":"FINTEOSTATUSDESCTEXT",
+    "NAME":"UI.IDENTIFICATION$1$.LABEL",
+    "TEXT":"Finteo Statü Detayı Açıklaması"
+   },
+   {
+    "DDLXNAME":"ZARETE_DBS_PV_T011_EXT",
+    "DDLANGUAGE":"E",
+    "ELEMENT":"FINTEOSTATUSDESCTEXT",
+    "NAME":"UI.LINEITEM$1$.LABEL",
+    "TEXT":"Finteo Statü Detayı Açıklaması"
    }
   ]
  },
@@ -444,8 +521,8 @@
     "EXTENDED_ARTIFACT":"ZARETE_DBS_PV_T011",
     "VARIANT":"",
     "LAYER":1500,
-    "DT_UUID":"2A4C3D79E2E91FD08CCACA2D6F7D13C1",
-    "RT_HASH":"F9D8D23D32F1EF9525E9FA78CAD9328133CF6202",
+    "DT_UUID":"F296263EC5CB1FD098E0CAE38E415BC4",
+    "RT_HASH":"5590571D57F82893DA1AB357565E0559064A2E40",
     "GEN_VERSION":"0",
     "TYPE":"0"
    }

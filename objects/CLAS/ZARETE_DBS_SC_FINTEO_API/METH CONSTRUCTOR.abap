@@ -1,4 +1,5 @@
   METHOD constructor.
+
     TYPES:
       BEGIN OF ty_token_json,
         access_token  TYPE string,
@@ -26,9 +27,10 @@
 
         LOOP AT lt_properties INTO DATA(ls_property).
           CASE ls_property-name.
-
             WHEN 'INVOICE URL'.
               gv_invoiceurl = ls_property-values[ 1 ].
+            WHEN 'SEND INVOICE URL'.
+              gv_sendinvoiceurl = ls_property-values[ 1 ].
             WHEN 'LIMIT URL'.
               gv_limiturl = ls_property-values[ 1 ].
             WHEN 'USERNAME'.
@@ -110,4 +112,5 @@
                          msgtx = lv_error_msj ).
 
     ENDTRY.
+
   ENDMETHOD.
